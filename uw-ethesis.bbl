@@ -1,0 +1,146 @@
+\begin{thebibliography}{10}
+
+\bibitem{Adderley2015}
+C.~Adderley, A.~Christen, and J.~A. Voogt.
+\newblock {The effect of radiometer placement and view on inferred directional
+  and hemispheric radiometric temperatures of an urban canopy}.
+\newblock {\em Atmospheric Measurement Techniques}, 8(2):1891--1933, 2015.
+
+\bibitem{BastiaanssenW.G.M.1998}
+{Bastiaanssen W.G.M.}, {M. Meneti}, {R.A. Feddes}, and a~a~M Holtslag.
+\newblock {A remote sensing surface energy balance algorithm for land (SEBAL):
+  Formulation}.
+\newblock {\em Journal of Hydrology}, 212-213(JANUARY):198--212, 1998.
+
+\bibitem{Berk1989}
+A~Berk, L.~S. Bernstein, and {D. C. Robertson}.
+\newblock {MODTRAN: A Moderate Resolution Model for LOWTRAN7}.
+\newblock Technical Report GL-TR-89-0122, 1989.
+
+\bibitem{Christen2012}
+Andreas Christen, Fred Meier, and Dieter Scherer.
+\newblock {High-frequency fluctuations of surface temperatures in an urban
+  environment}.
+\newblock {\em Theoretical and Applied Climatology}, 108(1-2):301--324, 2012.
+
+\bibitem{Cooper1989}
+D.~I. Cooper and G.~Asrar.
+\newblock {Evaluating atmospheric correction models for retrieving surface
+  temperatures from the AVHRR over a tallgrass prairie}.
+\newblock {\em Remote Sensing of Environment}, 27(1):93--102, 1989.
+
+\bibitem{Kotani2009a}
+Ayumi Kotani and Michiaki Sugita.
+\newblock {Concise formulae for the atmospheric correction of hemispherical
+  thermal radiation measured near the ground surface}.
+\newblock {\em Water Resources Research}, 45(7):1--7, 2009.
+
+\bibitem{Meier2011}
+F.~Meier, D.~Scherer, J.~Richters, and A.~Christen.
+\newblock {Atmospheric correction of thermal-infrared imagery of the 3-D urban
+  environment acquired in oblique viewing geometry}.
+\newblock {\em Atmospheric Measurement Techniques}, 4(5):909--922, 2011.
+
+\bibitem{Miskolczi1993}
+F.~Miskolczi and R~Guzzi.
+\newblock {Effect of nonuniform spectral dome transmittance on the accuracy of
+  infrared radiation measurements using shielded pyrradiometers and
+  pyrgeometers}.
+\newblock {\em Applied Optics}, 32(18):3257, jun 1993.
+
+\bibitem{Nakamura1988}
+Y.~Nakamura and T.~R. Oke.
+\newblock {Wind, temperature and stability conditions in an east-west oriented
+  urban canyon}.
+\newblock {\em Atmospheric Environment (1967)}, 22(12):2691--2700, 1988.
+
+\bibitem{Norman1995}
+John~M. Norman and Francois Becker.
+\newblock {Terminology in thermal infrared remote sensing of natural surfaces}.
+\newblock {\em Agricultural and Forest Meteorology}, 77(3-4):153--166, 1995.
+
+\bibitem{Peng2012}
+Shushi Peng, Shilong Piao, Philippe Ciais, Pierre Friedlingstein, Catherine
+  Ottle, Fran{\c{c}}ois~Marie Br{\'{e}}on, Huijuan Nan, Liming Zhou, and
+  Ranga~B. Myneni.
+\newblock {Surface urban heat island across 419 global big cities}.
+\newblock {\em Environmental Science and Technology}, 46(2):696--703, 2012.
+
+\bibitem{Qin2001}
+Z.~Qin, A.~Karnieli, and P.~Berliner.
+\newblock {A mono-window algorithm for retrieving land surface temperature from
+  Landsat TM data and its application to the Israel-Egypt border region}.
+\newblock {\em International Journal of Remote Sensing}, 22(18):3719--3746,
+  2001.
+
+\bibitem{Rotach2005}
+M.~W. Rotach, Roland Vogt, C.~Bernhofer, E.~Batchvarova, A.~Christen,
+  A.~Clappier, B.~Feddersen, S.-E. Gryning, G.~Martucci, H.~Mayer, V.~Mitev,
+  Tim~R. Oke, E.~Parlow, H.~Richner, M.~Roth, Y.-A. Roulet, D.~Ruffieux, J.~A.
+  Salmond, M.~Schatzmann, and J.~A. Voogt.
+\newblock {BUBBLE – an Urban Boundary Layer Meteorology Project}.
+\newblock {\em Theoretical and Applied Climatology}, 81(3-4):231--261, 2005.
+
+\bibitem{Roth1989}
+M.~Roth, Tim~R. Oke, and W.~Emery.
+\newblock {Satellite-derived urban heat islands from three coastal cities and
+  the utilization of such data in urban climatology.}
+\newblock {\em International Journal of Remote Sensing}, 10(11):1699--1720,
+  1989.
+
+\bibitem{Soux2004}
+A.~Soux, J.~A. Voogt, and Tim~R. Oke.
+\newblock {A model to calculate what a remote sensor 'sees' of an urban
+  surface}.
+\newblock {\em Boundary-Layer Meteorology}, 111(1):109--132, 2004.
+
+\bibitem{Stewart2011}
+I.~D. Stewart.
+\newblock {A systematic review and scientific critique of methodology in modern
+  urban heat island literature}.
+\newblock {\em International Journal of Climatology}, 31(2):200--217, 2011.
+
+\bibitem{Stewart2012}
+Iain~D. Stewart and Tim~R. Oke.
+\newblock {Local climate zones for urban temperature studies}.
+\newblock {\em Bulletin of the American Meteorological Society},
+  93(12):1879--1900, 2012.
+
+\bibitem{Stoll1992}
+Matthew~J Stoll and Anthony~J Brazel.
+\newblock {Surface-air temperature relationship in the urban environment of
+  Phoenix, Arizona}.
+\newblock {\em Physical Geography}, 13(2):160--179, 1992.
+
+\bibitem{Voogt1997}
+J.~A. Voogt and Tim~R. Oke.
+\newblock {Complete Urban Surface Temperatures}.
+\newblock {\em Journal of Applied Meteorology}, 36(9):1117--1132, 1997.
+
+\bibitem{Voogt1998a}
+J.~A. Voogt and Tim~R. Oke.
+\newblock {Effects of urban surface geometry on remotely-sensed surface
+  temperature}.
+\newblock {\em International Journal of Remote Sensing}, 19(February
+  2015):895--920, 1998.
+
+\bibitem{Voogt2003}
+J.~A. Voogt and Tim~R. Oke.
+\newblock {Thermal remote sensing of urban climates}.
+\newblock {\em Remote Sensing of Environment}, 86(3):370--384, 2003.
+
+\bibitem{Wan1996}
+Zhengming Wan and Jeff Dozier.
+\newblock {A Generalized Split-Window Algorithm for Retrieving Land-Surface
+  Temperature from Space}.
+\newblock {\em IEEE Transactions of Geoscience and Remote Sensing},
+  34(4):892--905, 1996.
+
+\bibitem{Yamaguchi2005}
+Yasushi Yamaguchi and Soushi Kato.
+\newblock {Analysis of urban heat-island effect using ASTER and ETM+ Data:
+  Separation of anthropogenic heat discharge and natural heat radiation from
+  sensible heat flux.}
+\newblock {\em Remote Sensing of Environment}, 99:44--54, 2005.
+
+\end{thebibliography}
