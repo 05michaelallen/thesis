@@ -12,10 +12,10 @@ C.~Adderley, A.~Christen, and J.~A. Voogt.
   Formulation}.
 \newblock {\em Journal of Hydrology}, 212-213(JANUARY):198--212, 1998.
 
-\bibitem{Berk1989}
-A~Berk, L.~S. Bernstein, and {D. C. Robertson}.
+\bibitem{Berk1987}
+A~Berk, L.~S. Bernstein, and D.~C. Robertson.
 \newblock {MODTRAN: A Moderate Resolution Model for LOWTRAN7}.
-\newblock Technical Report GL-TR-89-0122, 1989.
+\newblock Technical Report GL-TR-89-0122, 1987.
 
 \bibitem{Christen2012}
 Andreas Christen, Fred Meier, and Dieter Scherer.
@@ -28,6 +28,11 @@ D.~I. Cooper and G.~Asrar.
 \newblock {Evaluating atmospheric correction models for retrieving surface
   temperatures from the AVHRR over a tallgrass prairie}.
 \newblock {\em Remote Sensing of Environment}, 27(1):93--102, 1989.
+
+\bibitem{Kantor1962}
+A.~J. Kantor and A.~E. Cole.
+\newblock {Mid-latitude atmospheres, winter and summer}.
+\newblock {\em Geofisica Pura e Applicata}, 53(1):171--188, 1962.
 
 \bibitem{Kotani2009a}
 Ayumi Kotani and Michiaki Sugita.
