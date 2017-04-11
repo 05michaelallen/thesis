@@ -1,39 +1,57 @@
-\chapter{A method to correct upwelling longwave radiation to estimate hemispherical urban surface temperature}
+\chapter{A method to correct upwelling longwave radiation to estimate hemispherical urban surface temperature}\label{paper1}
 
 \section{Introduction}
-Thermal infrared (TIR) remote sensing of land surface temperature (T\textsubscript{surf}) has emerged as a primary research focus in climatology, as researchers seek to better describe spatiotemporal patterns of T\textsubscript{surf} globally and better understand how anthropogenic modification of earth's surface influences land T\textsubscript{surf} with links to the climate at-large. Over the last two decades, use of thermal remote sensing of surface climates has expanded significantly --- both in terms of the volume and breadth of remote sensed study and its explicative importance in climatology as a discipline. Thermal remote sensing of earth's surface has applications over a wide range of disciplines: from informing micro-, urban-, and global-scale climate models, to aiding decision making and mitigation praxis with respect to climate change and the \gls{uhi}. 
+Thermal infrared (TIR) remote sensing of land surface temperature (T\textsubscript{surf}) has emerged as a primary research focus in climatology, as researchers seek to better describe spatiotemporal patterns of T\textsubscript{surf} globally and better understand how anthropogenic modification of earth's surface influences land T\textsubscript{surf} and impacts climate at various scales. Over the last two decades, the application of thermal remote sensing to study surface climates has expanded significantly. Thermal remote sensing of earth's surface has applications over a wide range of disciplines: from informing micro-, urban-, and global-scale climate models, to aiding decision making and mitigation praxis with respect to climate change and the \gls{uhi}. 
 
-Within urban climatology, a combination of satellite, aerial, and ground-based thermal remote sensors have been integral in elucidating the spatial \cite{Roth1989}, temporal \cite{Peng2012}, and geometric \cite{Voogt1997} effects of the built environment on land T\textsubscript{surf}; in evaluating and partitioning urban surface energy balances \cite{BastiaanssenW.G.M.1998, Yamaguchi2005} and; in characterizations of the relationship between surface and \gls{blayer} air temperatures (T\textsubscript{air}) \cite{Stoll1992}. These advances have been aided by substantial improvements in sensor ground, spectral, and radiometric resolutions, and by the proliferation of both large-scale public satellite remote sensing campaigns and low-cost aerial and near-ground thermography. However, in spite of it's widespread usage, several questions concerning the use and validity of urban remote thermal remote sensing, first posed in Roth et al. 1989 \cite{Roth1989}, have yet to be sufficiently answered, viz,
+Within urban climatology, a combination of satellite, aerial, and ground-based thermal remote sensors have been integral in elucidating the spatial \cite{Roth1989}, temporal \cite{Peng2012}, and geometric \cite{Voogt1997} effects of the built environment on land T\textsubscript{surf}; in evaluating and partitioning urban surface energy balances \cite{BastiaanssenW.G.M.1998, Yamaguchi2005} and; in characterizations of the relationship between surface and \gls{blayer} air temperatures (T\textsubscript{air}) \cite{Stoll1992}. These advances have been aided by substantial improvements in sensor spatial, spectral, and radiometric resolutions, and by the proliferation of both large-scale public satellite remote sensing campaigns and low-cost aerial and near-ground thermography. However, in spite of it's widespread usage, several questions concerning the use and validity of urban remote thermal remote sensing, first posed in Roth et al. 1989 \cite{Roth1989}, have yet to be sufficiently answered, viz,
 
 \begin{enumerate}
 	\item What is the nature of the surface 'seen' by a thermal remote sensor?
 	\item How does T\textsubscript{surf} observed by a remote sensor relate to the 'true' temperature governing the surface-atmosphere interface?
 \end{enumerate}
 
-\noindent In this paper, we seek to examine question two by introducing and evaluating a method for atmospheric and emissivity correction of near-ground hemispherical TIR --- measured via \gls{pyrg} --- for hemispherical radiometric temperature (T\textsubscript{hem}) retrieval. These measures are common to most urban energy balance assessments and thus constitute a hitherto untapped method for urban T\textsubscript{surf} analysis. A companion paper responds to question one through an analysis of a climatology of T\textsubscript{hem} and derived surface UHI (sUHI), to quantify geometric and temporal biases across multiple methods for remote sensing of urban T\textsubscript{surf}.
+\noindent In this paper, we seek to examine question two by introducing and evaluating a method for atmospheric correction of near-ground hemispherical TIR --- measured via \gls{pyrg} --- for hemispherical radiometric temperature (T\textsubscript{hem, r}) retrieval. These measures are common to most urban energy balance assessments and thus constitute a hitherto untapped method for urban T\textsubscript{surf} analysis. A companion paper responds to question one through an analysis of an 8-month climatology of T\textsubscript{hem, r} and derived surface UHI magnitudes (sUHI), to quantify geometric and temporal biases across multiple methods for remote sensing of urban T\textsubscript{surf}.
 
 \section{Atmospheric effects on TIR}
 
-Although most thermal remote sensors operate within one of the \gls{atmwind}[s] --- where atmospheric effects are greatly reduced --- virtually any remote sensed TIR signal is subject to radiative effects from the intervening atmosphere between the surface and the sensor. Over much of the thermal infrared \gls{waveband} the atmosphere emits radiation and absorbs a fraction of radiation emitted by the surface. In addition, the earth (and indeed the urban surface) reflects a portion of incoming solar radiation. Thus, a TIR signal measured from a remote sensing platform is almost certainly not equal to the ground emitted signal. These effects can lead to differences between the 'true' radiometric T\textsubscript{surf} and the remote sensed T\textsubscript{surf} of over 10 k for satellite platforms \cite{Cooper1989} and over 6 K for near-ground sensors \cite{Meier2011}. Moreover, because atmospheric and emissivity effects are a function of non-uniform and spatiotemporally variant surface and atmospheric properties, their associated errors change depending on instrument type, study location, and ambient conditions. As intersite and time-sequential analysis is a significant goal of most thermal remote sensed studies (urban or otherwise) these effects cannot be ignored.
+Although most thermal remote sensors operate within one of the \gls{atmwind}[s] - where atmospheric effects are minimal - virtually any remote sensed TIR signal is subject to radiative effects from the layer of atmosphere between the surface and the sensor. Over much of the thermal infrared \gls{waveband} the atmosphere emits radiation and absorbs a fraction of radiation emitted by the surface. Thus, a remote sensed TIR signal almost certainly not equal to the ground emitted signal. Spectral radiance received by a sensor at height ($z$) can be described by a function deviating from a Planck curve defined by T\textsubscript{surf} based on the spectral transmittance of the intervening atmosphere, with the magnitude of that deviation determined by the difference between Planck curves calculated from T\textsubscript{surf} and ambient T\textsubscript{air}. A radiative transfer code, such as MODTRAN \cite{Berk1987}, can be used to model the effect of the atmosphere on a remote sensed TIR signal. Radiative transfer simulations run in MODTRAN version 4.1 for two path lengths are shown in figure \ref{spectairtsurf}, for spectral radiance emitted from a planar surface at 300 \si{kelvin} through an isothermal atmosphere at 290 \si{\kelvin}, water vapor content of 12 \si{\gram\per\meter\cubed}, and aerosol and trace gas profiles from the mid-latitude summer standard atmosphere \cite{Kantor1962}. At both short and long path lengths, radiance in each band shows some deviation from the ground emitted signal. Larger deviations are observed at longer path lengths, where a significant portion of the resulting signal is emitted from that atmosphere, even in bands with high spectral transmittance. Long path lengths and a less transmissive atmosphere increase the potential for deviation in a remote sensed TIR signal from the ground emitted signal, while the difference between T\textsubscript{air} and T\textsubscript{surf} determines the resulting magnitude of atmospheric influence.
 
-Spectral transmission of longwave radiation through a given layer of atmosphere varies significantly based on wavelength, path geometry, and column absorber content (primarily H\textsubscript{2}0, C0\textsubscript{2}, and to a lesser extent 0\textsubscript{3}, N\textsubscript{2}0, CO, CH\textsubscript{4}, and 0\textsubscript{2} \cite{Miskolczi1993}). Variation in band-by-band longwave transmittance with path length is greatest at urban scales (approximately 1 to 50 meters), where transparent spectral bands can quickly become opaque with small changes in path length or absorber content - illustrated in figure \ref{spectransheight}. Thus, transmittance of TIR near the surface is highly dependent on surface-sensor-sun geometry, instrument properties, and synoptic conditions. Indeed, accurate assessment of atmospheric influence on TIR may be most complex when measured near the surface.
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{spectairtsurf}
+	\caption{At-sensor spectral directional radiances computed in MODTRAN 4.1 \cite{Berk1987} for short (30 \si{m}) and long (3000 \si{m}) path lengths (z) with Planck curves indicating spectral radiances at T\textsubscript{surf} = 300 \si{K} and T\textsubscript{air} = 290 \si{K}.}
+	\label{spectairtsurf}
+\end{figure}
+
+Atmospheric effects can lead to differences between the 'true' radiometric T\textsubscript{surf} and the remote sensed T\textsubscript{surf} of over 10 \si{K} for satellite platforms \cite{Cooper1989} and over 6 \si{K} for near-ground sensors \cite{Meier2011}. Moreover, because atmospheric effects are a function of non-uniform and spatiotemporally variant surface and atmospheric properties, their associated errors change depending on instrument type, surface-sensor geometry, study location, and ambient conditions. As intersite and time-continuous analysis is a significant goal of most thermal remote sensed studies (urban or otherwise) these effects cannot be ignored.
+
+Spectral transmission of longwave radiation through a given layer of atmosphere is dependent on total column absorber content (the principal broadband TIR absorbers are H\textsubscript{2}O, CO\textsubscript{2}, and to a lesser extent O\textsubscript{3}, N\textsubscript{2}O, CO, CH\textsubscript{4}, and O\textsubscript{2} \cite{Miskolczi1993}). Holding vertical absorber content constant through a layer of atmosphere, variation in band-by-band TIR transmittance with path length is greatest at urban scales (approximately 1 to 50 \si{\meter}), where transparent spectral bands can quickly become opaque with small changes in path length or absorber content - illustrated in figure \ref{spectransheight}. Thus, transmittance of TIR near the surface is highly dependent on surface-sensor geometry, instrument spectral response, and atmospheric absorber content. Indeed, accurate assessment of atmospheric influence on TIR may be most complex when measured near the surface. 
 
 \begin{figure}[H]
 	\includegraphics[width=\textwidth]{spectransheight}
-	\caption{Spectral transmission of water vapor as a function of height. Black and grey shading indicate opaque (0\% transmittance) and transparent (100\% transmittance) bands respectively. Redo this figure with wavelength and colorbar?}
+	\caption{Spectral transmission of water vapor as a function of height. Run in MODTRAN 4.1 for radiance emitted from a planar surface at 300 \si{\kelvin} through an atmosphere with water vapor content of 8 \si{\gram\per\meter\cubed}. Sampled at heights of 1, 5, 10, 15, 20, 25, and 30 \si{\meter}.}
 	\label{spectransheight}
 \end{figure}
 
-The radiation passing through a layer of atmosphere from an emitting surface can be described in a number of ways. \textit{Spectral directional radiance} $ R (\lambda)$, at height $ z $ and from a direction defined by zenith angle \(\theta\), and azimuth angle \(\phi\) is commonly written as
+\subsection{Describing radiation as received by a remote sensor}
+
+Radiation passing through a layer of atmosphere from an emitting surface towards a sensor can be described in a number of ways: \textit{Spectral directional radiance} $R^\uparrow_z (\lambda, \theta, \phi)$, at height $ z $, wavelength $\lambda$ and from a direction defined by viewingzenith angle \(\theta\), and azimuth angle \(\phi\) is commonly written as
 
 \begin{equation}
-R^\uparrow_z (\lambda, \theta, \phi) = \tau_\lambda \epsilon R^\uparrow_0(\lambda) + (1-\epsilon) R^\downarrow_{sky} (\lambda) + (1-\tau_\lambda) R^\uparrow_{atm}(\lambda)
+R^\uparrow_z (\lambda, \theta, \phi) = \tau_\lambda \epsilon_\lambda R^\uparrow_0(\lambda) + (1-\epsilon_\lambda) R^\downarrow_{sky} (\lambda) + (1-\tau_\lambda) R^\uparrow_{atm}(\lambda)
 \end{equation}
 
-\noindent where \(\epsilon\) is surface emissivity, \(\tau\)\textsubscript{\( \lambda \)} is spectral "slab" transmittance through the layer between the emitting surface $( z  = 0) $ and $ z $. The same spectral TIR signal, as measured by a narrow-FOV sensor mounted at height $ z $, passes through an instrument shield (or dome) with spectral transmittance \(\tau_d\), and is integrated over the sensor waveband (bounded by \(\lambda_1\) and \(\lambda_2\)) to yield a \textit{directional radiance} $L'$ as 'seen' by the sensor
+\noindent where \(\epsilon\)\textsubscript{\( \lambda \)} is spectral surface emissivity, \(\tau\)\textsubscript{\( \lambda \)} is spectral "slab" transmittance through the layer between the emitting surface $( z  = 0) $ and $ z $. Directional radiances upwelling from the atmosphere $R^\uparrow_{atm}$, and the surface $R^\uparrow_0$, and downwelling from the sky $R^\downarrow_{sky}$, can be described spectrally or integrated over a waveband bounded by \(\lambda_1\) and \(\lambda_2\) as
 
 \begin{equation}
-L'_z (\theta, \phi) = \int_{\lambda_1}^{\lambda_2} \tau_d(\lambda) R^\uparrow_z(\lambda) ~ d\lambda
+R(\theta, \phi) = \bigints_{\lambda_1}^{\lambda_2} R(\lambda,\theta, \phi) ~ d\lambda =\displaystyle\frac{\epsilon_\lambda C_1}{\pi \lambda^5 \left( \exp\left(\cfrac{C_2}{\lambda T}\right)\right)}
+\end{equation}
+
+\noindent where C\textsubscript{1} = $ 3.7404 \cdot 10^8 $ $ W\mu^4 m^{-2} $, C\textsubscript{2} = $ 14387 \mu K $, and $T$ is emitter temperature.
+
+Measured by a narrow-FOV sensor mounted at height $ z $, $R^\uparrow_z (\lambda, \theta, \phi)$ passes through an instrument filter (or dome) with spectral transmittance \(\tau_d\), and is integrated over the sensor waveband to yield a \textit{directional radiance} $L_z'$ as 'seen' by the sensor
+
+\begin{equation}
+L_z' (\theta, \phi) = \int_{\lambda_1}^{\lambda_2} \tau_d(\lambda) R^\uparrow_z(\lambda) ~ d\lambda
 \end{equation}
 
 \noindent which, integrated over the hemisphere with respect to zenith \(\theta\) angle and azimuth \(\phi\) angle, yields an \textit{irradiance} $ L $ at height $ z $,
@@ -44,121 +62,486 @@ L_z = \int_{0}^{2\pi} \int_{0}^{\pi/2} L_z'(\theta, \phi) ~ \cos\theta \sin\thet
 
 \subsection{Relating TIR and surface temperature}
 
-TIR received by a remote sensor can be related to the emitting body's temperature in a number of ways --- each producing different conceptions of T\textsubscript{surf} from different instrument and sensor types. As such, the term "surface temperature" with respect to a remote sensed TIR is vague and can refer to several definitions of "surface" and "temperature" Thus, proper terminology must be attached to land T\textsubscript{surf} inferred from TIR. Definitions and nomenclature conventions for multiple methods for T\textsubscript{surf} retrieval are discussed at length in Norman \& Becker, (1995)\cite{Norman1995}.
+TIR received by a remote sensor can be related to a surface temperature in a number of ways --- each producing different conceptions of T\textsubscript{surf} from different instrument and sensor types. As such, the term "surface temperature" with respect to a remote sensed TIR is vague and can refer to several definitions of "surface" and "temperature". Thus, proper terminology must be attached to land T\textsubscript{surf} inferred from TIR. Definitions and nomenclature conventions for multiple methods for T\textsubscript{surf} retrieval are discussed at length in Norman \& Becker, (1995) \cite{Norman1995}.
 
-Directional radiance $ L'_z $ detected from a narrow-FOV sensor operating over waveband (\(\lambda_1\) --- \(\lambda_2\)) and viewing the surface from some orientation described by \(\theta\), \(\phi\) can be used to infer a \textit{directional brightness temperature} T'\textsubscript{bright}(\(\theta\), \(\phi\)) via an inversion of the Planck function multiplied by normalized sensor response integrated over the sensor waveband,
-
-\begin{equation}
-L'_z(T'_{bright} (\theta, \phi)) = \bigints_{\lambda_1}^{\lambda_2} \cfrac{f(\lambda) C_1}{\pi \lambda^5 \left( \exp\left(\cfrac{C_2}{\lambda T'_{bright} (\theta, \phi)}\right)\right)}
-\end{equation}
-
-\noindent where C\textsubscript{1} = $ 3.7404 \cdot 10^8 $ $ W\mu^4 m^{-2} $, C\textsubscript{2} = $ 14387 \mu K $, and relative sensor response $ r(\lambda) $ normalized via,
-
-\begin{equation}
-1 ~ =  \int_{\lambda_1}^{\lambda_2} r(\lambda) ~ d\lambda
-\end{equation}
-
-Similarly irradiance $L_z$ received by a broadband hemispherical sensor (such as a pyrgeometer), can be used to infer a \textit{hemispherical brightness temperature} T\textsubscript{bright} through an inversion of the Stefan-Boltzmann law,
+ Irradiance $L_z$ received by a broadband hemispherical sensor (such as a pyrgeometer), can be used to infer a \textit{hemispherical brightness temperature} T\textsubscript{hem, b} through an inversion of the Stefan-Boltzmann law,
 
 \begin{equation}
 \label{stefb1}
-L_z = \overline{r} (\sigma T_{bright}^4)
+T_{hem,~ b} = \sqrt[4]{\frac{L_z}{\overline{r}\sigma}}
 \end{equation}
 
-\noindent where $ \sigma $ is the Stefan-Boltzmann constant and $ \overline{r} $ is Planck weighted average broadband sensor response computed as,
+\noindent where $ \sigma $ is the Stefan-Boltzmann constant and $ \overline{r} $ is Planck weighted mean broadband sensor response computed as,
 
 \begin{equation}
-\overline{r} = \cfrac{\int R(\lambda) ~ r(\lambda)}{\int R(\lambda)}
+\label{meansens}
+\overline{r} = \cfrac{\int R(\lambda) ~ r(\lambda)~d\lambda}{\int R(\lambda) ~ d\lambda}
 \end{equation}
 
-\noindent with $ R(\lambda) $ computed from a Planck function at an approximated $T_{bright}$. 
+\noindent with $ R(\lambda) $ computed from a Planck function at an approximated emitter temperature. 
 
-In addition, a simple approximation of $T_{bright}$ can be inferred from directional radiance using equation \ref{stefb1} by replacing $ L_z $ with $L'_z$ multiplied by a constant. This method is commonly used to infer T\textsubscript{bright} from infrared thermometers (IRT) operating over the atmospheric window (where atmospheric correction magnitudes are small and T\textsubscript{bright} is a reasonably accurate approximation of T\textsubscript{surf}). However, constants must be calibrated for the range of expected T\textsubscript{surf} as the relationship between $ L_z $ and $L'_z$  is not perfectly linear.
+A \textit{directional brightness temperature} T\textsubscript{bright} $(\theta, \phi)$ from some viewing able described $\theta$ and $\phi$ by can be inferred from directional radiance via equation \ref{stefb1} by replacing $ L_z $ with $L_z'$ multiplied by a constant. This method is commonly used to infer T\textsubscript{bright} $(\theta, \phi)$ from infrared thermometers (IRT) operating over the atmospheric window - where atmospheric effects are minimal and T\textsubscript{bright} is a reasonably accurate approximation of T\textsubscript{surf}. However, constants must be calibrated for the range of expected T\textsubscript{surf} as the relationship between $ L_z $ and $L_z'$  is not perfectly linear with respect to emitter temperature.
 
-Inversions of uncorrected directional radiances or irradiances using the Planck function or the Stefan-Boltzmann law yield a temperature equal to that of a blackbody emitting the same amount of radiation as detected by the sensor. Since $ L_z $ is unlikely to be equal to $ L_0 $, T\textsubscript{bright, 0} and T\textsubscript{bright, z} often show significant variation based on sensor characteristics, ambient conditions, and surface-sensor geometry. Hence, remote sensed T\textsubscript{bright} is generally considered only a rough approximation representation of kinetic or thermodynamic T\textsubscript{surf}. 
+Inversions of uncorrected $ L_z $ or \textbf{$L_z'$} yield a temperature equal to that of a blackbody emitting the same amount of radiation as detected by the sensor. Since $ L_z $ is unlikely to be equal to $ L_0 $ and, by extension,  $L_z'$ is unlikely to be equal to $L_0'$, T\textsubscript{hem, b} at $ z = 0 $ and T\textsubscript{hem, b} at $ z $ often show significant deviation based on sensor characteristics, ambient conditions, and surface-sensor geometry. Hence, T\textsubscript{bright} and T\textsubscript{hem, b} are generally considered only a rough approximation representation of radiometric, kinetic, or thermodynamic T\textsubscript{surf}.
 
-To retrieve a more accurate estimation of the 'true' T\textsubscript{surf}, the same inversions can be applied to TIR measurements after correction for atmospheric and surface emissivity effects (e.g. transformations of the TIR signal to represent that at $ z = 0 $ if the surface was emitting as a perfect blackbody) to yield a direction radiometric surface temperature T\textsubscript{rad} for atmospheric and emissivity corrected directional radiances, a hemispherical radiometric surface temperature T\textsubscript{hem} for atmospheric and emissivity corrected irradiances. $ T\textsubscript{rad} (\theta, \phi) $ and T\textsubscript{hem} provide a better approximation of the ‘true’ T\textsubscript{surf} by representing the temperature at which the surface is radiating integrated over the sensor FOV.
+To retrieve a more accurate estimation of the 'true' T\textsubscript{surf}, the same inversions can be applied to TIR measurements after correction for atmospheric effects (e.g. modification of the remote sensed TIR signal to represent the same signal at $ z = 0 $ emitted from a homogeneous, isothermal, blackbody emitter) to yield a \textit{directional radiometric surface temperature} T\textsubscript{rad} from atmospheric corrected directional radiances and a \textit{hemispherical radiometric surface temperature} T\textsubscript{hem, r} from atmospherically corrected irradiances. T\textsubscript{rad} and T\textsubscript{hem, r} provide a better approximation of the ‘true’ T\textsubscript{surf} by representing the temperature at which emitting surfaces are radiating, integrated over the sensor FOV.
 
 
 \subsection{Atmospheric correction of near-ground TIR} \label{Atmospheric correction of near-ground TIR}
 
-A large number of correction routines have been developed to remove atmospheric and emissivity effects from aerial and satellite TIR signals and derive accurate T\textsubscript{rad}. Methods range from simple mono- \cite{Qin2001} and split-window \cite{Wan1996} routines for single- and multi-channel remote sensors to schemes that integrate a radiative transfer code to isolate the surface emitted signal from interfering signals. Boundary conditions are standard across most correction methods: often requiring vertical profiles of T\textsubscript{air}, humidity, pressure, and aerosol content to remove atmospheric effects, and assessments of surface radiative properties to correct for emissivity effects. However, correction methods are generally instrument (or at least platform) specific and difficult to generalize across sensor and platform types. Few methods exist for correction of ground based remote sensed TIR --- none of which are robust enough to correct irradiances upwelling from rough terrain measured  wide-\gls{fov}(FOV) sensor. In part, this is due to the fact that near ground thermal sensors have only recently become sensitive enough to require correction. However, a new breed of more accurate radiometers and thermal imagers should prompt a critical reevaluation of this assumption.
+A large number of correction routines have been developed to remove atmospheric and emissivity effects from aerial and satellite TIR signals and derive accurate T\textsubscript{rad}. Methods range from simple mono- \cite{Qin2001} and split-window \cite{Wan1996} routines for single- and multi-channel remote sensors, to schemes that integrate a radiative transfer code to isolate the surface emitted signal from interfering signals. Boundary conditions are standard across most correction methods: generally requiring vertical profiles of T\textsubscript{air}, humidity, pressure, and aerosol content to remove atmospheric effects, and surface radiative properties to correct for emissivity effects. However, correction methods are often instrument (or, at the very least, least platform) specific and difficult to generalize across sensor and platform types. Few methods exist for correction of ground based remote sensed TIR --- none of which are robust enough to correct irradiances measured from a near-ground wide-\gls{fov} (FOV) radiometer mounted to view rough terrain. 
 
-Atmospheric correction of near-ground remote sensed TIR is subject to a unique set of challenges compared to satellite and aerial platforms. Near-ground remote sensors have complex, multiple line-of-sight (LOS) geometry - illustrated in figure 2.1 for a wide-FOV instrument. Surface to sensor path lengths vary significantly over the sensor FOV, even when measured close (less than 5m) above the surface. This creates the potential for non-uniform atmospheric effects over the sensor FOV and necessitates a multi-LOS correction to retrieve accurate T\textsubscript{rad}. The addition of 3-dimensional surface geometry further amplifies this effect, as some paths may intersect with raised vertical, sloped, and horizontal features. In effect, with near-ground wide-FOV sensors, surface geometry is non-trivial and must be represented in atmospheric correction routines. In contrast, over a scene retrieved via satellite, spatial viability in surface geometry and LOS angle have a negligible effect on path length. Atmospheric correction routines for satellite retrieved TIR, therefore, assume uniform or single-LOS geometry because the TIR signal passes through a relatively constant volume of atmosphere over the projected sensor FOV, regardless of surface geometry. This greatly reduces the complexity of correction routines for satellite or aerial thermography. 
+%In part, this is due to the fact that until recently, errors inherent in radiometer measurements were large relative to atmospheric effects. However, a new breed of more accurate radiometers and thermal imagers should prompt a critical reevaluation of this assumption.
 
-\begin{figure}[!ht]
+Atmospheric correction of near-ground remote sensed TIR is subject to a unique set of challenges compared to traditional satellite and aerial platforms. Wide-FOV remote sensors have complex, multiple line-of-sight (LOS) path length geometries - illustrated in Figure \ref{lineofsight} for a downward facing pyrgeometer. Surface-sensor geometry varies significantly over the sensor FOV as some path lengths intersect with raised vertical, sloped, and horizontal features. This creates the potential for non-uniform atmospheric effects over the sensor FOV and necessitates a multi-LOS correction to retrieve accurate T\textsubscript{hem, r}. In effect, with near-ground wide-FOV sensors, surface geometry is non-trivial and must be represented in atmospheric correction routines. In contrast, over a scene retrieved via satellite, spatial viability in surface geometry and LOS angle have a negligible effect on path length. Atmospheric correction routines for satellite retrieved TIR, therefore, assume uniform or single-LOS geometry because the TIR signal passes through a relatively constant volume of atmosphere over the projected sensor FOV, regardless of surface geometry.
+
+\begin{figure}[H]
 	\includegraphics[width=\textwidth]{lineofsight}
-	\label{lineofsight}
 	\caption{Variable path geometry inherent with wide-FOV near-ground sensor visualized over an idealized 2-dimensional urban area.}
+	\label{lineofsight}
 \end{figure}
 
-Several multi-LOS atmospheric correction routines have been developed for near-ground TIR: Meier et al., 2011 describes a correction method for oblique angled urban thermography \cite{Meier2011}. Path lengths were calculated for each pixel over the FOV of a tower-mounted thermal imager angled obliquely toward the urban surface. A correction factor was then computed and applied using a radiative transfer code initialized using isothermal, isohumal atmospheric profiles for each time step. Applied over a time-series of images, the result is a continuous atmospherically corrected series of thermal images with each pixel representing a different T\textsubscript{rad}. However, the method uses visual-band images and a GIS database to represent urban geometry for each pixel's LOS - a technique not possible with a pyrgeometer, which returns a single integrated irradiance at each time-step. Moreover, the target instrument operates over a narrow waveband, reducing the magnitude and variance in atmospheric transmission over the sensor response curve. Thus, the method is not directly generalizable to correction TIR as measured via pyrgeometer.  Kotani \& Sugita, 2009 describes a method for correction of wide-FOV (pyrgeometer) TIR Irradiances \cite{Kotani2009a} over planar terrain. However, these methods are limited to narrow-FOV thermal imagers and sensors over planar surfaces respectively. A method which combines Meier et al., 2009's representation of complex surface geometry and Kotani \& Sugita, 2009's broadband hemispherical integration is needed for atmospheric correction of urban TIR measured from a downward facing pyrgeometer. A method to correct hemispherical broadband TIR as measured from a downward facing pyrgeometer needs to combine the two for accurate T\textsubscript{hem} retrieval over rough terrain. 
+Several multi-LOS correction routines have been developed for to remove atmospheric effects on near-ground remote sensed TIR: Meier et al., 2011 describes a correction method for oblique angled thermal imagery of urban terrain \cite{Meier2011}. In the method, spatially distributed LOS geometries were calculated by linking each image pixel to the corresponding 3-d coordinates of its viewpoint on a digital building model (DBM). Path lengths were then calculated as the distance between each pixel's corresponding location on the DBM and the sensor represented as the vanishing point of a 3-dimensional pyramidic projection from the sensor's location in the DBM. A pixel-by-pixel correction was then applied to remove atmospheric effects and retrieve T\textsubscript{rad} for each pixel at 30 minute intervals, resulting in a time-continuous climatology of urban T\textsubscript{rad}. However, the method uses thermal images in conjunction with a DBM to calculate path length geometries for each pixel's LOS - a technique not possible with a pyrgeometer, which returns a single integrated value over the sensor FOV. Moreover, the target instrument operates over a narrow waveband with relatively uniform spectral sensor response, reducing the magnitude and variance in atmospheric transmission over the sensor response curve. Thus, the method is not directly generalizable to correct TIR measured via pyrgeometer.
+
+Kotani \& Sugita, 2009 describes a method for correction of wide-FOV (pyrgeometer) TIR irradiances \cite{Kotani2009a} over a homogeneous planar surface. In this method, path lengths were calculated for six sensor heights. Radiances were then modeled using LOWTRAN initialized at $5^{\circ}$ intervals and integrated over the hemisphere to retrieve irradiances for a suite of T\textsubscript{surf}, and ambient T\textsubscript{air} and humidities. The resulting lookup table (LUT) of values is then used to correct $L_z$ and quantify atmospheric effects on remote sensed $L_z$ measured from several sensor heights. Methods outlined in Meier et al., 2011 and Kotani \& Sugita, 2009 are limited to narrow-FOV thermal imagers and planar terrain respectively. A method which combines Meier et al., 2011's representation of complex surface geometry and Kotani \& Sugita, 2009's broadband hemispherical integration is needed for atmospheric correction of urban TIR measured via downward facing pyrgeometer.
 
 \section{A "rolling lookup table" method for hemispherical atmospheric correction}
 
 %alt title:method to retrieve atmospherically corrected hemispherical surface temperatures from near ground TIR
 
-The "rolling lookup-table" method described in this study uses a sensor view model in conjunction with a radiative transfer code to model hemispherical irradiances upwelling from a simplified isothermal 3-dimensional representation of the target study area. In summary, the method (depicted in figure \ref{flow}) uses vertical profiles of measured T\textsubscript{air} and humidity to model at-sensor spectral radiances at 5$^{\circ}$ increments over the sensor FOV for a predefined range of possible T\textsubscript{hem} at each time-step. Spectral directional radiances are convolved by a dome transmittance curve, integrated over the sensor waveband, and weighted for their respective angular view factor. Weighted directional radiances are then integrated over the hemisphere and aggregated into a lookup table (LUT) of modeled irradiance---T\textsubscript{hem} pairings for each timestep, unique to the vertical profile of measured T\textsubscript{air} and humidity. Finally, for each time-step, measured irradiances are matched with the closest modeled irradiances in the associated LUT to return an atmospherically corrected hemispherical surface temperature (T\textsubscript{hem}). This process is repeated at 30 minute intervals to yield a continuous climatology of urban T\textsubscript{hem} for surface urban heat island (sUHI) analysis. The following sections introduce the study area and describe the sensor view modeling, radiative transfer, and post-processing steps of the method.
-
-
+The "rolling lookup-table" method described in this study uses a sensor view model in conjunction with a radiative transfer code to model hemispherical irradiances upwelling from a simplified isothermal 3-dimensional representation of the urban surface. In summary, the method (depicted in Figure \ref{flow}) uses vertical profiles of measured T\textsubscript{air} and humidity to model at-sensor spectral radiances at 5$^{\circ}$ increments over the sensor FOV for a predetermined range of possible T\textsubscript{hem, r} at each time-step. Spectral directional radiances are convolved by a dome transmittance curve, integrated over the sensor waveband, and weighted for their respective angular view factor. Weighted directional radiances are then integrated over the hemisphere and aggregated into a LUT of modeled irradiance - T\textsubscript{hem, r} pairings for each time step, unique to the vertical profile of measured T\textsubscript{air} and humidity. Finally, for each time step, measured irradiances are matched with the closest modeled irradiances in the LUT to return an atmospherically corrected radiometric hemispherical surface temperature. This process is repeated at 30 minute intervals to yield a continuous climatology of urban T\textsubscript{hem, r} for surface urban heat island (sUHI) analysis. The following sections introduce the study area for which the method was developed and describe the sensor view model, radiative transfer, and post-processing steps of the correction method.
 
 \begin{figure}[!ht]
 	\includegraphics[width=\textwidth]{flow}
-	\label{flow}
 	\caption{A workflow schematic depicting the input, model, and output-processing steps of a "rolling lookup table method" for hemispherical radiometric surface temperature retrial.}
+	\label{flow}
 \end{figure}
 
 \subsection{Study area}
 
-As discussed in Section \ref{Atmospheric correction of near-ground TIR}, atmospheric correction of longwave irradiances measured from downward-facing, near-ground, wide-FOV sensors must account for surface geometry - particularly when mounted to view complex surface geometry. Hence, routines to retrieve atmospherically corrected urban T\textsubscript{hem} from upwelling longwave irradiances are inherently site specific. However, it is important to note that although correction magnitudes described in this paper are not generalizable, the correction method described in this paper can readily be adapted to different study sites, pyrgeometer types, and unique surface geometries.
+As discussed in section \ref{Atmospheric correction of near-ground TIR}, atmospheric correction of longwave irradiances measured from downward-facing, near-ground, wide-FOV sensors must account for complex surface geometry. Thus, routines to retrieve atmospherically corrected urban T\textsubscript{hem, r} from upwelling longwave irradiances are inherently site specific. However, it is important to note that although correction \textit{magnitudes} described in this paper are not necessarily generalizable, the correction \textit{method} described in this paper can readily be adapted to different study sites, sensor types, and unique surface geometries.
 
-With methodological generalizability in mind, a "rolling lookup table" atmospheric correction method was developed to retrieve radiometric T\textsubscript{hem} for a climatology of upwelling longwave irradiances measured from above the Sperrstrasse urban street canyon in Basel, Switzerland. The site, instrumented as a part of the Basel Urban Boundary Layer Experiment (BUBBLE) \cite{Rotach2005}, has an approximately northeast-southwest orientation and site morphology representative of local climate zone (LCZ) 2\footnote{Site surroundings can be described by the following morphological parameters: mean building height: 14.6m, plan aspect ratio: 0.54, complete aspect ratio: 1.92, local canyon aspect ratio: 1.0, and average shortwave albedo: 0.11 \cite{Rotach2005}.} \cite{Stewart2012}. LCZ classification was based on an assessment of surface characteristics in a 250m circular area extending from the Sperrstrasse tower using a 1m raster digital building model (DBM). Thus, the morphological parameters identified in \cite{Rotach2005} are representative of the vast majority of the pyrgeometer footprint. However, it should be noted that vegetation was not included in the DBM, and thus is not represented in morphological assessment or the sensor view model. 
+With methodological generalizability in mind, a "rolling lookup table" atmospheric correction method was developed to retrieve radiometric T\textsubscript{hem, r} for a climatology of upwelling longwave irradiances measured from above the Sperrstrasse street canyon in Basel, Switzerland. The site, instrumented as a part of the Basel Urban Boundary Layer Experiment (BUBBLE) \cite{Rotach2005}, has an approximately northeast-southwest orientation and site morphology representative of local climate zone (LCZ) 2\footnote{Site surroundings can be described by the following morphological parameters: mean building height: 14.6m, plan aspect ratio: 0.54, complete aspect ratio: 1.92, local canyon aspect ratio: 1.0, and average shortwave albedo: 0.11 \cite{Rotach2005}.} \cite{Stewart2012}. LCZ classification was based on an assessment of surface characteristics in a 250m circular area extending from the Sperrstrasse tower using a 1 \si{m} raster digital building model (DBM). Thus, the morphological parameters identified in \cite{Rotach2005} are representative of a majority of the pyrgeometer footprint. Vegetation was not included in the DBM, and thus is not represented in morphological assessment or the sensor view model, however, the street canyon and surrounding area has little vegetation.
 
-For the nine month period between November 2001 and July 2002, a triangular lattice tower was installed skewed towards the southeast facing wall near the center of the Sperrstrasse canyon to observe a full suite of meteorological, radiation, and flux parameters. Profiles of T\textsubscript{air} and humidity were measured from seven heights extending from 2.5m to 31.5m above the canyon floor (with the highest observation level at approximately 2.17 times mean building height). Upwelling and downwelling short/longwave fluxes were measured at the lowest and highest tower heights, with an additional downward facing pyrgeometer mounted at roof level in the center of the canyon. In addition, during a summertime intense operation period (IOP) an array of narrow-FOV IRTs was installed to view individual facet surface temperatures (T\textsubscript{facet}) of approximately the same urban patch viewed by the pyrgeometer. 
+For the eight month period between December 2001 and July 2002, a triangular lattice tower was installed within the Sperrstrasse street canyon. It's location was skewed towards the southeast facing wall near the along-canyon center of the canyon. Instruments to observe a full suite of meteorological variables and fluxes of heat, mass, and momentum are mounted at various levels on the tower. Profiles of T\textsubscript{air} and humidity were measured at seven heights extending from 2.5 \si{m} to 31.5 \si{m} above the canyon floor (with the highest observation level at approximately 2.17 times mean roof level). Upwelling and downwelling short/longwave fluxes were obtained from radiometers mounted at the lowest and highest measurement levels, with an additional downward facing pyrgeometer mounted at roof level near the center of the street canyon. In addition, during a summertime intense operation period (IOP) an array of narrow-FOV IRTs was installed to sample representative individual facet surface temperatures (T\textsubscript{facet}).
 
-The BUBBLE Sperrstrasse site was chosen for two primary reasons: 1. The study site provided a long-term climatology of radiation and meteorological variables for a representative mid-latitude city over a diverse range of synoptic conditions. This allowed for examination of urban T\textsubscript{surf}, atmospheric correction magnitudes, and sUHI magnitudes over a wide range of mid-latitude conditions. 2. T\textsubscript{facet} measured during the summertime IOP allowed for direct climatological comparison of T\textsubscript{hem} to wall (T\textsubscript{wall}), roof (T\textsubscript{roof}), and road (T\textsubscript{road}) surface temperatures of both the northwest- and southeast-facing sides of the canyon. In addition, several hypothetical sensor views of the canyon were simulated by weighting to represent different geometric representations of the canyon, including a nadir/plan view, an oblique south-facing, and an oblique north-fac from narrow-FOV sensors and a complete, 3-dimensional view of the canyon. This facilitated comparison of T\textsubscript{hem} against different instrument types and platforms to identify and quantify biases in each method.  In each representation, different weightings were applied to T\textsubscript{wall}, T\textsubscript{roof}, and T\textsubscript{road} on both sides of the canyon to represent different sensor orientations and sampling regimes. Weightings for each representation are described in table \ref{weightings}. 
-\begin{table}[!ht]
+The BUBBLE Sperrstrasse site was chosen for two primary reasons: 1. The site provided a long-term climatology of radiation and meteorological variables for a representative mid-latitude city. This allowed for examination of urban T\textsubscript{surf}, sUHI, and atmospheric correction magnitudes over a wide range of representative mid-latitude conditions. 2.  In inclusion of T\textsubscript{facet} over the IOP allows for investigation of the effect of sensor-surface geometry on remote sensed urban T\textsubscript{surf} for common urban T\textsubscript{surf} measurement strategies. This directional dependence of urban T\textsubscript{surf} - termed "effective anisotropy" - refers to the notion that a TIR signal upwelling from rough terrain viewed from a remote sensor changes based on the combined effects of surface-sensor-sun geometry and the convoluted, 3-dimensional structure of the urban surface \cite{Voogt1998a}. Facet surface temperatures measured during the summertime IOP allow for direct climatological comparison of T\textsubscript{hem, r} to common remote sensed representations of the urban surface constructed from weighted averages of wall (T\textsubscript{wall}), road (T\textsubscript{road}), and roof (T\textsubscript{roof}) temperatures. Table \ref{weightings} describes T\textsubscript{facet} weightings for nadir remote sensed (T\textsubscript{plan}) and complete (T\textsubscript{comp}) representations of urban surface temperature. At each time step, both T\textsubscript{hem, r} and T\textsubscript{plan} were divided by T\textsubscript{comp} and averaged over the IOP to yield normalized mean T\textsubscript{hem, r} and T\textsubscript{plan} at 30-minute intervals. Through comparison of T\textsubscript{hem, r} to T\textsubscript{plan} and T\textsubscript{comp} we investigate the effect of sensor-surface geometry on remote sensed urban T\textsubscript{surf} and quantify directional biases in common urban T\textsubscript{surf} measurements. 
+
+\begin{table}[H]
 	\centering
-	\caption{Weightings to produce T'\textsubscript{rad} for different geometric representations of the Basel street canyon.}
+	\caption{Weights applied to individual facet temperature components in order to calculate complete and nadir temperatures for the Basel Sperrstrasse street canyon.}
 	\label{weightings}
 	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}} p{1cm}p{1cm}p{1cm}p{1cm}p{1.6cm}}
 		\toprule 
 		& Road & Northwest & Southeast & Northwest & Southeast \\ 
 		&  & Roof & Roof & Wall & Wall \\ 	\midrule
-
-		Complete & 0.33 & 0.16 & 0.16 & 0.16 & 0.16 \\ 
-
-		Nadir & 0.46 & 0.27 & 0.27 & 0.00 & 0.00 \\ 
-
-		Oblique (south-facing) & 0.20 & 0.25 & 0.25 & 0.00 & 0.30 \\ 
-
-		Oblique (north-facing) & 0.20 & 0.25 & 0.25 & 0.30 & 0.00 \\ 
+		Complete (T\textsubscript{comp}) & 0.33 & 0.16 & 0.16 & 0.16 & 0.16 \\ 
+		Nadir (T\textsubscript{plan}) & 0.46 & 0.27 & 0.27 & 0.00 & 0.00 \\ 
 		\bottomrule
 	\end{tabular*} 
 \end{table}
 
 \subsection{Modeling path lengths of 3-dimensional terrain}
 
-Radiative transfer of broadband longwave radiation in highly dependent on sensor-surface geometry. To calculate surface-sensor path lengths, the Surface-Sensor-Sun Urban Model (S\textsuperscript{3}UM) \cite{Soux2004} is initialized with a simplified, orthogonal 3-dimensional DBM representing the area immediately surrounding the sensor. In S\textsuperscript{3}UM, urban features (roads, roofs, buildings, etc.) are constructed from an array of horizontal and stacked vertical patches (representing rooftops/roads and walls respectively). After indicating sensor FOV and position over the DBM, the model determines which patches have an unobstructed line of sight to the sensor and calculates the path distance from "seen" patches to the sensor. Path lengths are binned at 5$^{\circ}$ increments from the nadir and averaged to return an azimuthally averaged path length for each 5$^{\circ}$ bin. Using azimuthally averaged path lengths in lieu of a full 3-dimensional radiative transfer model significantly reduces the computational time required to model each irradiance-T\textsubscript{hem} pairing, as at-sensor radiance can be computed independent of azimuth angle. Radiative transfer is thus reduced to a two dimensional problem (shown in panel (b) of figure \ref{23radtran}) in which an azimuthally averaged radiance is simulated for each zenith angle. The view factors required to weight directional radiances in the hemispherical integrated are computed While generating azimuthally averaged path lengths, S\textsuperscript{3}UM calculates view factors for each solid angle bin used in weighting 2-dimensional angular radiances during the hemispherical integration.  By using azimuthally averaged path lengths in lieu of  However, because hemispherical TIR sensor returns a bulk irradiance, the sensor signal does not need to be computed for each point of the
+The sheer number of unique path length geometries inherent with wide-FOV radiometry of urban areas makes full 3-dimensional radiative transfer simulation difficult and computationally intensive - particularly when correcting a long-term climatology of irradiances or T\textsubscript{hem, r}. In this method, to improve efficiency, radiances are calculated for azimuthally averaged path lengths that represent average surface-sensor geometry for each solid angle "slice" of the sensor FOV. Thus, hemispherical radiative transfer is reduced to a 2-dimensional problem as shown in Figure \ref{23radtran}. This greatly reduces the computational time required to model each irradiance - T\textsubscript{hem, r} pairing, as angular radiances can be computed as a function of zenith angle alone and subsequently weighted and integrated 3-dimensionally over the hemisphere. 
 
-\begin{figure}[!ht]
+To calculate surface-sensor geometries, the Surface-Sensor-Sun Urban Model (SUM) \cite{Soux2004} is initialized with a simplified, orthogonal 3-dimensional DBM representing surface geometry of the area surrounding the sensor. SUM uses a four-dimensional array to represent surface morphology with three spatial dimensions ($x$, $y$, and $z$), with $z$ representing height above the $x$, $y$ plane. An additional fourth dimension is used to store information describing each cell (in this case, distance from the point to the sensor). After specifying sensor position and FOV, the model determines which patches have an unobstructed line of sight to the sensor and calculates distance from "seen" patches to the sensor. Path lengths are binned at 5$^{\circ}$ increments of zenith angle and averaged to return an azimuthally-independent mean path length for each bin. In addition, while simulating path length geometries, SUM calculates view factors for each solid angle "slice", which are later used to weight 2-dimensional angular radiances in the hemispherical integration post-processing steps.
+
+\begin{figure}[H]
 	\includegraphics[width=\textwidth]{23radtran}
+	\caption{Path lengths over an urban surface. a) A downward radiometer mounted above a simplified three-dimensional urban surface showing b) the component radiances and path lengths from a vertical slice. Dotted lines indicate radiation streams subject to absorption by the intervening atmospheric layer.}
 	\label{23radtran}
-	\caption{A typical 2-dimensional (b) radiative transfer schematic adapted for an idealized 3-dimensional urban area (a). In 3-dimensions, path length for a given zenith angle can change significantly with azimuth angle. Dotted lines indicate the potential for absorption by the intervening atmospheric layer}
 \end{figure}
 
 \subsection{Modeling hemispherical irradiances}
-With path length geometries calculates inS\textsuperscript{3}UM, MODTRAN 4.1 is initialized with 30-minute averaged profiles of T\textsubscript{air} and humidity to model at-sensor spectral directional radiances over a waveband of 0---2500cm\textsuperscript{-1}. Aerosol and above canyon meterological conditions are informed by the Mid-Latitude Summer standard atmosphere when dayttime maximum T\textsubscript{air} is greater than 10$^{\circ}$. For days with dayttime T\textsubscript{air} maximum below 10$^{\circ}$, the Mid-Latitude Winter standard atmosphere is substituted. In spite of significant computational efficiency gains from reducing 3-dimensional radiative transfer to azimuthally averaged 2-dimensions, the method still requires significant computational time to write input cards and model spectral radiances - in this case, with a path length increment of 5 and a LUT of 31 modeled irradiance---T\textsubscript{hem} pairings, each time-step requires 496 independent MODTRAN runs 
+With path length geometries calculated in SUM, irradiances are modeled for each time step using version 4.1 of the MODerate resolution atmospheric TRANsmission radiative transfer code (MODTRAN) \cite{Berk1987}. At each time-step, a range of potential temperatures is specified (T\textsubscript{spec}) based on T\textsubscript{hem, b} calculated from the measured irradiance with
+
+\begin{equation}
+	T_{spec, ~min} = T_{hem, ~b} - 6 ~K 
+\end{equation}
+
+\noindent defining a minimum T\textsubscript{spec} before iterating over
+
+\begin{equation}
+T_{spec, ~i} = T_{spec, ~min} + \displaystyle\sum_{i = 1}^{n} 0.5n, ~1 \leq n \leq 32
+\end{equation}
+
+\noindent to retrieve a LUT of T\textsubscript{spec}. 
+
+After the LUT is defined, at-sensor spectral radiances for each path length/zenith angle are modeled at an emissivity of 0.95 over a waveband of 0 - 2300 \si{cm^{-1}} for each T\textsubscript{spec}. Profiles of T\textsubscript{air} and humidity are retrieved from 30-minute averages of conditions observed at the Sperrstrasse site. Aerosol, trace gas absorber, and above-sensor T\textsubscript{air} and humidity conditions are defined by the mid-latitude summer standard atmosphere when daytime T\textsubscript{air, max} \textgreater 10 \si{\degreeCelsius} (the mid-latitude winter profile is substituted on days where T\textsubscript{air, max} \textless 10 \si{\degreeCelsius}) \cite{Kantor1962}. 
+
+In this method, a "typical" longwave bandpass, approximately 250 - 2300 \si{\centi\meter^{-1}} (4 - 42 \si{\micro\meter}), was extended to include much smaller wavenumber (longer wavelengths). This was done for two reasons: 1) To accurately represent spectral longwave curves for typical urban T\textsubscript{surf}, which show significant emittance in wavenumber smaller than 250 \si{cm^{-1}} (wavelengths much longer than 42 \si{\micro\meter}). 2) To replicate the spectral signal "seen" by a silicone-domed pyrgeometer, which continues to transmit radiation at wavenumber \textless 250 \si{cm^{-1}} (wavelengths \textgreater 42 \si{\micro\meter}). A "typical" longwave bandpass underestimates a pyrgeometer signal by approximately 7 - 10 \si{\watt\per\square\meter}, depending on emitter temperature. A comparison of ‘typical’ and ‘extended’ longwave bandpasses is shown in Figure \ref{dometrans}.
+
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{dometrans}
+	\caption{A comparison of dome transmittance for a Kipp \& Zonen silicone domed pyrgeometer and at-sensor radiance (T\textsubscript{surf} = 300 \si{K}, T\textsubscript{air} = 300 \si{K}, $z$ = 30 \si{m})  for "typical" and extended bandpasses.}
+	\label{dometrans}
+\end{figure}
+
+At-sensor spectral radiances computed by MODTRAN are convolved by a dome transmittance curve and integrated over the bandpass via 
+
+\begin{equation}
+\label{work1}
+	L'_z (\theta, \phi) = \frac{\bigints_{\nu_1}^{\nu_2} R(\theta, \phi, \lambda) ~ r(\lambda) ~ d\lambda}{\overline{r}}
+\end{equation}
+
+\noindent to yield a directional radiance $ L'_z $ for each $\theta$, with $\overline{r}$ as mean dome transmittance over a waveband of $\nu_1 $= 0 \si{cm^{-1}} to $\nu_2$ = 2300 \si{cm^{-1}}. $ L'_z (\theta) $ are then multiplied by their associated angular view factor weighting ($\Phi$) and integrated over the hemisphere to yield an irradiance $ L_z $ for the target T\textsubscript{hem, r}
+
+\begin{equation}
+\label{work2}
+	L_z (T\textsubscript{spec}) = \int_{0}^{2\pi}\int_{0}^{\pi/2} L'_z (\phi, \theta) ~ \Phi (\phi) ~ d\theta d\phi
+\end{equation}
+
+$L_z (T\textsubscript{spec}) $ is representative of at-sensor irradiance upwelling from the urban surface described in SUM at the target specified temperature T\textsubscript{hem, r} for the measured T\textsubscript{air}, humidity, aerosol, and trace gas profile. The process is repeated to retrieve $L_z$ for the range of potential T\textsubscript{hem, r} at the given time-step. Irradiance - T\textsubscript{hem, r} pairings are then aggregated into a LUT. Finally, the measured irradiance from BUBBLE is matched with its closest modeled irradiance to yield an atmospherically corrected, radiometric hemispherical surface temperature for the given time step. The workflow is repeated at 30-minute intervals to yield a continuous time series of T\textsubscript{hem, r}. Atmospheric correction magnitudes can then be calculated as the difference between T\textsubscript{hem, r} and T\textsubscript{hem, b}, with T\textsubscript{hem, b} calculated via:
+
+\begin{equation}
+	\label{stefboltz2}
+	T_{hem,~ b} = \sqrt[4]{\frac{L_z}{\sigma}}
+\end{equation}.
+
+\section{Evaluation of the method using profiles of upwelling longwave radiation over a homogeneous planar surface} \label{sensitivity}
+
+MODTRAN has been shown to effectively model near-ground radiative transfer at urban-scale path lengths in 2-dimensions \cite{Hoch2005} \cite{Hoch2007}. However, the method described in this paper accounts for complex 3-dimensional surface geometry, which can exert significant influence on atmospheric transmittance. In addition, the method includes significant post-processing to weight and integrate point-to-point spectral directional radiances to derive 3-dimensional, hemispherical irradiances. Thus, prior to deriving a climatology of urban T\textsubscript{hem, r}, the method was evaluated using profiles of upwelling longwave irradiances measured over a simple planar surface.
+
+%Although downward facing pyrgeometers mounted at different heights do not have the same radiative source area. Over a simple relatively homogeneous surface, the signal measured by each sensor should be radiating from an approximately isothermal surface area. As such, differences in the upwelling longwave signal between sensor heights (a phenomenon termed longwave divergence) are solely the result of differential atmospheric effects, which should be accounted for by the model.
+
+For a continuous 14-day period, profiles of up/downwelling short/longwave radiation, T\textsubscript{air}, and humidity measured from 2 \si{m}, 10 \si{m}, and 30 \si{m} were obtained from an instrumented tower in Payerne, Switzerland. The tower, installed over a cultivated field as a part of the Baseline Surface Radiation Network (BSRN), is located approximately 100 \si{\kilo\meter} southwest of the BUBBLE Sperrstrasse tower and is subject to similar summertime conditions as the study site. The study period was chosen to include a comprehensive range of T\textsubscript{surf}, T\textsubscript{air}, humidities, and cloud coverages to represent typical summertime conditions over which atmospheric corrections show the greatest variation. To evaluate the method, we used a modified version of the workflow described in Figure \ref{flow}. First, azimuthally averaged path lengths over a planar surface were calculated in SUM at 5\si{\degree} increments of zenith angle over the sensor FOV for the 10 \si{\meter} and 30 \si{\meter} sensors. For each time step, T\textsubscript{hem, b}, calculated from the lowest $L_z$ measurement, was used to model irradiances at 10 \si{m} and 30 \si{m} at 30-minute intervals using concurrent profiles of T\textsubscript{air} and humidity. Daytime T\textsubscript{air} observed at the highest measurement level was anomalously high compared to typical summertime lapse rates above planar vegetated terrain \cite{Oke1987}. Thus, the T\textsubscript{air} profile was modified to be more representative of the neutral or weakly unstable daytime conditions and weakly stable nighttime conditions. It is likely that these modifications better represent the T\textsubscript{air} profile in the layer between 10 and 30 \si{\meter} than a simple interpolation between the 10 \si{\meter} T\textsubscript{air} and 30 \si{\meter} T\textsubscript{air} measurements. Contrary to the findings in Kotani \& Sugita (2009), an isothermal atmospheric profile was not sufficient to accurately model upwelling fluxes over planar terrain. Although thermal stratification is relatively small by day in an urban canyon \cite{Nakamura1988} - where strong microscale contrasts in T\textsubscript{surf} foster strong canyon mixing and neutral stability - the large daytime T\textsubscript{surf} - T\textsubscript{air} differential and the path-length/transmittance gradient can create large differences in upwelling longwave forced by inter-canyon thermal contrasts - a phenomenon termed radiative divergence. By underestimating near-surface air temperatures and overestimating roughness-layer T\textsubscript{air}, positive divergences by day are underestimated by an isothermal profile. As such, we suggest using a full canyon T\textsubscript{air} and humidity profile to most accurately model near ground fluxes.
+
+Modeled and measured upwelling longwave at 10 \si{m} and 30 \si{m} fluxes and divergences - calculated as the difference between 30 \si{\meter} and 10 \si{\meter} fluxes - are compared in Figure \ref{fluxes}. Both fluxes and divergences show strong correlation, thus we conclude: 1. Irradiances measured near screen level (approximately 2 \si{\meter} above ground level) do not include significant atmospheric influence - as T\textsubscript{bright} inferred from $L_{z=2~\si{\meter}}$ was sufficient for modeling irradiances at 10 \si{m} and 30 \si{m}. As such, T\textsubscript{bright} and T\textsubscript{hem, r} are reasonably equal when $z$ = 2 \si{m}. However, it should be noted that in urban areas a 2 \si{m} sensor is not sufficiently representative of canyon geometry and should not be used to derive urban T\textsubscript{hem, r}. 2. MODTRAN can accurately model longwave fluxes and divergences above a flat, homogeneous surface over a wide range of temperatures, humidities, and cloud coverages and large resulting contrasts in near-ground stability. At 30 \si{\meter} under typical summertime profiles of humidity, CO\textsubscript{2}, and O\textsubscript{3}, view factor weighted hemispherical transmittance over a planar surface is approximately 55\% - meaning 45\% of a broadband hemispherical TIR signal at 30 \si{\meter} is emitted by the atmosphere, rather than the target surface. As such, it is imperative that T\textsubscript{air} profiles are well represented in MODTRAN to accurately model the atmospheric component of remote sensed TIR signal. As profiles of T\textsubscript{air} in the layer between the surface and the sensor at the Sperrstrasse site are generally subject to neutral or weakly unstable conditions, with only rare stable stratifications, urban longwave divergences are likely to be smaller than those observed at Payerne - and well approximated by MODTRAN. Thus, provided path length geometries are accurately replicated in by the sensor view model, we can reasonably assume that the method has similar effectiveness at the urban site.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{eval}
+	\caption{A comparison of 10 \si{m} and 30 \si{m} measured and modeled longwave fluxes and divergences - calculated as the difference between 30 \si{\meter} and 10 \si{\meter} fluxes - over the 14 day evaluation period at Payerne, Switzerland.}
+	\label{fluxes}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\caption{Statistical performance of the Payerne evaluation. RMSE\textit{\textsubscript{s}} and RMSE\textit{\textsubscript{u}} represent the systemic and unsystematic RMSE respectively. n = 378}
+	\label{evalstats}
+	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}} cccr}
+		\toprule 
+		Statistic & 10 \si{\meter} flux & 30 \si{\meter} flux & Divergence & Citation \\  \midrule
+		Slope & 1.002 & 1.011 & 0.792 &  \\ 
+		Intercept, (\si{\watt\per\meter\squared}) & 0.422 & $-$3.560 & $-$0.583 &   \\ 
+		\textit{R\textsuperscript{2}} & 0.995 & 0.996 & 0.863 & \\ 
+		MAE,  (\si{\watt\per\meter\squared}) & 1.781 & 1.325 & 1.191 & \cite{Willmott1985a} \\ 
+		RMSE,  (\si{\watt\per\meter\squared}) & 2.204 & 1.690 & 1.423 & \cite{Willmott1985a} \\ 
+		RMSE\textit{\textsubscript{s}},  (\si{\watt\per\meter\squared}) & 1.444 & 0.851 & 1.028 & \cite{Willmott1985a} \\ 
+		RMSE\textit{\textsubscript{u}},  (\si{\watt\per\meter\squared}) & 1.666 & 1.460 & 0.985 & \cite{Willmott1985a} \\ 
+		\textit{d} & 0.999 & 0.999 & 0.959 & \cite{Willmott2012} \\
+		\bottomrule
+	\end{tabular*} 
+\end{table}
+
+\section{Results}
+
+\subsection{Atmospheric correction magnitudes}
+
+Atmospheric correction magnitudes binned for season and time of day are show in Figure \ref{bx_ac}. Summertime correction magnitudes show significant day-to-day and diurnal variation. Variance is largest in summer near solar noon, where different synoptic conditions can force correction magnitudes of up to $8$ \si{\kelvin} in clear-sky hot conditions and below $0$ \si{\kelvin} under cooler overcast conditions. In winter, correction magnitudes display less variance and are smaller - approximately $2$ \si{\kelvin} over a range of representative wintertime synoptic conditions. 
+
+Over both summer and winter seasons, correction magnitudes are strongly correlated with $\Delta$T\textsubscript{hem, r - air}. Figure \ref{season_fit} shows the effect of seasonality and cloud cover on the relationship between correction magnitudes and $\Delta$T\textsubscript{hem, r - air}. The relationship is strongest and most clear in summer when variations in cloud cover can lead to large day-to-day contrasts in solar input and $\Delta$T\textsubscript{surf - air}, which translates into a wide range of correction magnitudes.
+
+Figure \ref{nofit} illustrates the the relationship between correction magnitude and meteorological variables commonly measured as a part of climatological assessments of urban environments. A strong positive relationship is observed between correction magnitudes and incoming solar radiation. T\textsubscript{hem, r} and T\textsubscript{air} display more complex relationships with correction magnitude, with a large cluster of observed correction magnitudes situated at a local minimum between $10$ and $20$ \si{\degreeCelsius}, weakly negative correlation at temperatures lower than $10$ \si{\degreeCelsius}, and weakly positive correlation at temperatures greater than $20$ \si{\degreeCelsius}. Atmospheric water vapor content did not appear to exert significant control over correction magnitudes.
+
+Figure \ref{humtest} shows hemispherical atmospheric transmittance as a function of vapor pressure for pyrgeometers at 10 \si{\meter} and 30 \si{\meter} above a planar surface. Hemispherical transmittances are modeled in MODTRAN 4.1 as the fraction of surface emission reaching the sensor for the path length and view factor geometries calculated in the method evaluation in Section \ref{sensitivity}. Hemispherical transmittance falls sharply with increasing vapor pressure between 0 and 5 \si{\hecto\pascal}, but is relatively constant with vapor pressure \textgreater 5 \si{\hecto\pascal}. This results in the weak correlation observed in Figure \ref{nofit} between humidity and correction magnitude.
+
+%Correction magnitudes are most strongly dependent on incoming solar radiation - which exerts significant control over seasonal and diurnal variance in the T\textsubscript{hem, r} - T\textsubscript{air} differential. These observations are largely made up of nighttime and cloudy points during the summer months with small or weakly negative T\textsubscript{surf} - T\textsubscript{air} differentials. During the winter months, a negative relationship between T\textsubscript{hem, r}/T\textsubscript{air} and correction magnitudes is observed at lower overall T\textsubscript{hem, r} and T\textsubscript{air}. In summer months, a positive relationship between T\textsubscript{hem, r}/T\textsubscript{air} and correction magnitudes is observed at higher overall temperatures. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm,
+	height=7in,
+	keepaspectratio]{bxsac_season_clima_pres}
+	\caption{Atmospheric correction magnitudes calculated as the difference between T\textsubscript{hem, r} and T\textsubscript{bright} for the duration of the study period. Grey shading indicates nighttime.}
+	\label{bx_ac}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm,
+	height=7in,
+	keepaspectratio]{season_fit}
+	\caption{Correction magnitude versus $\Delta$T\textsubscript{plan - hem, r} binned first for season and the then for cloud cover in the summer months.}
+	\label{season_fit}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm,
+	height=7in,
+	keepaspectratio]{nofit}
+	\caption{Correction magnitude versus meteorological variables for the daytime hours of the study period. }
+	\label{nofit}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm,
+	height=7in,
+	keepaspectratio]{hum_test}
+	\caption{Hemispherical at-sensor atmospheric transmittance as a function of vapor pressure for two pyrgeometer heights (10 \si{\meter} and 30 \si{\meter}) over a planar surface. Calculated as the fraction of surface emission reaching the sensor height using MODTRAN 4.1 with T\textsubscript{surf} = T\textsubscript{air} = 300 \si{\kelvin} with water vapor as the sole atmospheric absorber.}
+	\label{humtest}
+\end{figure}
+
+%\subsection{Relating correction magnitudes to climatological parameters}
+
+%Correction magnitudes show strong diurnal and seasonal relationships with the T\textsubscript{surf} - T\textsubscript{air} differential - shown in figure \ref{season_fit}. As such, parameters that determine the T\textsubscript{surf} - T\textsubscript{air} differential exert similar control over correction magnitudes, most notably incoming shortwave radiation, T\textsubscript{surf}, and T\textsubscript{air}, shown in figures \ref{nofit}. Correction magnitudes are greatest with large shortwave radiation input and with high T\textsubscript{air} and T\textsubscript{hem, r}, during which contrasts between T\textsubscript{air} and T\textsubscript{surf} are largest. Conversely, correction magnitudes are smallest under conditions that suppress contrasts between T\textsubscript{surf} and T\textsubscript{air} - when solar input is small, and with low T\textsubscript{air} and T\textsubscript{hem, r}. In summer, variations in solar input based on time of day and cloud cover produce large fluctuations in the T\textsubscript{surf} - T\textsubscript{air} differential and significant variation in correction magnitude with time of day and synoptic conditions. Thus, maximum correction magnitudes occur on hot, clear-sky days, when solar input, T\textsubscript{air} and T\textsubscript{hem, r} are also maximized. Conversely, overcast and nighttime conditions with zero or low incoming solar radiation produce smaller or negative T\textsubscript{surf} - T\textsubscript{air} differentials and suppress correction magnitudes. In winter, a lower solar angle and shorter day length reduce overall solar input and the diurnal amplitude of T\textsubscript{hem, r} and T\textsubscript{air}. This suppresses both the overall size and diurnal amplitude of the T\textsubscript{surf} - T\textsubscript{air} differential and has a similar effect on winter correction magnitudes.
+
+%Atmospheric transmittance of longwave radiation is primarily determined by column water vapor content. However, correction magnitudes are only weakly correlated with humidity (figure \ref{corr_abshum}). This supports the notion that atmospheric transmittance determines the \textit{potential} for atmospheric effects on a remote sensed TIR signal, but not necessarily the \textit{magnitude} of atmospheric influence. In the absence of a strong contrast between T\textsubscript{surf} and T\textsubscript{air}, absorption and reemission of TIR by water vapor or other absorbers has little effect on a remote sensed signal. Contra, with a strong contrast between T\textsubscript{surf} and T\textsubscript{air}, but little absorber content, the atmosphere is highly transmissive and does not yield strong atmospheric effects. 
+
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=15cm,
+%	height=7in,
+%	keepaspectratio]{corr_sd}
+%	\caption{Correction magnitude versus the T\textsubscript{hem, r}-T\textsubscript{air} differential for summer months of the study period (April 15\textsuperscript{th} - July 7\textsuperscript{th}). Contour shading indicates frequency (higher frequencies in red, lower in yellow).}
+%	\label{corr_sd}
+%\end{figure}
+%
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=15cm,
+%	height=7in,
+%	keepaspectratio]{corr_wd}
+%	\caption{Correction magnitude versus the T\textsubscript{hem, r}-T\textsubscript{air} differential for winter and spring months of the study period (Dec 1\textsuperscript{st} - April 14\textsuperscript{th}). Contour shading indicates frequency (higher frequencies in red, lower in yellow).}
+%	\label{corr_wd}
+%\end{figure}
+%
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=15cm,
+%	height=7in,
+%	keepaspectratio]{corr_sds}
+%	\caption{Correction magnitude versus the T\textsubscript{hem, r}-T\textsubscript{air} differential for clear sky summertime days over the study period. Contour shading indicates frequency (higher frequencies in red, lower in yellow).}
+%	\label{corr_sds}
+%\end{figure}
+%
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=15cm,
+%	height=7in,
+%	keepaspectratio]{corr_sdc}
+%	\caption{Correction magnitude versus the T\textsubscript{hem, r}-T\textsubscript{air} differential for partly cloudy and overcast summertime days over the study period. Contour shading indicates frequency (higher frequencies in red, lower in yellow).}
+%	\label{corr_sdc}
+%\end{figure}
+%
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=15cm,
+%	height=7in,
+%	keepaspectratio]{corr_kdown}
+%	\caption{Correction magnitude versus incoming shortwave radiation for the daytime hours of the study period. Contour shading indicates frequency (higher frequencies in red, lower in yellow).}
+%	\label{corr_kdown}
+%\end{figure}
+%
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=15cm,
+%	height=7in,
+%	keepaspectratio]{corr_them}
+%	\caption{Correction magnitude versus T\textsubscript{hem, r} over the duration of the study period. Contour shading indicates frequency (higher frequencies in red, lower in yellow).}
+%	\label{corr_them}
+%\end{figure}
+%
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=15cm,
+%	height=7in,
+%	keepaspectratio]{corr_tair}
+%	\caption{Correction magnitude versus T\textsubscript{air} over the duration of the study period. Contour shading indicates frequency (higher frequencies in red, lower in yellow).}
+%	\label{corr_tair}
+%\end{figure}
+%
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=15cm,
+%	height=7in,
+%	keepaspectratio]{corr_abshum}
+%	\caption{Correction magnitude versus atmospheric water vapor content for the daytime hours of the study period. Contour shading indicates frequency (higher frequencies in red, lower in yellow).}
+%	\label{corr_abshum}
+%\end{figure}
 
 
 
 
-\section{Evaluation of the method using profiles of upwelling longwave radiation over a homogenous planar surface}
-
-MODTRAN has been shown to effectively model near-ground radiative transfer at urban-scale path lengths in 2-dimensions. However, the method detailed in this paper includes significant post-processing to ‘collate’ point-to-point radiances into 3-dimensional hemispherical irradiances. In addition, the method accounts for site-specific surface geometry, which has a significant influence on boundary-layer transmittance of broadband longwave radiation. Thus, prior to deriving a climatology of radiometric urban Them, the method was evaluated over a simple surface with known surface characteristics. Thus, divergences are solely the result of differential atmospheric effects with increasing height above ground, which should be accounted for by the model. It is assumed that each pyrgeometer in this validation views a patch with approximately the same temperature. 
-
-Profiles of upwelling longwave radiation, downwelling shortwave, air temperature, and humidity at 2m, 10m, and 30m were obtained from the Payerne station, located 50 miles southwest of Basel, Switzerland in a cultivated field. To evaluate the method, we used a modified version of the workflow described in XXXX. Brightness temperature calculated from the lowest upwelling longwave measurement was used to model irradiances at 10m and 30m at each time-step. Downwelling shortwave radiation was used to categorize test days based on cloud cover. The daytime air temperature profile was modified to replicate typical lapse rates in the Sperrstrasse canyon. Unlike, Kotani \& Sugita (2009), an isothermal atmospheric profile was not sufficient to accurately model upwelling longwave divergences (nor fluxes) of planar terrain. Although thermal stratification is likely to be relatively small by day in an urban canyon \cite{Nakamura1988} --- where strong microscale contrasts in Tsurf foster canyon mixing and neutral stability --- the large daytime Tsurf-T\textsubscript{air}  differential and the path-length/transmittance gradient can create large positive divergences (5 – 15 Wm\textsuperscript{-2},CHECK THIS). As such, we suggest using a full canyon T\textsubscript{air} /humidity profile to 
-
-Modeled upwelling longwave at 10m and 30m and divergences are compared to their measured counterparts in figure a. Both fluxes and divergence show strong correlations, thus we conclude: 1. Irradiances measured at 2m are free from significant atmospheric influence – as an uncorrected irradiance provided an accurate Tsurf for modeling of 10m and 30m Irradiances As such, brightness Them and radiometric Them are approximately equal when z < 2m. Although, it should be noted that a 2m sensor is not representative of canyon geometry and should not be used to derive urban Them. 2. The method is sensitive enough to model divergences in a large layer above a flat surface. Urban divergences are likely to be smaller with less frequent and less severe stable stratifications. Thus, we can safely make the assumption that the method is effective over complex terrain – provided path length geometries are accurately replicated in SUM.
 
 
+\section{Comparing T\textsubscript{surf} from different sensor geometries}
+
+
+ 
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=15cm,
+%	height=7in,
+%	keepaspectratio]{tc_quarts2}
+%	\caption{A comparison of T\textsubscript{surf} from sensor geometries described in Table \ref{weightings}. T\textsubscript{surf} is normalized against complete %T\textsubscript{surf}.}
+%	\label{tc_quarts}
+%\end{figure}
+
+Figure \ref{tc_nadhem} shows a comparison of mean normalized T\textsubscript{hem, r} and T\textsubscript{plan} calculated as T\textsubscript{x} divided by T\textsubscript{comp}, where T\textsubscript{x} is T\textsubscript{hem, r} or T\textsubscript{plan}, and averaged over the IOP. Both T\textsubscript{hem, r} and T\textsubscript{plan} overestimate T\textsubscript{comp} by day and underestimate T\textsubscript{comp} by night. Mean daytime overestimation of T\textsubscript{comp} by T\textsubscript{hem, r} is smaller and less variable than that by T\textsubscript{plan}. In the figure, overestimation of T\textsubscript{comp} is observed at values above $1$ and underestimation by values below $1$.
+
+Mean normalized T\textsubscript{hem, r}, T\textsubscript{plan}, and $\Delta$T\textsubscript{plan - hem, r} are shown in figure \ref{tc_mean_314} along with clear sky and overcast sky case days. While mean T\textsubscript{hem, r} and T\textsubscript{plan} display similar overestimations of T\textsubscript{comp}, under clear sky conditions, overestimation by T\textsubscript{plan} is much larger than that by T\textsubscript{hem, r}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm,
+	height=7in,
+	keepaspectratio]{nad_hem_314}
+	\caption{A comparison of normalized T\textsubscript{hem, r} and T\textsubscript{plan} over the IOP. Shading indicates the area bounded by the first and third quartiles. n = 14}
+	\label{tc_nadhem}
+\end{figure}
+
+%As shown in figure \ref{tc_mean},
+
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=15cm,
+%	height=7in,
+%	keepaspectratio]{tc_mean3}
+%	\caption{Normalized T\textsubscript{hem, r}, T\textsubscript{plan}, and T\textsubscript{plan} minus T\textsubscript{hem, r} averaged over the IOP and for clear sky and overcast case days.}
+%	\label{tc_mean}
+%\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm,
+	height=7in,
+	keepaspectratio]{tc_mean_314}
+	\caption{Normalized T\textsubscript{hem, r}, T\textsubscript{plan}, and $\Delta$T\textsubscript{plan - hem, r} averaged over the IOP and for clear sky and overcast case days. n = 14}
+	\label{tc_mean2}
+\end{figure}
+
+\section{Discussion}
+
+\subsection{Controls on atmospheric correction magnitude}
+
+Atmospheric correction magnitudes are highly dependent on factors that control $\Delta$T\textsubscript{surf - air}. With a nonzero $\Delta$T\textsubscript{surf - air}, TIR emitted from the surface and absorbed by the atmosphere is re-emitted at a different temperature, modifying the at-sensor TIR signal. Thus, the strength of the T\textsubscript{surf} to T\textsubscript{air} differential is directly related to the magnitude of atmospheric effects on a remote sensed TIR signal. This results in a strong positive relationship between atmospheric correction magnitude and $\Delta$T\textsubscript{hem, r - air}. Results show that conditions that maximize microscale surface to atmosphere thermal contrasts entail large correction magnitudes and conditions that suppress differences between T\textsubscript{surf} and T\textsubscript{air} show much smaller or negative correction magnitudes.
+
+Of the meteorological variables tested, results show that correction magnitudes are most strongly dependent on solar input. Solar radiation incident on the surface forces microscale thermal contrasts between the surface and the air, directly controlling the T\textsubscript{surf} - T\textsubscript{air} differential. The relationships between correction magnitude and T\textsubscript{hem, r} and T\textsubscript{air} individually are weaker and more complex. Correction magnitudes are smallest at temperatures between approximately $10$ and $20$ \si{\degreeCelsius} - largely made up of morning and cloudy observations during the summer months where thermal contrasts between T\textsubscript{surf} and T\textsubscript{air} are small or weakly negative, forcing small correction magnitudes. During the winter months, a negative relationship between T\textsubscript{hem, r}/T\textsubscript{air} and correction magnitudes is observed, likely a result of the effect of shifting spectral emittance curves combined with non-uniform sensor response - discussed in section \ref{Persistence in correction magnitudes}. On clear sky summer days, positive relationships between surface and air temperatures and correction magnitudes is observed as an increased solar input foster higher overall temperatures and large contrasts between T\textsubscript{surf} and T\textsubscript{air}.
+
+Results show significant seasonal, day to day, and diurnal variation in correction magnitudes. The range of observed correction magnitudes is largest in summer, when a wide range of mid latitude synoptic conditions result in significant contrasts in daytime solar input and similarly large variance in the T\textsubscript{surf} - T\textsubscript{air} differential. Maximum correction magnitudes over the study period (often approaching $7$ to $8$ \si{\kelvin}) occur frequently near solar noon on clear, hot, humid days, during which intense solar heating of the surface produces a large T\textsubscript{surf} - T\textsubscript{air} differential. Minimum correction magnitudes near $-1$ \si{\kelvin} occurs consistently on clear, calm nights following hot days, when T\textsubscript{surf} can dip below T\textsubscript{air}. In winter, decreased variance in overall solar input and lower solar angles result in less intense solar heating of the surface and smaller T\textsubscript{surf} - T\textsubscript{air} contrasts. Thus, winter correction magnitudes are smaller and more consistent with a mean of approximately $2$ \si{\kelvin}.
+
+\subsection{The effect of non-uniform pyrgeometer spectral dome transmittance on correction magnitudes}\label{Persistence in correction magnitudes}
+
+A pyrgeometer's dome transmittance is spectrally non-uniform. Thus, the "dome effect" a pyrgeometer's exerts on a given incoming TIR signal changes as a function of emission temperature (T\textsubscript{emiss}), as the shape of a given spectral radiance curve is temperature dependent. This is illustrated in Figure \ref{nonuniform} by comparing the relative peaks and shape of a pyrgeometer dome transmittance curve to a Planckian spectral radiance curve (R\textsubscript{Planck}) at T = 300 \si{\kelvin} and the same curve shifted to smaller wavenumber to represent the spectral radiance peak of a curve at T = 270 \si{\kelvin} (R\textsubscript{Planck, s}). When integrated, the two curves have the same radiance, but different spectral peaks and different resulting dome effects.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm,
+	height=7in,
+	keepaspectratio]{nonuniform}
+	\caption{Spectral dome transmittance (\textit{r}) for a Kipp \& Zonen pyrgeometer overlaid with a Planckian spectral radiance curve at T = 300 \si{\kelvin} and the same curve shifted to represent the shape and peak of a spectral radiance curve at T = 270 \si{\kelvin}.}
+	\label{nonuniform}
+\end{figure}
+
+Spectrally non-uniform pyrgeometer dome transmittance results in differential dome effects on the two spectral radiance curves in Figure \ref{nonuniform} and two different radiance signals "seen" by the pyrgeometer. Thus, calibration routines designed to remove dome effects and retrieve accurate irradiance values are temperature specific and subject to errors based on the difference between T\textsubscript{emiss} and the temperature at which the instrument was calibrated (T\textsubscript{calib}). The magnitude of this error can be expressed as differences Planck weighted mean sensor response ($\overline{r} $) between T\textsubscript{emiss}, computed from equation \ref{meansens} - where lower $\overline{r} $ indicates a larger dome effect on the signal received by the sensor. In addition, this error can be expressed as a temperature bias (T\textsubscript{bias}) computed as the difference between a reference T\textsubscript{calib} and a dome adjusted temperature (T\textsubscript{adj}). T\textsubscript{adj} is computed by applying a spectral shift to R\textsubscript{Planck} calculated for T = 300 \si{\kelvin} so that its peak spectral radiance matches the wavenumber of peak spectral emission for the target T\textsubscript{emiss}\footnote{In this sensitivity test, the waveband was truncated from 1 - 2500 \si{cm^{-1}} to 80 - 2500 \si{cm^{-1}} to accommodate shorter wavenumber when shifting R\textsubscript{Planck} calculated at the reference T\textsubscript{calib} to lower temperatures where peak spectral emission occurs at smaller wavenumber. This results in a slight underestimation of the total radiance at a given T\textsubscript{emiss}, and thus, slightly negative T\textsubscript{bias} at T\textsubscript{calib}, where no spectral shift has been applied. When computed from total in band radiance, T\textsubscript{bias} at the reference T\textsubscript{calib} is zero.} - a similar shift is illustrated for a reference T\textsubscript{calib} = 300 \si{\kelvin} and T\textsubscript{emiss} = 270 \si{\kelvin} in Figure \ref{nonuniform}. Following the spectral shift, spectral radiances were convolved by the dome transmittance function, integrated over the waveband and hemisphere, and used to derive T\textsubscript{adj} via equation \ref{stefb1} with $\overline{r}$ at T\textsubscript{calib}. Table \ref{nonuniformsen} shows $\overline{r}$ and T\textsubscript{bias} and for a range of T\textsubscript{emiss}.
+
+\begin{table}[H]
+	\centering
+	\caption{Planck weighted mean sensor response and T\textsubscript{bias} for a suite of common urban T\textsubscript{surf}.}
+	\label{nonuniformsen}
+	\begin{tabular}{lp{2cm}c}
+		\toprule 
+		Emission & & T\textsubscript{bias}, \si{\kelvin} \\
+		temperature, \si{\kelvin}& $\overline{r}$, \% & computed for T\textsubscript{calib} = 300 \si{\kelvin} \\ \midrule
+		%Emission temperature, \si{\kelvin}& $\overline{r}$, \% & T\textsubscript{adj}, \si{\kelvin} \\ \midrule
+		260 & 48.3 & -1.67 \\ 
+		265 & 48.5 & -1.49 \\ 
+		270 & 48.7 & -1.32 \\ 
+		275 & 48.9 & -1.13 \\ 
+		280 & 49.1 & -0.95 \\ 
+		285 & 49.3 & -0.75 \\ 
+		290 & 49.4 & -0.56 \\ 
+		295 & 49.6 & -0.36 \\ 
+		300 & 49.7 & -0.15 \\ 
+		305 & 50.0 & 0.05 \\ 
+		310 & 50.1 & 0.26  \\ 
+		315 & 50.3 & 0.47 \\ 
+		320 & 50.4 & 0.69  \\
+		\bottomrule
+	\end{tabular} 
+\end{table}
+
+The magnitude of T\textsubscript{bias} increases as the difference between the reference T\textsubscript{calib} and T\textsubscript{emiss} increases, with approximately equal rates of change with increasing and decreasing T\textsubscript{emiss}. Thus, dome effects have a larger effect on the pyrgeometer received signal when comparing irradiances or T\textsubscript{hem} over a wide range of temperatures, or when T\textsubscript{emiss} is significantly different from T\textsubscript{calib}. As pyrgeometers used in the BUBBLE campaign were calibrated outdoors under clear-sky, mid-latitude springtime conditions \cite{Christen2005}, the dome effect present in uncorrected BUBBLE $L_z$ measurements is likely smaller in summer than in winter, and is well represented by Table \ref{nonuniformsen}.
+
+By convolving modeled spectral radiances by a dome transmittance curve, the correction method presented in this study accounts for dome effects. Thus, correction magnitudes include both atmospheric and dome effects in aggregate (and, crudely, emissivity effects, as modeled radiances are calculated with $\epsilon$ = 0.95 and include a reflected L\textsubscript{sky} component). While the individual effects are difficult to separate, temperature dependent differential dome effects are visible in correction magnitudes as a persistent minor positive correction in winter. Relative to T\textsubscript{calib}, colder T\textsubscript{emiss} in winter results in a larger dome effects. This manifests in artificially low T\textsubscript{hem, b} and increased wintertime correction magnitudes. Additionally, modeled irradiances include a reflected downwelling component, which, although small, is sensitive to T\textsubscript{air} and humidity profiles above the sensor height. Because this data was not consistently measured, mid-latitude summer and winter standard atmospheric profiles were supplemented. The climate of Basel is characterized by mild, humid winters (K\"oppen classification: Cfb). As a result, above-sensor T\textsubscript{air} and humidity values are likely underestimated by the standard wintertime atmosphere, reducing the modeled at-sensor reflected component of downwelling longwave in winter and the overall modeled at-sensor signal. This results in an increase in both derived T\textsubscript{hem, r} and correction magnitudes as measured irradiances are matched with irradiances modeled at slightly higher T\textsubscript{surf} to make up for the underestimated at-sensor L\textsubscript{sky} signal. 
+
+%Differential dome effects are visible in atmospheric corrections as a persistent minor positive correction in winter. During winter T\textsubscript{arg} This has the effect of positively weighting spectral bands with less energy and negatively weighting bands with more energy, resulting in a small systemic underestimation of the broadband signal which is removed during instrument calibration. However, calibration routines are specific to a range of T\textsubscript{surf} and the effect of the sensor's non-uniform spectral response changes based on emitter temperature. Lower emitter temperatures shift the peak of the Planckian curve closer to bands with low relative sensor response. Thus, T\textsubscript{bright} inverted from pyrgeometer measured irradiance via \ref{stefb1} is systemically lower than those derived using a routine that accounts for nonuniform sensor response. In other words, because a pyrgeometer does not respond uniformly over a spectral longwave curve and operates over a slightly restricted longwave bandpass, T\textsubscript{bright} will always include some small underestimation of T\textsubscript{rad}, even when atmospheric influence is negligible. The size of this underestimation is inversely related to T\textsubscript{surf} - increasing the base magnitude of wintertime corrections compared to summertime corrections. Additionally, modeled irradiances include a reflected downwelling component, which, although small, is sensitive to T\textsubscript{air} and humidity profiles above the sensor height. Because this data was not consistently measured, mid-latitude summer and winter standard atmospheric profiles were supplemented. Basel's climate is characterized by mild, humid winters (K\"oppen classification: Cfb). As a result, above-sensor profiles of T\textsubscript{air} and humidity at study site are likely underestimated by the standard wintertime atmosphere, reducing the modeled at-sensor reflected component of downwelling longwave in winter. This results in an increase in both derived T\textsubscript{hem, r} and correction magnitudes. 
+
+\subsection{The effect of sensor sampling geometry on remote sensed T\textsubscript{surf}}
+
+Results show that sensor sampling regimes have a significant effect on remotely sensed T\textsubscript{surf}. Both T\textsubscript{hem, r} and T\textsubscript{plan} overestimate T\textsubscript{comp} by day and underestimate T\textsubscript{comp} by night. However, over/underestimations from geometric effects are highly dependent on synoptic conditions, particularly for a nadir view of the urban surface. Overestimation of T\textsubscript{comp} under clear sky conditions is much larger for T\textsubscript{plan} than T\textsubscript{hem, r}. Representing the surface from the nadir, over half of the T\textsubscript{plan} signal from the Sperrstrasse canyon is generated by rooftops with both a large diurnal T\textsubscript{surf} amplitude and the highest daytime facet T\textsubscript{max}. Undersampling of wall facets by T\textsubscript{plan} also has a significant effect on the daytime clear-sky warming bias, as walls show much cooler daytime T\textsubscript{max} than T\textsubscript{roof} or T\textsubscript{road} and have a moderating effect on T\textsubscript{comp} and T\textsubscript{hem, r} by day, particularly on hot clear sky days. Mean daytime overestimations by T\textsubscript{plan} just after solar noon are approximately $4$ \si{K} over the IOP, approaching $8$ \si{K} on the clear sky case day. T\textsubscript{hem, r} shows smaller overestimations of approximately $3$ \si{K} over the IOP and $5$ \si{K} on the clear sky case day. Urban T\textsubscript{surf} and the sUHI are often measured from a satellite TIR remote sensors that retrieve T\textsubscript{plan} exclusively under clear-sky conditions and often sample in the nadir. Thus, overestimation of daytime urban T\textsubscript{comp} inherent in the satellite T\textsubscript{surf} record is best represented by T\textsubscript{plan} on the clear sky case day. 
+
+Nighttime underestimations of T\textsubscript{comp} by nadir and hemispherical views are a result of an undersampling of wall and road facets respectively. T\textsubscript{hem, r}, derived from a pyrgeometer skewed towards the south-facing canyon wall oversamples the nearest roof and underestimates the canyon floor compared to T\textsubscript{comp}. This results in a large underestimation of nighttime T\textsubscript{comp}. However, nighttime underestimation - and to some extent, daytime overestimation - by T\textsubscript{hem, r} is the combined result of a sampling bias inherent in a hemispherical view of the surface and improper sensor placement, discussed in greater detail in section \ref{Methodological limitations and considerations}. Thus, both of these bias can likely be reduced significantly by adjusting sensor placement to best represent surface geometry. 
+
+\section{Sensor placement sensitivity testing} \label{Methodological limitations and considerations}
+
+ When measured from a near ground downward facing remote sensor, upwelling TIR is sensitive to sensor height and position relative to surface geometry \cite{Adderley2015, Roberts2010}. Below 3 times mean roof level, remote sensed TIR varies from a 'true', geometrically representative, TIR signal based on a comparison between view factor proportions of and those of the urban surface. For an idealized, orthogonal, block-like urban array, Roberts 2010 found that facet view factor proportions - and thus measured TIR - varied significantly with sensor position and height. To investigate the effect of sensor placement on T\textsubscript{hem, r} for a simplified representation of the Sperrstrasse canyon site, we used SUM to vary sensor position over a simplified DBM and calculated normalized view factor proportions for a 160\si{\degree} FOV sensor. For nine sensor positions, show in in Figure \ref{placement}, facet view factor proportions normalized to unity are shown in Figure \ref{bars1} for a sensor height of 2.17 times mean building height and in Figure \ref{bars45} for a sensor height of 3 times mean building height. Approximated actual facet surface area proportions for the Sperrstrasse canyon are included for reference. A fully geometrically representative sensor viewing the urban surface would have facet view factor proportions equal to actual facet surface area proportions. 
+  
+ Normalized facet view factors show significant variation based on sensor position at both test heights. At the lower test height, in the horizontal direction (moving perpendicular to the canyon axis), sensor positions at the canyon center (positions 4, 5, and 6) are most representative of actual facet view factors, with decreasing representivity at the edge of the canyon (positions 1, 2, and 3), and over the rooftops (positions 7, 8, and 9). In the vertical direction (moving parallel to the canyon axis), positions slightly offset from the roof edge (positions 2, 5, and 8) agree most closely with actual canyon surface area proportions, with decreasing representivity in positions further from the roof edge. Roof and road view factor proportions are most strongly affected by sensor placement. Positions directly over buildings show large biases towards roof view factors and positions in the center of the canyon showing slight biases towards road facets. In all positions roof view factor was overestimated (save position 4), and wall view factor was underestimated.
+ 
+ \begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm,
+	height=7in,
+	keepaspectratio]{placement1}
+	\caption{A plan view of the simplified DBM showing the nine test sensor placements. Actual sensor placement at the Sperrstrasse canyon is approximated by number 3.}
+	\label{placement}
+\end{figure}
+
+ \begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm,
+	height=7in,
+	keepaspectratio]{bars2_ann}
+	\caption{Normalized wall, road, and roof view factors for nine sensor positions viewing the simplified street canyon array from 2.17 times mean building height. Actual normalized view factors refer to surface area proportions for the three facet types in the Sperrstrasse street canyon. }
+	\label{bars1}
+ \end{figure}
+
+Results in Roberts 2010 and Adderley et al. 2015 show that sensitivity to sensor placement decreases with increasing sensor height  Above a height of approximately 3 to 5 times mean building height, depending on surface geometry, a TIR signal becomes spatially invariant and view factor proportions are constant across all sensor placements. Results from the higher test height support findings in Roberts 2010 and Adderley et al. 2015, with decreased spatial variance in facet view factor proportions across the nine sensor positions. However increased spatial stability in view factor proportions does not necessarily entail increased geometric representativity. For all sensor placements, road view factor proportion is increased and wall view factor is reduced. This results in large overestimations of road view factor for nearly all positions except positions 3 and 9, which include a large overestimation of roof view factor. Thus, although increasing sensor height does increase spatial invariance, it can lead to decreased representivity for some positions - in this case, positions 1 and 4.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm,
+	height=7in,
+	keepaspectratio]{bars45_ann}
+	\caption{Normalized wall, road, and roof view factors for nine sensor positions viewing the simplified street canyon array from 3 times mean building height. Actual normalized view factors refer to surface area proportions for the three facet types in the Sperrstrasse street canyon. }
+	\label{bars45}
+\end{figure}
+
+To visualize how sensor placement affects inferred surface temperatures, T\textsubscript{hem, r} is calculated using view factors as weights in an average of T\textsubscript{wall}, T\textsubscript{road}, and T\textsubscript{roof}. Temperatures are normalized by T\textsubscript{comp} and averaged at 30-minute intervals over the IOP, the results of which are shown in figures \ref{vf_all} and \ref{vf_all45} for sensor heights of 2.17 and 3 times mean building height respectively. As with view factor proportions, calculated T\textsubscript{hem, r} is highly dependent on relative to T\textsubscript{comp}. For the lower sensor height, as predicted by view factor proportions, positions at the center of the canyon (positions 4, 5, and 6) and edge of the building (positions 1, 4, and 7) follow most closely to T\textsubscript{comp}. By day, all sensor positions overestimate T\textsubscript{comp}, from a systemic bias towards rooftop facets. The degree of overestimation is largely determined by rooftop view factor, with larger overestimations coming from positions most biased towards hot rooftop surfaces. At night, most sensor positions (save position 4) underestimate T\textsubscript{comp}, again from a bias towards cool rooftop facets. Position 4 weakly overestimates nighttime T\textsubscript{comp}, from a slight view factor bias towards road facets with suppressed nocturnal cooling from canyon radiation trapping. 
+
+At the higher test height, T\textsubscript{hem, r} is more representative of T\textsubscript{comp} for positions 2, 3, and 5 - 9. T\textsubscript{hem, r} from positions 1 and 4 displays a slight systemic overestimation of T\textsubscript{comp}. For these positions, although roof view factor proportion is well represented, road view factor is significantly overestimated, oversampling warmer nighttime road temperatures. For all other positions daytime overestimation and nighttime underestimation of T\textsubscript{comp} is reduced. As is the case with view factor proportions, T\textsubscript{hem, r} is more spatially stable based on sensor placement.
+ 
+   \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[width=15cm,
+ 	height=7in,
+ 	keepaspectratio]{vf_all}
+ 	\caption{Mean T\textsubscript{hem, r} normalized against T\textsubscript{comp} for each sensor position the 14-day IOP. Shaded area indicates quartiles one through three.}
+ 	\label{vf_all}
+ \end{figure}
+
+  \begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm,
+	height=7in,
+	keepaspectratio]{vf_all45}
+	\caption{Mean T\textsubscript{hem, r} normalized against T\textsubscript{comp} for each sensor position the 14-day IOP. Shaded area indicates quartiles one through three.}
+	\label{vf_all45}
+\end{figure}
+ 
+Both Roberts 2010 and Adderley et al. 2015 did not find a perfectly representative sensor position for typical low- and mid-rise urban street canyons, this is supported by sensitivity testing performed in this study. As such, under conditions with strong microscale spatial contrasts in T\textsubscript{surf}, T\textsubscript{hem, r} is unlikely to be equal T\textsubscript{comp} regardless of sensor placement. However, sensor view models, such as SUM, can be used to optimize sensor placement with information about surface geometry to retrieve the most accurate measured irradiances and derived T\textsubscript{hem, r} for a given surface geometry.
+ 
+ \section{Conclusions}
+ 
+Accurate, geometrically representative, spatially extensive, and temporally continuous thermal remote sensing of complex terrain (urban or otherwise) is difficult. It is unlikely that a single sensor will satisfy spatial, geometric, and temporal goals. Thus, a combination of satellite, aerial, and in-situ observational methods has been integral in isolating and elucidating the urban effect on surface temperature and its spatial, temporal, and geometric characteristics. However, neither technological advancement nor critical analysis of these methods has provided a satisfactory answer to the questions posed in Roth et al. 1989 viz urban thermal remote sensing. As such, the true spatial, temporal, and geometric nature of the urban effect on surface temperature remains unknown. 
+ 
+This paper details a  method for urban T\textsubscript{surf} retrieval using atmospherically corrected hemispherical radiometric surface temperatures derived from continuous near-ground measurements of thermal infrared radiation. Atmospherically corrected, hemispherical urban T\textsubscript{surf} is derived using a method which combines a sensor view model (SUM) to represent urban surface geometry and a point-to-point radiative transfer model (MODTRAN 4.1) to model irradiances upwelling from complex surface terrain in 3-dimensions. At each time step, irradiances are modeled using profiles of T\textsubscript{air} and water vapor content for a range of possible T\textsubscript{hem, r}. Irradiance - T\textsubscript{hem, r} pairings are aggregated into a LUT and the measured irradiance is matched with the closest modeled irradiance to retrieve T\textsubscript{hem, r} for a given time step. Repeated at 30-minute intervals, this method is used to derive an 8-month climatology of urban T\textsubscript{hem, r} for the Basel Sperrstrasse canyon, instrument as a part of the BUBBLE campaign. T\textsubscript{hem, r} at each time step is a view factor weighted temperature representative of the  at which the surfaces contained within the sensor FOV are emitting longwave radiation.
+ 
+Atmospheric corrections are large compared to typical sUHI magnitudes \cite{Peng2012} and vary significantly based on season, time of day, and synoptic conditions. Correction magnitudes are largest on hot, clear sky summertime days - with large solar input and high T\textsubscript{hem, r} and T\textsubscript{air} - and smallest by night and under overcast conditions, during which solar input is suppressed and T\textsubscript{hem, r} and T\textsubscript{air} are low. Correction magnitudes are most strongly correlated with the T\textsubscript{surf} - T\textsubscript{air} differential and incoming solar radiation and weakly correlated with T\textsubscript{hem, r} and T\textsubscript{air}. Water vapor content did not appear to exert strong control over correction magnitudes.
+
+Comparison of T\textsubscript{surf} from nadir, hemispherical, and complete representations of the Basel Sperrstrasse street canyon show that a hemispherical view is more geometrically representative of the complete surface temperature than a sensor viewing in the nadir. However, sensor placement sensitivity tests show that T\textsubscript{hem, r} is highly dependent on sensor placement and height. Overestimations by T\textsubscript{plan} and T\textsubscript{hem, r} are greatest under clear sky conditions, but is particularly large for T\textsubscript{plan}. This is particularly important when one considers that satellite observations of urban T\textsubscript{surf} are only possible under clear sky conditions (when T\textsubscript{plan} is least representative of T\textsubscript{comp}). Significant variability in over/underestimation of T\textsubscript{comp} by T\textsubscript{hem, r} and T\textsubscript{plan} based on time of day and synoptic conditions make these biases difficult to generalize to other urban study sites with different surface geometries and characteristics, canyon orientations, and macro climates. However, the measures used to derive T\textsubscript{hem, r} are common to most energy balance assessments and constitute an untapped, but promising, resource to improve understanding of how the built environment affects land T\textsubscript{surf} and to quantify the geometric and temporal biases inherent in satellite TIR remote sensing of complex terrain. 
