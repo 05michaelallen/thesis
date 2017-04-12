@@ -1,4 +1,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Weightings to produce T'\textsubscript {rad} for different geometric representations of the Basel street canyon.}}{14}{table.2.1}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Weights applied to individual facet temperature components in order to calculate complete and nadir temperatures for the Basel Sperrstrasse street canyon.\relax }}{17}{table.caption.14}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Statistical performance of the Payerne evaluation. RMSE\textit {\textsubscript {s}} and RMSE\textit {\textsubscript {u}} represent the systemic and unsystematic RMSE respectively. n = 378\relax }}{26}{table.caption.18}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Planck weighted mean sensor response and T\textsubscript {bias} for a suite of common urban T\textsubscript {surf}.\relax }}{37}{table.caption.26}
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces A description of morphological and measured variables for urban and rural sites. Modified from \citet {Rotach2005} to include only relevant parameters.\relax }}{58}{table.caption.32}
+\contentsline {table}{\numberline {3.2}{\ignorespaces A summary of the relationship between sUHI, meteorological variables, and clUHI.\relax }}{70}{table.caption.40}

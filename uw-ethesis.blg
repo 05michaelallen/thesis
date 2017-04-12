@@ -1,5 +1,7 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: uw-ethesis.aux
-The style file: plain.bst
+The style file: apalike.bst
 Database file #1: library.bib
-Warning--empty institution in Berk1989
-(There was 1 warning)
+Warning--empty institution in Berk1987
+Warning--empty institution in Christen2005
+Warning--can't use both volume and number fields in Oke2017
+(There were 3 warnings)
