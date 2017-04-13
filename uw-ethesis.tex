@@ -1,5 +1,3 @@
-% Write your fucking thesis in this bitch.
-
 % DON'T FORGET TO ADD YOUR OWN NAME AND TITLE in the "hyperref" package
 % configuration below. THIS INFORMATION GETS EMBEDDED IN THE PDF FINAL PDF DOCUMENT.
 % You can view the information if you view Properties of the PDF document.
@@ -62,6 +60,12 @@
 \setlength\heavyrulewidth{.35ex}
 
 \usepackage{times}
+
+\usepackage{subcaption}
+
+\usepackage{float}
+
+\usepackage{natbib}
 
 % Hyperlinks make it very easy to navigate an electronic document.
 % In addition, this is where you should specify the thesis title
@@ -239,7 +243,7 @@ description={Random vector: a location in n-dimensional Cartesian space, where e
 % -----------------------
 
 % The following statement selects the style to use for references.  It controls the sort order of the entries in the bibliography and also the formatting for the in-text labels.
-\bibliographystyle{plain}
+\bibliographystyle{apalike}
 % This specifies the location of the file containing the bibliographic information.  
 % It assumes you're using BibTeX (if not, why not?).
 \cleardoublepage % This is needed if the book class is used, to place the anchor in the correct page,

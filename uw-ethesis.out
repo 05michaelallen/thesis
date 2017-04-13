@@ -8,14 +8,37 @@
 \BOOKMARK [0][-]{chapter.2}{A method to correct upwelling longwave radiation to estimate hemispherical urban surface temperature}{}% 8
 \BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.2}{Atmospheric effects on TIR}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.1}{Relating TIR and surface temperature}{section.2.2}% 11
-\BOOKMARK [2][-]{subsection.2.2.2}{Atmospheric correction of near-ground TIR}{section.2.2}% 12
-\BOOKMARK [1][-]{section.2.3}{A "rolling lookup table" method for hemispherical atmospheric correction}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.3.1}{Study area}{section.2.3}% 14
-\BOOKMARK [2][-]{subsection.2.3.2}{Modeling path lengths of 3-dimensional terrain}{section.2.3}% 15
-\BOOKMARK [2][-]{subsection.2.3.3}{Modeling hemispherical irradiances}{section.2.3}% 16
-\BOOKMARK [1][-]{section.2.4}{Evaluation of the method using profiles of upwelling longwave radiation over a homogenous planar surface}{chapter.2}% 17
-\BOOKMARK [0][-]{chapter.3}{A climatology of urban surface heat islands derived from hemispherical radiometric surface temperatures}{}% 18
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.2}{Bias in Thermal remote sensing}{chapter.3}% 20
-\BOOKMARK [0][-]{section*.10}{References}{}% 21
+\BOOKMARK [2][-]{subsection.2.2.1}{Describing radiation as received by a remote sensor}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.2}{Relating TIR and surface temperature}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.3}{Atmospheric correction of near-ground TIR}{section.2.2}% 13
+\BOOKMARK [1][-]{section.2.3}{A "rolling lookup table" method for hemispherical atmospheric correction}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.3.1}{Study area}{section.2.3}% 15
+\BOOKMARK [2][-]{subsection.2.3.2}{Modeling path lengths of 3-dimensional terrain}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.3}{Modeling hemispherical irradiances}{section.2.3}% 17
+\BOOKMARK [1][-]{section.2.4}{Evaluation of the method using profiles of upwelling longwave radiation over a homogeneous planar surface}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.5}{Results}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.5.1}{Atmospheric correction magnitudes}{section.2.5}% 20
+\BOOKMARK [1][-]{section.2.6}{Comparing Tsurf from different sensor geometries}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.7}{Discussion}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.7.1}{Controls on atmospheric correction magnitude}{section.2.7}% 23
+\BOOKMARK [2][-]{subsection.2.7.2}{The effect of non-uniform pyrgeometer spectral dome transmittance on correction magnitudes}{section.2.7}% 24
+\BOOKMARK [2][-]{subsection.2.7.3}{The effect of sensor sampling geometry on remote sensed Tsurf}{section.2.7}% 25
+\BOOKMARK [1][-]{section.2.8}{Sensor placement sensitivity testing}{chapter.2}% 26
+\BOOKMARK [1][-]{section.2.9}{Conclusions}{chapter.2}% 27
+\BOOKMARK [0][-]{chapter.3}{A climatology of urban surface heat islands derived from hemispherical radiometric surface temperatures}{}% 28
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.1.1}{Bias in thermal remote sensing}{section.3.1}% 30
+\BOOKMARK [1][-]{section.3.2}{Methods}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.2.1}{A method to retrieve hemispherical radiometric urban Tsurf}{section.3.2}% 32
+\BOOKMARK [2][-]{subsection.3.2.2}{Study area}{section.3.2}% 33
+\BOOKMARK [1][-]{section.3.3}{Results}{chapter.3}% 34
+\BOOKMARK [2][-]{subsection.3.3.1}{Seasonality in sUHI magnitudes}{section.3.3}% 35
+\BOOKMARK [2][-]{subsection.3.3.2}{The effect of sensor-surface geometry on sUHI}{section.3.3}% 36
+\BOOKMARK [2][-]{subsection.3.3.3}{The effect of meteorological conditions on sUHI}{section.3.3}% 37
+\BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 38
+\BOOKMARK [2][-]{subsection.3.4.1}{Diurnal patterns of sUHI}{section.3.4}% 39
+\BOOKMARK [2][-]{subsection.3.4.2}{Seasonal patterns of sUHI}{section.3.4}% 40
+\BOOKMARK [2][-]{subsection.3.4.3}{Sensor-surface-sun geometries and sUHI}{section.3.4}% 41
+\BOOKMARK [2][-]{subsection.3.4.4}{Meteorological controls on sUHI}{section.3.4}% 42
+\BOOKMARK [1][-]{section.3.5}{Conclusion}{chapter.3}% 43
+\BOOKMARK [0][-]{section*.41}{References}{}% 44
