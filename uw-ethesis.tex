@@ -53,7 +53,7 @@
 \usepackage{siunitx}
 % bigints allows for much larger integral signs. Useful for integrals with nested fractions.
 \usepackage{bigints}
-% float allows you to place a figure at precisely the location in the LaTeX code.
+% float allows you to place a figure at precisely the location in the LaTeX code. 
 \usepackage{float}
 % "This makes your tables nicer" - Dimuth
 \usepackage{booktabs}
@@ -66,6 +66,11 @@
 \usepackage{float}
 
 \usepackage{natbib}
+
+\usepackage{fancyhdr}
+
+%\usepackage[square,numbers,sectionbib]{natbib}
+\usepackage{chapterbib}
 
 % Hyperlinks make it very easy to navigate an electronic document.
 % In addition, this is where you should specify the thesis title
@@ -170,7 +175,7 @@ description={A programmable machine that receives input data,
 \newglossaryentry{atmwind}
 {
 	name=atmospheric window,
-	description={A region of the electromagnetic spectrum over which the atmosphere is transmissive. Two are located in the thermal infrared \gls{waveband} at approximately 3--5 and 8---14\SI{}{\micro\metre}.}
+	description={A region of the electromagnetic spectrum over which the atmosphere is transmissive. Two are located in the thermal infrared \gls{waveband} at approximately 3 - 5 and 8 - 14\SI{}{\micro\metre}.}
 }
 \newglossaryentry{pyrg}
 {name={pyrgeometer},
@@ -247,8 +252,8 @@ description={Random vector: a location in n-dimensional Cartesian space, where e
 % This specifies the location of the file containing the bibliographic information.  
 % It assumes you're using BibTeX (if not, why not?).
 \cleardoublepage % This is needed if the book class is used, to place the anchor in the correct page,
-                 % because the bibliography will start on its own page.
-                 % Use \clearpage instead if the document class uses the "oneside" argument
+% because the bibliography will start on its own page.
+% Use \clearpage instead if the document class uses the "oneside" argument
 \phantomsection  % With hyperref package, enables hyperlinking from the table of contents to bibliography             
 % The following statement causes the title "References" to be used for the bibliography section:
 \renewcommand*{\bibname}{References}
@@ -262,7 +267,6 @@ description={Random vector: a location in n-dimensional Cartesian space, where e
 
 % The following statement causes the specified references to be added to the bibliography% even if they were not 
 % cited in the text. The asterisk is a wildcard that causes all entries in the bibliographic database to be included (optional).
-
 % The \appendix statement indicates the beginning of the appendices.
 \appendix
 % Add a title page before the appendices and a line in the Table of Contents
