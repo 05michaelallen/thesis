@@ -81,7 +81,7 @@ This is the abstract.
 % A C K N O W L E D G E M E N T S
 % -------------------------------
 
-\begin{center}\textbf{Acknowledgements}\end{center}
+\begin{center}\textbf{Acknowledgments}\end{center}
 
 These are my Acknowledgments
 \cleardoublepage
@@ -113,6 +113,10 @@ These are my Acknowledgments
 \cleardoublepage
 \phantomsection		% allows hyperref to link to the correct page
 
-% Change page numbering back to Arabic numerals
+% Change page numbering back to Arabic numerals and have it in the upper right corner
 \pagenumbering{arabic}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
 

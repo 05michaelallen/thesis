@@ -1,8 +1,80 @@
 \chapter{Introduction}
+Urban development drastically changes the character of the surface. Replacement of natural terrain with roads, buildings, parks, and other urban features modifies the geometry of the surface as well as its thermal, radiative, moisture, and aerodynamic properties. These modifications, combined with anthropogenic emissions of heat, result in a distinct urban climate; one which is often warmer, a phenomenon termed the urban heat island effect (UHI). As both the Earth's population and the urbanized fraction of that population increase \citep{Nations2014}, cities grow and more people are exposed to urban-modified atmospheres. Thus, understanding how cities interact with the climate across spatiotemporal scales has important implications for human health, energy efficiency, and for informing future urban development. This, in part, has prompted significant expansion in study of the urban effect on climates, particularly in the decades preceding this thesis. 
+
+The notion that urban areas have elevated air and surface temperatures (T\textsubscript{air} and T\textsubscript{surf} respectively) is not new, with the first formal studies of the urban effect on T\textsubscript{air} dating back to \citet{Howard1833}'s identification of "artificial warming" and "urban contamination" in his characterization of spatial patterns of T\textsubscript{air} in early 19\textsuperscript{th} century London. Conceptually, contemporary studies of urban climate do not stray far from \citet{Howard1833}, by seeking to isolate and quantify the urban signal in measured or modeled observation of a given meteorological variable. However, as \citet{Howard1833} identified nearly two centuries ago, the sheer number of factors influencing direct measurement of climates makes experimental control nearly impossible in observational study. Myriad urban and non urban signals make it difficult to determine what is urban and what is not, degrading interstudy comparison. Even in the modeling domain, where experimental control is possible, the inherent complexity in simulating flows of energy, momentum, and mass at the scales necessary to represent physical phenomena over realistic urban environments is, as of yet, not possible. Notwithstanding implementation of accurate, physically based schemes to represent urban climates in regional or global climate models. Thus, accurate measurement of the urban effect on climate is a deceptively challenging task. To address this, \citet{Lowry1977} presents a framework to isolate and analyze the urban effect in observation of a given meteorological variable. In his framework - termed the "Lowry method" - measurement of a meteorological variable ($V_M$) is the sum of forcings from the background climate and synoptic conditions ($V_B$), local topography ($V_L$), and the urban landscape ($V_H$)
+
+\begin{equation}
+	V_M = V_B + V_L + V_H
+\end{equation}
+
+Thus, isolation of the urban effect on observed $V_M$ simply requires the removal of $V_B$ and $V_L$. This can be achieved by subtracting some urban affected observation ($V_{M, U}$) from a non-urban observation ($V_{M, R}$) where $V_{H, R}$ = 0,
+
+\begin{equation}
+V_{M, U} - V_{M, R} = (V_B + V_L + V_H) - (V_B + V_L) = V_H
+\end{equation}
+
+\noindent simplified as,
+
+\begin{equation}
+	V_H = V_{M, U} - V_{M, R}
+\end{equation}
+
+Study of the urban heat island effect tacitly falls into such a framework, by replacing $V_{M, U} - V_{M, R}$ with $\Delta$T\textsubscript{air, U-R}. However, in spite of its conceptual simplicity, meta-analysis of observational air temperature UHI (aUHI) study in \citet{Stewart2011} found that nearly fifty percent of aUHI studies published between 1950 and 2007 are "scientifically indefensible" based on an analysis of relevant criteria\footnote{Each study was given a "passing" or "failing" grade and ranked using a points-based scheme to assess methodological quality in the following criteria: conceptual model, operational definitions, instrument specification, site metadata, site representativeness, number of replicates, weather control, surface control, and synchronicity.}, suggesting a significant gulf between conceptual simplicity and practical realities in aUHI analysis. Of the 190 surveyed studies, only 13\% were derived from field sites that were sufficiently representative of the local-scale environment or lacked the meta-data to make such a determination, leading to potential biases from micro-scale terrain. This is particularly discouraging as it is not the result of an evolution in measurement techniques or improved instrumentation - in fact, \citet{Stewart2011} suggests the opposite: a disproportionately large number of studies deemed scientifically sound were published early in the study purview. Thus, in study of the urban effect on variables for which significant methodological shifts have or will occur, the warnings implicit in \citet{Stewart2011} are particularly salient, as inherent difficulties found in translating "Lowry"-esque conceptual models to real world observations may be compounded by significant methodological changes. In the five years since its publication, aUHI study has seen further expansion and, as such, it is difficult to assess whether its critical analysis has prompted a shift towards more thoughtful, careful, and methodical study of aUHI, notwithstanding its adoption in study of the urban effect on different meteorological variables.
+
+Study of the urban effect on land T\textsubscript{surf}, compared to study of urban T\textsubscript{air}, is relatively new and is rapidly expanding and evolving, with a vast majority of urban T\textsubscript{surf} study focusing on passive remote sensing of upwelling TIR. In the decades preceding this thesis, a combination of factors has lead to significant expansion of TIR remote sensed study of urban T\textsubscript{surf} including: 
+
+\begin{itemize}
+	\item The proliferation of satellite and aerial thermal infrared (TIR) remote sensors and "openness" in data access policies.
+	\item Improvements in sensor spatial, spatial, and radiometric resolutions. 
+	\item An increased focus on the importance of the surface in both determining and understanding key near-ground micro-meteorological phenomena.
+\end{itemize}
+
+Remote sensed study of the urban effect on land T\textsubscript{surf} has been instrumental in characterizing spatial and temporal patterns of sUHI \citep{Peng2012, Streutker2003, Imhoff2010}. However, given the relative novelty of TIR remote sensing methods, the wide (and broadening) range of remote sensing instruments and methods used for urban T\textsubscript{surf} retrieval, and the difficulty observed in maintaining scientific integrity in aUHI study, similar conclusions to those in \citet{Stewart2011} are likely for study of sUHI. In addition, traditional methods for urban T\textsubscript{surf} measurement are also subject to a suite of geometric and temporal biases. Geometric biases inherent in thermal remote sensing of the urban surface are the results of urban modification of surface structure and thermal and radiative processes. The convoluted 3-dimensional structure of the urban surface modifies sunlit/shading regimes and creates large micro-scale spatiotemporal contrasts in urban T\textsubscript{surf} depending on surface-sun geometry, can be amplified by significant contrasts in the thermal admittance of common urban materials. Thus, when urban T\textsubscript{surf} is viewed from a narrow-field-of-view (FOV) remote sensor, urban T\textsubscript{surf} is directionally dependent - an "effective anisotropy" of urban T\textsubscript{surf}. Urban effective anisotropy can reach up to 10 \si{\kelvin} and is highly dependent on surface-sensor geometry, surface structure, and urban materials \citep{Krayenhoff2016, Voogt1997}. Temporal biases in urban thermal remote sensing occur across multiple scales including: 
+
+\begin{itemize}
+	\item Contamination by turbulence forced, high frequency fluctuations in urban T\textsubscript{surf}.
+	\item Discontinuity in satellite overpass cycles for remote sensors with sufficient spatial resolutions.
+	\item Diurnal and seasonal biases towards clear sky "satellite friendly" conditions, under which the atmosphere is relatively transparent to TIR.
+\end{itemize}
+
+\begin{table}[H]
+	\centering
+	\caption{Sources of temporal bias in urban thermal remote sensing.}
+	\label{tbias}
+	\begin{tabular*}{\textwidth}{p{6cm}p{1.5cm}p{3cm}p{3cm}}
+		\toprule 
+		Bias & Temporal scale & Magnitude & Citation  \\  
+		\midrule
+		High-frequency turbulence forced fluctuations in urban T\textsubscript{surf} & Micro- & 1 - 3 \si{\kelvin} & \citep{Christen2012} \\
+		&&&\\
+		Discontinuity in satellite overpass cycles & Micro- to seasonal- & unknown & \\
+		&&&\\
+		Clear sky bias & Diurnal- to seasonal- & unknown & \\
+		\bottomrule
+	\end{tabular*} 
+\end{table}
+
+
  
-\section{Defining the urban surface}
- 	Sometimes I have no idea what I am doing.
- 	
- \section{The urban radiation budget}
- 
- \section{The structure of the following sections}
+\section{Research questions and objectives}
+
+Thermal-infrared (TIR) remote sensing of urban surface temperatures (Tsurf) has emerged as a primary research focus in the field of urban climatology as researchers seek to elucidate diurnal and seasonal Tsurf regimes and understand coupling between urban surfaces and the ambient air in complex, 3-d urban environments (Voogt  Oke, 1997, 2003). Recent technological improvements in thermal imaging of earth’s surface temperatures have fostered significant progress in characterizations of the surface urban heat island effect (sUHI) and its function in driving urban/suburban air temperature regimes (Peng et al., 2012; Rigo  Parlow, 2005; Roth et al., 1989). However, these improvements have not mitigated the geometric and temporal biases inherent in satellite/airborne remote sensing of complex urban surface climates. 
+
+Deriving urban Tsurf from conventional remote sensing platforms (i.e., satellites, airborne sensors) presents three main geometrical and temporal deficiencies. First, conventional satellite remote sensing represents the urban form as a two-dimensional plane – a ‘bird’s eye view’. The resulting measurements undersample urban surfaces by ignoring and/or underrepresenting vertical (wall) facets (Voogt, 2000). This is particularly salient in dense urban areas where canyon height is often greater than canyon width (Offerle et al., 2003). Second, clouds absorb thermal infrared radiation (TIR) – thus satellite thermal imaging of the surface requires clear sky conditions. Third, satellite overpass cycles are temporally discontinuous. Consequently, satellite assessment of surface temperature either sacrifices spatial resolution for a daily repeat cycle (MODIS) or sacrifices temporal resolution for a higher spatial resolution (ASTER or Landsat). As a result of these three shortcomings, the satellite record of urban Tsurf is discontinuous, has a significant clear sky bias, and fails to accurately sample the complete, 3-d urban form. Prompted by these shortcomings the proposed research introduces novel analyses of urban/rural Tsurf regimes to elucidate the following:
+
+\begin{itemize}
+	\item What is the nature of urban surface temperature when viewed from a hemispherical downward-facing radiometer? And how does it relate to urban temperatures derived from other methods for urban surface temperature retrieval?
+	\item What is the diurnal and seasonal nature of the surface urban heat island effect?
+\end{itemize}
+
+\noindent In an attempt to answer these questions, I did the following:
+
+\begin{enumerate}
+	\item Developed and evaluated a method to retrieve atmospherically correction hemispherical radiometric urban surface temperatures from time-continuous measurements of upwelling longwave radiation.
+	\item Compared urban surface temperatures and surface urban heat island magnitudes retrieved using the method to common remote sensed representations of the urban surface.
+	\item Derived an eight month climatology of hemispherical urban surface temperatures to observe seasonal and diurnal patterns of the surface urban heat island effect.
+\end{enumerate}
+
+\section{The structure of the following sections}
+
+The following two papers make up the body of the thesis, read them you fuck.
