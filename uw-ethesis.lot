@@ -1,9 +1,9 @@
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces Sources of temporal bias in urban thermal remote sensing.\relax }}{5}{table.caption.10}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Weights applied to individual facet temperature components in order to calculate complete and nadir temperatures for the Basel Sperrstrasse street canyon.\relax }}{23}{table.caption.15}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Statistical performance of the Payerne evaluation. RMSE\textit {\textsubscript {s}} and RMSE\textit {\textsubscript {u}} represent the systemic and unsystematic RMSE respectively. n = 378\relax }}{32}{table.caption.19}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Planck weighted mean sensor response and T\textsubscript {bias} for a suite of common urban emission temperatures.\relax }}{44}{table.caption.27}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Weights applied to individual facet temperature components in order to calculate complete and nadir temperatures for the Basel Sperrstrasse street canyon.\relax }}{25}{table.caption.15}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Statistical performance of the Payerne evaluation. RMSE\textit {\textsubscript {s}} and RMSE\textit {\textsubscript {u}} represent the systemic and unsystematic RMSE respectively. n = 378\relax }}{34}{table.caption.19}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Planck weighted mean sensor response and T\textsubscript {bias} for a suite of common urban emission temperatures.\relax }}{46}{table.caption.27}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces A description of morphological and measured variables for urban and rural sites. Modified from \citet {Rotach2005} to include only relevant parameters.\relax }}{65}{table.caption.33}
-\contentsline {table}{\numberline {3.2}{\ignorespaces A summary of the relationship between sUHI, meteorological variables, and clUHI.\relax }}{77}{table.caption.41}
+\contentsline {table}{\numberline {3.1}{\ignorespaces A description of morphological and measured variables for urban and rural sites. Modified from \citet {Rotach2005} to include only relevant parameters.\relax }}{67}{table.caption.33}
+\contentsline {table}{\numberline {3.2}{\ignorespaces A summary of the relationship between sUHI, meteorological variables, and clUHI.\relax }}{79}{table.caption.41}
+\addvspace {10\p@ }
