@@ -1,5 +1,8 @@
-\chapter{A hemispherical atmospheric correction method to derive time-continuous urban surface temperature}\label{paper1}
+\begin{bibunit}
 
+\rhead{\thepage}
+
+\chapter{An atmospheric correction method to derive hemispherical time-continuous urban surface temperature}\label{paper1}
 
 \section{Introduction}
 Thermal infrared (TIR) remote sensing of land surface temperature (T\textsubscript{surf}) has emerged as a primary research focus in climatology, as researchers seek to better describe spatiotemporal patterns of T\textsubscript{surf} globally and better understand how anthropogenic modification of earth's surface influences land T\textsubscript{surf} and impacts climate at various scales. Over the last two decades, the application of thermal remote sensing to study surface climates has expanded significantly. Thermal remote sensing of earth's surface has applications over a wide range of disciplines: from informing micro-, urban-, and global-scale climate models, to aiding decision making and mitigation praxis with respect to climate change and the \gls{uhi}. 
@@ -437,6 +440,51 @@ At the higher test height, T\textsubscript{hem, r} is more representative of T\t
 \end{figure}
  
 Both \citet{Roberts2010} and \citet{Adderley2015} did not find a perfectly representative sensor position for typical low- and mid-rise urban street canyons; this is supported by sensitivity testing performed in this study. As such, under conditions with strong microscale spatial contrasts in T\textsubscript{surf}, T\textsubscript{hem, r} is unlikely to be equal T\textsubscript{comp} regardless of sensor placement. However, sensor view models, such as SUM, can be used to optimize sensor placement with information about surface geometry to retrieve the most accurate measured irradiances and derived T\textsubscript{hem, r} for a given surface geometry.
+
+\section{A practical parameterization}
+
+To save computational time and facilitate broader use of the method, a parameterization scheme was developed to simplify the correction process. In the parameterization, a suite of radiative transfer simulations is run prior to correction (as opposed to at each time step) to retrieve $\tau$ for a range of humidities and path lengths. T\textsubscript{surf} and T\textsubscript{air} are held constant in these simulations as they have a relatively small effect on $\tau$. Simulations for path lengths from 1 to 100 \si{\meter} and water vapor mass densities from 0.1 to 23.5 \si{\gram\per\meter\cubed} are included in Appendix \ref{appendixa}. Sensor-surface geometry is approximated as a single view factor weighted, azimuthally averaged surface-sensor path length calculated using the surface-sensor-sun urban model \citep{Soux2004} and a simplified DBM. This path length represents the average distance from the sensor to the surface as "seen" by the sensor. For each time step, measured humidity is used to infer a hemispherical transmittance ($\overline{\tau_{\Phi}}$) for the approximated surface-sensor geometry. A parameterized T\textsubscript{hem, r} can then be calculated by using measured (in this case, profile averaged) T\textsubscript{air} to decompose measured L\textsubscript{up} into irradiance received by the sensor from the surface $L_{surf}^{at-sensor}$ and from the atmosphere $L_{atm}^{at-sensor}$ via, 
+
+\begin{equation}
+	\label{para}
+	T_{hem, ~para} =\left(\displaystyle\frac{\biggl(\cfrac{\displaystyle L_{surf}^{at-sensor}}{ \displaystyle\tau}\biggr)}{ \displaystyle\sigma}\right)^{0.25}
+\end{equation}
+\noindent where $\tau$ is calculated using a radiative transfer code and a we and $L_{surf}^{at-sensor}$ is the fraction of ,
+
+\begin{equation}
+	\label{para2}
+	\displaystyle L_{surf}^{at-sensor} = L_{total}^{at-sensor} - (1-\tau)\sigma T_{air}^4
+\end{equation}
+
+Using this parameterization, a climatology of T\textsubscript{hem, para} for a given surface geometry can be retrieved from approximately 100 simulations as opposed to the many millions needed for full hemispherical radiative transfer simulation. A variety of online and offline, open and closed source resources are available for radiative transfer simulation \citep{Gastellu-Etchegorry1996,Berk1987,Buehler2005}, some of which are available for free or at a low cost (Spectral-Calc), all of which are likely to provide similar results to those included in Appendix \ref{appendixa}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm,
+	height=7in,
+	keepaspectratio]{para_eval}
+	\caption{Modeled T\textsubscript{hem, r} versus T\textsubscript{hem, r} derived via the parameterization scheme.}
+	\label{para_eval}
+\end{figure}
+ 
+\begin{table}[H]
+ 	\centering
+ 	\caption{Statistical performance of T\textsubscript{hem} derived using the parameterization scheme relative to modeled T\textsubscript{hem,r}. RMSE\textit{\textsubscript{s}} and RMSE\textit{\textsubscript{u}} represent the systemic and unsystematic RMSE respectively. n = 853}
+ 	\label{parastats}
+ 	\begin{tabular}{lcl}
+ 		\toprule 
+ 		Statistic & Parameterization & Citation \\  \midrule
+ 		Slope & 1.058 &  \\ 
+ 		Intercept, (\si{\kelvin}) & -1.488 &   \\ 
+ 		\textit{R\textsuperscript{2}} & 0.991 & \\ 
+ 		MAE,  (\si{\kelvin}) & 0.607& \citep{Willmott1985a} \\ 
+ 		RMSE,  (\si{\kelvin}) & 0.757 & \citep{Willmott1985a} \\ 
+ 		RMSE\textit{\textsubscript{s}},  (\si{\kelvin}) & 0.476  & \citep{Willmott1985a} \\ 
+ 		RMSE\textit{\textsubscript{u}},  (\si{\kelvin}) & 0.588  & \citep{Willmott1985a} \\ 
+ 		\textit{d}, agreement index & 0.998 & \citep{Willmott2012} \\
+ 		\bottomrule
+ 	\end{tabular} 
+\end{table}
  
  \section{Conclusions}
  
@@ -447,3 +495,11 @@ This paper details a method for urban T\textsubscript{surf} retrieval using atmo
 Atmospheric corrections are large and vary significantly based on sensor-surface-sun geometry and synoptic conditions. Thus, for accurate intersite comparison, T\textsubscript{hem} derived from irradiances measured at different heights or above different surface geometries may have different atmospheric or dome effects that can confound results. This fact makes clear the need for robust atmospheric correction of T\textsubscript{hem} for sUHI analysis. Correction magnitudes are largest on hot, clear sky summertime days - with large solar input and high T\textsubscript{hem, r} and T\textsubscript{air} - and smallest by night and under overcast conditions, during which solar input is suppressed and T\textsubscript{hem, r} and T\textsubscript{air} are low. Correction magnitudes are most strongly correlated with the T\textsubscript{surf} - T\textsubscript{air} differential and incoming solar radiation and weakly correlated with T\textsubscript{hem, r} and T\textsubscript{air}. Water vapor content did not appear to exert strong control over correction magnitudes.
 
 Comparison of T\textsubscript{surf} from nadir, hemispherical, and complete representations of the Basel Sperrstrasse street canyon show that a hemispherical view is more geometrically representative of the complete surface temperature than a sensor viewing in the nadir. However, sensor placement sensitivity tests show that T\textsubscript{hem, r} is highly dependent on sensor placement and height. Overestimations by T\textsubscript{plan} and T\textsubscript{hem, r} are greatest under clear sky conditions, but is particularly large for T\textsubscript{plan}. This is particularly important when one considers that satellite observations of urban T\textsubscript{surf} are only possible under clear sky conditions (when T\textsubscript{plan} is least representative of T\textsubscript{comp}). Significant variability in over/underestimation of T\textsubscript{comp} by T\textsubscript{hem, r} and T\textsubscript{plan} based on time of day and synoptic conditions make these biases difficult to generalize to other urban study sites with different surface geometries and characteristics, canyon orientations, and macro climates. However, the measures used to derive T\textsubscript{hem, r} are common to most energy balance assessments and constitute an untapped, but promising, resource to improve understanding of how the built environment affects land T\textsubscript{surf} and to quantify the geometric and temporal biases inherent in satellite TIR remote sensing of complex terrain. 
+
+\cleardoublepage 
+\phantomsection  
+\renewcommand*{\bibname}{References}
+\addcontentsline{toc}{section}{\textbf{References}}
+
+\putbib
+\end{bibunit}

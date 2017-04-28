@@ -1,3 +1,7 @@
+\begin{bibunit}
+	
+\rhead{\thepage}
+
 \chapter{Introduction}
 Urban development drastically changes the character of the surface. Replacement of natural terrain with roads, buildings, parks, and other urban features modifies the geometry of the surface as well as its thermal, radiative, moisture, and aerodynamic properties. These modifications, combined with anthropogenic emissions of heat, result in a distinct urban climate; one which is often warmer, a phenomenon termed the urban heat island effect (UHI). As both the Earth's population and the urbanized fraction of that population increase \citep{Nations2014}, cities grow and more people are exposed to urban-modified atmospheres. Thus, understanding how cities interact with the climate across spatiotemporal scales has important implications for human health, energy efficiency, and for informing future urban development. This, in part, has prompted significant expansion in study of the urban effect on climates, particularly in the decades preceding this thesis. 
 
@@ -33,16 +37,26 @@ Remote sensed study of the urban effect on land T\textsubscript{surf} has been i
 
 Traditional methods for urban T\textsubscript{surf} measurement are subject to a suite of geometric and temporal biases. These biases are largely inherent to the discipline and contribute an additional source of error on top of potential concerns carried over from meta-analysis of conceptual flaws in aUHI literature. 
 
-Geometric biases in TIR remote sensing of the urban surface are the result of urban modification of surface structure and thermal and radiative properties. Relative to typical non-urban and rural terrain, urban development adds significant 3-dimensionality to the surface. This added complexity results in undersampling of the surface by narrow-FOV remote sensors. A narrow-FOV sensor, by sampling surface 3-dimensionality in 2-dimensions, "sees" a different assemblage of urban surfaces depending on its viewing direction, resulting in a geometric bias towards some arrangement of facets. I.e. viewing from the nadir, a narrow-FOV sensor sees the urban surface as an array of rooftops and roads, the same sensor viewing perpendicular to the surface sees wall facets exclusively, and one viewing from some off nadir angle sees some array of walls, rooftops, and roads depending on its orientation. 
+Geometric biases in TIR remote sensing of the urban surface are the result of urban modification of surface structure and thermal and radiative properties. Relative to typical non-urban and rural terrain, urban development adds significant 3-dimensionality to the surface. This added complexity results in undersampling of the surface by narrow-FOV remote sensors. A narrow-FOV sensor, by sampling surface 3-dimensionality in 2-dimensions, "sees" a different assemblage of urban surfaces depending on its viewing direction, resulting in a geometric bias towards some arrangement of facets. I.e. viewing from the nadir, a narrow-FOV sensor sees the urban surface as an array of rooftops and roads, the same sensor viewing the from an oblique angle sees some array of walls, rooftops, and roads depending on its orientation. For a sensor in the nadir, increasing FOV introduces sampling of vertical features. To illustrate how sensor-surface geometry influences sampling of the urban surface by narrow- and wide-FOV sensors, Figure \ref{model} shows FOVs for the three sensor orientation/type combinations.The vast majority of urban thermal remote sensing is done via a narrow-FOV sensor in the nadir.
 
-In addition, the convoluted 3-dimensional structure of the urban surface modifies sunlit/shading regimes, resulting in strong micro-scale spatiotemporal contrasts in urban T\textsubscript{surf}, which depend on surface-sun geometry. These microscale variations in urban T\textsubscript{surf} are often amplified by significant directional contrasts in the thermal admittance of common urban materials, which determines the diurnal amplitude of T\textsubscript{surf} for a given facet. Thus, when viewed from a narrow-FOV remote sensor with some inherent geometric bias, urban T\textsubscript{surf} is directionally dependent - constituting an "effective anisotropy" of urban T\textsubscript{surf}, shown in Figure \ref{anisot}. The qualifier "effective" is used to differentiate directional contrasts in urban T\textsubscript{surf} that arise from a city's 3-dimensional surface structure from those resulting from the non-Lambertian nature of individual urban facets (e.g. walls, rooftops, or roads). The magnitude of urban effective anisotropy can reach up to 10 \si{\kelvin} and is highly dependent on surface-sensor-sun geometry, surface structure, and urban materials \citep{Krayenhoff2016, Voogt1997}. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm,
+	height=7in,
+	keepaspectratio]{model}
+	\caption{Projected FOVs for a narrow-FOV sensor at nadir and oblique angles, and a wide-FOV hemispherical sensor viewing an idealized urban array with building width T\textit{H}, height 2\textit{H}, and inter element spacing textit{H}. Figure from \cite{Adderley2015}.}
+	\label{model}
+\end{figure}
+
+
+In addition to modifying how a remote sensor samples the surface, the convoluted 3-dimensional structure of the urban surface modifies sunlit/shading regimes, resulting in strong micro-scale spatiotemporal contrasts in urban T\textsubscript{surf}, which depend on surface-sun geometry. These microscale variations in urban T\textsubscript{surf} are often amplified by significant directional contrasts in the thermal admittance of common urban materials, which determines the diurnal amplitude of T\textsubscript{surf} for a given facet. Thus, when viewed from a narrow-FOV remote sensor with some inherent geometric bias, urban T\textsubscript{surf} is directionally dependent - constituting an "effective anisotropy" of urban T\textsubscript{surf}, shown in Figure \ref{anisot}. The qualifier "effective" is used to differentiate directional contrasts in urban T\textsubscript{surf} that arise from a city's 3-dimensional surface structure from those resulting from the non-Lambertian nature of individual urban facets (e.g. walls, rooftops, or roads). The magnitude of urban effective anisotropy can reach up to 10 \si{\kelvin} and is highly dependent on surface-sensor-sun geometry, surface structure, and urban materials \citep{Krayenhoff2016, Voogt1997}. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=15cm,
 	height=7in,
 	keepaspectratio]{anisot}
-	\caption{A narrow-FOV sensor viewing an idealized urban surface from two angles. Left: viewing the surface approximately perpendicular to the sun's angle. Right: viewing the surface approximately parallel to the sun's angle. The two viewing angles described in the left and right panels yield different remote sensed T\textsubscript{surf} by sampling different arrangements of sunlit and shaded features. Both will deviate from an area weighted "complete" urban T\textsubscript{surf}.}
+	\caption{A narrow-FOV sensor viewing an idealized urban surface from two angles. Left: viewing the surface approximately perpendicular to the sun's angle. Right: viewing the surface approximately parallel to the sun's angle. The two viewing angles yield different remote sensed T\textsubscript{surf} by sampling different arrangements of sunlit and shaded features. Both will deviate from an area weighted "complete" urban T\textsubscript{surf}.}
 	\label{anisot}
 \end{figure}
 
@@ -66,21 +80,28 @@ As is the case with geometric biases, the magnitude of these temporal biases in 
  
 \section{Research questions and objectives}
 
-Prompted by these shortcomings in the remote sensed urban T\textsubscript{surf} record, this thesis introduces a method to provide geometrically representative, temporally continuous urban T\textsubscript{surf} for sUHI analysis to address the following questions:
+Prompted by these shortcomings in the remote sensed urban T\textsubscript{surf} record, and in an effort to better understand the temporal and geometric aspects of sUHI, this thesis introduces a method to provide hemispherical, temporally continuous urban T\textsubscript{surf} for sUHI analysis to address the following questions:
 
-\begin{itemize}
+\begin{enumerate}
 	\item What is the nature of urban surface temperature when viewed from a hemispherical downward-facing radiometer? And how does it relate to urban temperatures derived from other methods for urban surface temperature retrieval?
 	\item What is the diurnal and seasonal nature of the surface urban heat island effect?
-\end{itemize}
+\end{enumerate}
 
 \noindent In an attempt to answer these questions, I did the following:
 
-\begin{enumerate}
+\begin{itemize}
 	\item Developed and evaluated a method to retrieve atmospherically correction hemispherical radiometric urban surface temperatures from time-continuous measurements of upwelling longwave radiation.
 	\item Compared urban surface temperatures and surface urban heat island magnitudes retrieved using the method to common remote sensed representations of the urban surface.
 	\item Derived an eight month climatology of hemispherical urban surface temperatures to observe seasonal and diurnal patterns of the surface urban heat island effect.
-\end{enumerate}
+\end{itemize}
 
-\section{The structure of the following sections}
+The following two chapters address questions one and two respectively. Chapter \ref{paper1} details and evaluates a method to retrieve atmospherically corrected, hemispherical urban T\textsubscript{surf} from time-continuous measurements of upwelling longwave radiation. Chapter \ref{paper2} explores the temporal and geometric nature of sUHI through an eight month climatological analysis of hemispherical sUHI and compares sUHI magnitudes from several representations of the urban surface.
 
-The following two papers make up the body of the thesis, read them you fuck.
+
+\cleardoublepage 
+\phantomsection  
+\renewcommand*{\bibname}{References}
+\addcontentsline{toc}{section}{\textbf{References}}
+
+\putbib
+\end{bibunit}

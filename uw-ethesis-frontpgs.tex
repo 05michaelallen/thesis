@@ -46,26 +46,11 @@
 
 % The rest of the front pages should contain no headers and be numbered using Roman numerals starting with `ii'
 \pagestyle{plain}
-\setcounter{page}{2}
+\setcounter{page}{3}
 
 \cleardoublepage % Ends the current page and causes all figures and tables that have so far appeared in the input to be printed.
 % In a two-sided printing style, it also makes the next page a right-hand (odd-numbered) page, producing a blank page if necessary.
- 
 
-
-% D E C L A R A T I O N   P A G E
-% -------------------------------
-  % The following is a sample Delaration Page as provided by the GSO
-  % December 13th, 2006.  It is designed for an electronic thesis.
-  \noindent
-I hereby declare that I am the sole author of this thesis. This is a true copy of the thesis, including any required final revisions, as accepted by my examiners.
-
-  \bigskip
-  
-  \noindent
-I understand that my thesis may be made electronically available to the public.
-
-\cleardoublepage
 
 % A B S T R A C T
 % ---------------
@@ -119,4 +104,7 @@ These are my Acknowledgments
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{\thepage}
+\makeatletter
+\let\ps@plain\ps@fancy % plain style = fancy style
+\makeatother
 
