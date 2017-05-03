@@ -1,44 +1,51 @@
-\contentsline {chapter}{List of Tables}{viii}{section*.2}
-\contentsline {chapter}{List of Figures}{ix}{section*.4}
-\contentsline {chapter}{Glossary}{xiv}{section*.7}
+\contentsline {chapter}{List of Tables}{ix}{section*.2}
+\contentsline {chapter}{List of Figures}{xi}{section*.4}
+\contentsline {chapter}{Glossary}{xvi}{section*.7}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Research questions and objectives}{8}{section.1.1}
-\contentsline {section}{\numberline {1.2}The structure of the following sections}{9}{section.1.2}
-\contentsline {chapter}{\numberline {2}A hemispherical atmospheric correction method to derive time-continuous urban surface temperature}{10}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduction}{10}{section.2.1}
-\contentsline {section}{\numberline {2.2}Atmospheric effects on TIR}{12}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Describing radiation as received by a remote sensor}{15}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Relating TIR and surface temperature}{17}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Atmospheric correction of near-ground TIR}{18}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}A "rolling lookup table" method for hemispherical atmospheric correction}{21}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Study area}{22}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Modeling path lengths of 3-dimensional terrain}{25}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Modeling hemispherical irradiances}{26}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Evaluation of the method using profiles of upwelling longwave radiation over a homogeneous planar surface}{30}{section.2.4}
-\contentsline {section}{\numberline {2.5}Results}{34}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Atmospheric correction magnitudes}{34}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}Comparing T\textsubscript {surf} from different sensor geometries}{39}{section.2.6}
-\contentsline {section}{\numberline {2.7}Discussion}{42}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Controls on atmospheric correction magnitude}{42}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}The effect of non-uniform pyrgeometer spectral dome transmittance on correction magnitudes}{43}{subsection.2.7.2}
-\contentsline {subsection}{\numberline {2.7.3}The effect of sensor sampling geometry on remote sensed T\textsubscript {surf}}{47}{subsection.2.7.3}
-\contentsline {section}{\numberline {2.8}Sensor placement sensitivity testing}{49}{section.2.8}
-\contentsline {section}{\numberline {2.9}Conclusions}{57}{section.2.9}
-\contentsline {chapter}{\numberline {3}A climatology of urban surface heat islands derived from hemispherical radiometric surface temperatures}{60}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{60}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Bias in thermal remote sensing}{62}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Methods}{64}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}A method to retrieve hemispherical radiometric urban T\textsubscript {surf}}{64}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Study area}{67}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Results}{68}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Seasonality in sUHI magnitudes}{68}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}The effect of sensor-surface geometry on sUHI}{70}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}The effect of meteorological conditions on sUHI}{72}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Discussion}{75}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Diurnal patterns of sUHI}{75}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Seasonal patterns of sUHI}{76}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Sensor-surface-sun geometries and sUHI}{77}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Meteorological controls on sUHI}{78}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Conclusion}{80}{section.3.5}
-\contentsline {chapter}{\numberline {4}Concluding statements}{82}{chapter.4}
-\contentsline {chapter}{\textbf {References}}{83}{section*.42}
+\contentsline {section}{\numberline {1.1}Research questions and objectives}{9}{section.1.1}
+\contentsline {section}{\textbf {References}}{11}{section*.12}
+\contentsline {chapter}{\numberline {2}An atmospheric correction method to derive hemispherical time-continuous urban surface temperature}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{13}{section.2.1}
+\contentsline {section}{\numberline {2.2}Atmospheric effects on TIR}{15}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Describing radiation as received by a remote sensor}{18}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Relating TIR and surface temperature}{20}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Atmospheric correction of near-ground TIR}{21}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}A "rolling lookup table" method for hemispherical atmospheric correction}{24}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Study area}{25}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Modeling path lengths of 3-dimensional terrain}{28}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Modeling hemispherical irradiances}{29}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Evaluation of the method using profiles of upwelling longwave radiation over a homogeneous planar surface}{33}{section.2.4}
+\contentsline {section}{\numberline {2.5}Results}{37}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Atmospheric correction magnitudes}{37}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Comparing T\textsubscript {surf} from different sensor geometries}{42}{section.2.6}
+\contentsline {section}{\numberline {2.7}Discussion}{45}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Controls on atmospheric correction magnitude}{45}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}The effect of non-uniform pyrgeometer spectral dome transmittance on correction magnitudes}{46}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.3}The effect of sensor sampling geometry on remote sensed T\textsubscript {surf}}{50}{subsection.2.7.3}
+\contentsline {section}{\numberline {2.8}Sensor placement sensitivity testing}{52}{section.2.8}
+\contentsline {section}{\numberline {2.9}A practical parameterization}{60}{section.2.9}
+\contentsline {section}{\numberline {2.10}Conclusions}{63}{section.2.10}
+\contentsline {section}{\textbf {References}}{65}{section*.38}
+\contentsline {chapter}{\numberline {3}A climatology of urban surface heat islands derived from hemispherical radiometric surface temperatures}{69}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{69}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Bias in thermal remote sensing}{71}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Methods}{73}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}A method to retrieve hemispherical radiometric urban T\textsubscript {surf}}{74}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Evaluation and parameterization}{76}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Study area}{77}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}sUHI analysis}{80}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Results}{82}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Seasonality in sUHI magnitudes}{82}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}The effect of sensor-surface geometry on sUHI}{85}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}The effect of meteorological conditions on sUHI}{87}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}The effect of rural/non-urban characteristics on sUHI}{91}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}Discussion}{93}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Diurnal patterns of sUHI}{93}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Seasonal patterns of sUHI}{95}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Sensor-surface-sun geometries and sUHI}{96}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Meteorological controls on sUHI}{97}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Conclusion}{99}{section.3.5}
+\contentsline {section}{\textbf {References}}{101}{section*.53}
+\contentsline {chapter}{\numberline {4}Concluding statements}{103}{chapter.4}
+\contentsline {section}{\textbf {References}}{105}{section*.55}
+\contentsline {chapter}{\numberline {A}Transmittances for a range of water vapor mass densities and path lengths.}{107}{appendix.A}

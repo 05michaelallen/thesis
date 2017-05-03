@@ -44,14 +44,18 @@
   <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>uw-ethesis.bcf</file>
+      <file>uw-ethesis.aux</file>
+      <file>uw-ethesis1-blx.aux</file>
+      <file>uw-ethesis-blx.bib</file>
     </provides>
     <requires type="dynamic">
       <file>uw-ethesis.bbl</file>
+      <file>uw-ethesis1-blx.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
       <file>blx-compat.def</file>
+      <file>blx-bibtex.def</file>
       <file>biblatex.def</file>
       <file>numeric.bbx</file>
       <file>standard.bbx</file>
@@ -60,14 +64,15 @@
       <file>english.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="1">
-    <generic>biber</generic>
+  <external package="biblatex" priority="5" active="0">
+    <generic>bibtex</generic>
     <cmdline>
-      <binary>biber</binary>
+      <binary>bibtex</binary>
+      <option>-min-crossrefs 2</option>
       <infile>uw-ethesis</infile>
     </cmdline>
     <input>
-      <file>uw-ethesis.bcf</file>
+      <file>uw-ethesis.aux</file>
     </input>
     <output>
       <file>uw-ethesis.bbl</file>
@@ -76,7 +81,39 @@
       <file>uw-ethesis.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>uw-ethesis.bcf</file>
+      <file>uw-ethesis.aux</file>
+      <file>uw-ethesis-blx.bib</file>
+    </requires>
+    <requires type="editable">
+    </requires>
+    <requires type="static">
+      <file>biblatex.bst</file>
+    </requires>
+  </external>
+  <external package="biblatex" priority="5" active="1">
+    <generic>bibtex</generic>
+    <cmdline>
+      <binary>bibtex</binary>
+      <option>-min-crossrefs 2</option>
+      <infile>uw-ethesis1-blx</infile>
+    </cmdline>
+    <input>
+      <file>uw-ethesis1-blx.aux</file>
+    </input>
+    <output>
+      <file>uw-ethesis1-blx.bbl</file>
+    </output>
+    <provides type="dynamic">
+      <file>uw-ethesis1-blx.bbl</file>
+    </provides>
+    <requires type="dynamic">
+      <file>uw-ethesis1-blx.aux</file>
+      <file>uw-ethesis-blx.bib</file>
+    </requires>
+    <requires type="editable">
+    </requires>
+    <requires type="static">
+      <file>biblatex.bst</file>
     </requires>
   </external>
 </requests>

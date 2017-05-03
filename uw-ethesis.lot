@@ -1,9 +1,13 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Weights applied to individual facet temperature components in order to calculate complete and nadir temperatures for the Basel Sperrstrasse street canyon.\relax }}{25}{table.caption.15}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Statistical performance of the Payerne evaluation. RMSE\textit {\textsubscript {s}} and RMSE\textit {\textsubscript {u}} represent the systemic and unsystematic RMSE respectively. n = 378\relax }}{34}{table.caption.19}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Planck weighted mean sensor response and T\textsubscript {bias} for a suite of common urban emission temperatures.\relax }}{46}{table.caption.27}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Weights applied to individual facet temperature components in order to calculate complete and nadir temperatures for the Basel Sperrstrasse street canyon.\relax }}{28}{table.caption.18}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Statistical performance of the Payerne evaluation. RMSE\textit {\textsubscript {s}} and RMSE\textit {\textsubscript {u}} represent the systemic and unsystematic RMSE respectively. n = 378\relax }}{37}{table.caption.22}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Planck weighted mean sensor response and T\textsubscript {bias} for a suite of common urban emission temperatures.\relax }}{49}{table.caption.30}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Statistical performance of T\textsubscript {hem} derived using the parameterization scheme relative to modeled T\textsubscript {hem,r}. RMSE\textit {\textsubscript {s}} and RMSE\textit {\textsubscript {u}} represent the systemic and unsystematic RMSE respectively. n = 853\relax }}{62}{table.caption.37}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces A description of morphological and measured variables for urban and rural sites. Modified from \citet {Rotach2005} to include only relevant parameters.\relax }}{67}{table.caption.33}
-\contentsline {table}{\numberline {3.2}{\ignorespaces A summary of the relationship between sUHI, meteorological variables, and clUHI.\relax }}{79}{table.caption.41}
+\contentsline {table}{\numberline {3.1}{\ignorespaces A description of morphological parameters and measured variables for BUBBLE urban and rural sites. Modified from \citet {Rotach2005} to include only relevant parameters.\relax }}{79}{table.caption.40}
+\contentsline {table}{\numberline {3.2}{\ignorespaces A description of morphological parameters and measured variables for EPiCC urban and rural sites.\relax }}{80}{table.caption.41}
+\contentsline {table}{\numberline {3.3}{\ignorespaces A summary of the relationship between sUHI, meteorological variables, and clUHI.\relax }}{98}{table.caption.52}
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces My caption\relax }}{108}{table.caption.59}
