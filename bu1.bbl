@@ -34,10 +34,10 @@ Lowry, W.~P. (1977).
 \newblock {Empirical Estimation of Urban Effects on Climate: A Problem
   Analysis}.
 
-\bibitem[Nations, 2014]{Nations2014}
-Nations, U. (2014).
-\newblock {World Urbanization Prospects: The 2014 Revision}.
-\newblock Technical report, Department of Economic and Social Affairs.
+\bibitem[Oke et~al., 2017]{Oke2017}
+Oke, T.~R., Mills, G., Christen, A., and Voogt, J.~A. (2017).
+\newblock {\em {Urban Climates}}.
+\newblock Cambridge University Press.
 
 \bibitem[Peng et~al., 2012]{Peng2012}
 Peng, S., Piao, S., Ciais, P., Friedlingstein, P., Ottle, C., Br{\'{e}}on,
@@ -56,6 +56,11 @@ Streutker, D. (2003).
 \newblock {Satellite-measured growth of the urban heat island of Houston,
   Texas}.
 \newblock {\em Remote Sensing of Environment}, 85(3):282--289.
+
+\bibitem[{United Nations}, 2014]{Nations2014}
+{United Nations} (2014).
+\newblock {World Urbanization Prospects: The 2014 Revision}.
+\newblock Technical report, Department of Economic and Social Affairs.
 
 \bibitem[Voogt and Oke, 1997]{Voogt1997}
 Voogt, J.~A. and Oke, T.~R. (1997).
