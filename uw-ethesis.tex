@@ -48,6 +48,7 @@
 \usepackage[pdftex]{graphicx} % For including graphics N.B. pdftex graphics driver 
 %change this to the folder with all of your gifures
 \graphicspath{ {figures/} }
+\newcommand*\rfrac[2]{{}^{#1}\!/_{#2}}%running fraction with slash - requires math mode.
 
 % si units
 \usepackage{siunitx}
@@ -69,8 +70,31 @@
 
 \usepackage{fancyhdr}
 
+\usepackage{csvsimple}
+
+\usepackage{filecontents}
+%\usepackage[backend=bibtex]{biblatex}
+%\usepackage[sectionbib]{natbib}
+\usepackage[sectionbib]{chapterbib} 
+
+\usepackage{bibunits}
+
+\defaultbibliography{library}
+\defaultbibliographystyle{apalike}
+
+% The following statements controls the line spacing, baselinestrech is default. setspace only 
+% controls spacing in the body/bibliogoraphy and leaves the rest defaulted.
+%\renewcommand{\baselinestretch}{1.2} 
+\usepackage{setspace}
+\setstretch{1.5}
+
+%indents the first line of each paragraph
+\usepackage{indentfirst}
+
+\usepackage{rotating}
+
 %\usepackage[square,numbers,sectionbib]{natbib}
-\usepackage{chapterbib}
+%\usepackage{chapterbib}
 
 % Hyperlinks make it very easy to navigate an electronic document.
 % In addition, this is where you should specify the thesis title
@@ -126,16 +150,6 @@
 % The following statement specifies the amount of space between
 % paragraphs. Other reasonable specifications are \bigskipamount and \smallskipamount.
 \setlength{\parskip}{\medskipamount}
-
-% The following statements controls the line spacing, baselinestrech is default. setspace only 
-% controls spacing in the body/bibliogoraphy and leaves the rest defaulted.
-%\renewcommand{\baselinestretch}{1.2} 
-\usepackage{setspace}
-\setstretch{1.5}
-
-%indents the first line of each paragraph
-\usepackage{indentfirst}
-
 
 % By default, each chapter will start on a recto (right-hand side)
 % page.  We also force each section of the front pages to start on 
@@ -234,6 +248,9 @@ description={Random vector: a location in n-dimensional Cartesian space, where e
 % separate documents, they would each start with the \chapter command, i.e, 
 % do not contain \documentclass or \begin{document} and \end{document} commands.
 
+\pagestyle{fancy}
+\rhead{\thepage}
+
 \input{introduction}
 
 \input{paper1}
@@ -261,7 +278,7 @@ description={Random vector: a location in n-dimensional Cartesian space, where e
 \renewcommand*{\bibname}{References}
 
 % Add the References to the Table of Contents
-\addcontentsline{toc}{chapter}{\textbf{References}}
+%\addcontentsline{toc}{chapter}{\textbf{References}}
 
 \bibliography{library}
 % Tip 5: You can create multiple .bib files to organize your references. 
@@ -271,6 +288,8 @@ description={Random vector: a location in n-dimensional Cartesian space, where e
 % cited in the text. The asterisk is a wildcard that causes all entries in the bibliographic database to be included (optional).
 % The \appendix statement indicates the beginning of the appendices.
 \appendix
+
+\input{appendix_a}
 % Add a title page before the appendices and a line in the Table of Contents
 
 \end{document}
