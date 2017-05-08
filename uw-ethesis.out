@@ -2,43 +2,52 @@
 \BOOKMARK [0][-]{section*.4}{List of Figures}{}% 2
 \BOOKMARK [0][-]{section*.7}{Glossary}{}% 3
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 4
-\BOOKMARK [1][-]{section.1.1}{Research questions and objectives}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.2}{The structure of the following sections}{chapter.1}% 6
-\BOOKMARK [0][-]{chapter.2}{A hemispherical atmospheric correction method to derive time-continuous urban surface temperature}{}% 7
-\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.2}{Atmospheric effects on TIR}{chapter.2}% 9
-\BOOKMARK [2][-]{subsection.2.2.1}{Describing radiation as received by a remote sensor}{section.2.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.2}{Relating TIR and surface temperature}{section.2.2}% 11
-\BOOKMARK [2][-]{subsection.2.2.3}{Atmospheric correction of near-ground TIR}{section.2.2}% 12
-\BOOKMARK [1][-]{section.2.3}{A "rolling lookup table" method for hemispherical atmospheric correction}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.3.1}{Study area}{section.2.3}% 14
-\BOOKMARK [2][-]{subsection.2.3.2}{Modeling path lengths of 3-dimensional terrain}{section.2.3}% 15
-\BOOKMARK [2][-]{subsection.2.3.3}{Modeling hemispherical irradiances}{section.2.3}% 16
-\BOOKMARK [1][-]{section.2.4}{Evaluation of the method using profiles of upwelling longwave radiation over a homogeneous planar surface}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.5}{Results}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.5.1}{Atmospheric correction magnitudes}{section.2.5}% 19
-\BOOKMARK [1][-]{section.2.6}{Comparing Tsurf from different sensor geometries}{chapter.2}% 20
-\BOOKMARK [1][-]{section.2.7}{Discussion}{chapter.2}% 21
-\BOOKMARK [2][-]{subsection.2.7.1}{Controls on atmospheric correction magnitude}{section.2.7}% 22
-\BOOKMARK [2][-]{subsection.2.7.2}{The effect of non-uniform pyrgeometer spectral dome transmittance on correction magnitudes}{section.2.7}% 23
-\BOOKMARK [2][-]{subsection.2.7.3}{The effect of sensor sampling geometry on remote sensed Tsurf}{section.2.7}% 24
-\BOOKMARK [1][-]{section.2.8}{Sensor placement sensitivity testing}{chapter.2}% 25
-\BOOKMARK [1][-]{section.2.9}{Conclusions}{chapter.2}% 26
-\BOOKMARK [0][-]{chapter.3}{A climatology of urban surface heat islands derived from hemispherical radiometric surface temperatures}{}% 27
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 28
-\BOOKMARK [2][-]{subsection.3.1.1}{Bias in thermal remote sensing}{section.3.1}% 29
-\BOOKMARK [1][-]{section.3.2}{Methods}{chapter.3}% 30
-\BOOKMARK [2][-]{subsection.3.2.1}{A method to retrieve hemispherical radiometric urban Tsurf}{section.3.2}% 31
-\BOOKMARK [2][-]{subsection.3.2.2}{Study area}{section.3.2}% 32
-\BOOKMARK [1][-]{section.3.3}{Results}{chapter.3}% 33
-\BOOKMARK [2][-]{subsection.3.3.1}{Seasonality in sUHI magnitudes}{section.3.3}% 34
-\BOOKMARK [2][-]{subsection.3.3.2}{The effect of sensor-surface geometry on sUHI}{section.3.3}% 35
-\BOOKMARK [2][-]{subsection.3.3.3}{The effect of meteorological conditions on sUHI}{section.3.3}% 36
-\BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 37
-\BOOKMARK [2][-]{subsection.3.4.1}{Diurnal patterns of sUHI}{section.3.4}% 38
-\BOOKMARK [2][-]{subsection.3.4.2}{Seasonal patterns of sUHI}{section.3.4}% 39
-\BOOKMARK [2][-]{subsection.3.4.3}{Sensor-surface-sun geometries and sUHI}{section.3.4}% 40
-\BOOKMARK [2][-]{subsection.3.4.4}{Meteorological controls on sUHI}{section.3.4}% 41
-\BOOKMARK [1][-]{section.3.5}{Conclusion}{chapter.3}% 42
-\BOOKMARK [0][-]{chapter.4}{Concluding statements}{}% 43
-\BOOKMARK [0][-]{section*.42}{References}{}% 44
+\BOOKMARK [1][-]{section.1.1}{Biases and shortcomings in thermal remote sensing of urban Tsurf}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.2}{Research questions and objectives}{chapter.1}% 6
+\BOOKMARK [1][-]{section*.12}{References}{chapter.1}% 7
+\BOOKMARK [0][-]{chapter.2}{An atmospheric correction method to derive hemispherical time-continuous urban surface temperature}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Atmospheric effects on TIR}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.1}{Describing radiation as received by a remote sensor}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.2}{Relating TIR and surface temperature}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.3}{Atmospheric correction of near-ground TIR}{section.2.2}% 13
+\BOOKMARK [1][-]{section.2.3}{A "rolling lookup table" method for hemispherical atmospheric correction}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.3.1}{Study area}{section.2.3}% 15
+\BOOKMARK [2][-]{subsection.2.3.2}{Modeling path lengths of 3-dimensional terrain}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.3}{Modeling hemispherical irradiances}{section.2.3}% 17
+\BOOKMARK [1][-]{section.2.4}{Evaluation of the method using profiles of upwelling longwave radiation over a homogeneous planar surface}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.5}{Results}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.5.1}{Atmospheric correction magnitudes}{section.2.5}% 20
+\BOOKMARK [1][-]{section.2.6}{Comparing Tsurf from different sensor geometries}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.7}{Discussion}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.7.1}{Controls on atmospheric correction magnitude}{section.2.7}% 23
+\BOOKMARK [2][-]{subsection.2.7.2}{The effect of non-uniform pyrgeometer spectral dome transmittance on correction magnitudes}{section.2.7}% 24
+\BOOKMARK [2][-]{subsection.2.7.3}{The effect of sensor sampling geometry on remote sensed Tsurf}{section.2.7}% 25
+\BOOKMARK [1][-]{section.2.8}{Sensor placement sensitivity testing}{chapter.2}% 26
+\BOOKMARK [1][-]{section.2.9}{A practical parameterization}{chapter.2}% 27
+\BOOKMARK [1][-]{section.2.10}{Conclusions}{chapter.2}% 28
+\BOOKMARK [1][-]{section*.38}{References}{chapter.2}% 29
+\BOOKMARK [0][-]{chapter.3}{A climatology of urban surface heat islands derived from hemispherical radiometric surface temperatures}{}% 30
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.1.1}{Bias in thermal remote sensing}{section.3.1}% 32
+\BOOKMARK [1][-]{section.3.2}{Methods}{chapter.3}% 33
+\BOOKMARK [2][-]{subsection.3.2.1}{A method to retrieve hemispherical radiometric urban Tsurf}{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.2}{Evaluation and parameterization}{section.3.2}% 35
+\BOOKMARK [2][-]{subsection.3.2.3}{Study area}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.4}{sUHI analysis}{section.3.2}% 37
+\BOOKMARK [1][-]{section.3.3}{Results}{chapter.3}% 38
+\BOOKMARK [2][-]{subsection.3.3.1}{Diurnal and seasonal variability in sUHI magnitudes}{section.3.3}% 39
+\BOOKMARK [2][-]{subsection.3.3.2}{The effect of sensor-surface geometry on sUHI}{section.3.3}% 40
+\BOOKMARK [2][-]{subsection.3.3.3}{The effect of meteorological conditions on sUHI}{section.3.3}% 41
+\BOOKMARK [2][-]{subsection.3.3.4}{The effect of rural/non-urban characteristics on sUHI}{section.3.3}% 42
+\BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 43
+\BOOKMARK [2][-]{subsection.3.4.1}{Diurnal patterns of sUHI}{section.3.4}% 44
+\BOOKMARK [2][-]{subsection.3.4.2}{Seasonal patterns of sUHI}{section.3.4}% 45
+\BOOKMARK [2][-]{subsection.3.4.3}{Sensor-surface-sun geometries and sUHI}{section.3.4}% 46
+\BOOKMARK [2][-]{subsection.3.4.4}{Meteorological controls on sUHI}{section.3.4}% 47
+\BOOKMARK [1][-]{section.3.5}{Conclusion}{chapter.3}% 48
+\BOOKMARK [1][-]{section*.53}{References}{chapter.3}% 49
+\BOOKMARK [0][-]{chapter.4}{Concluding statements}{}% 50
+\BOOKMARK [1][-]{section.4.1}{Final remarks}{chapter.4}% 51
+\BOOKMARK [1][-]{section*.55}{References}{chapter.4}% 52
+\BOOKMARK [0][-]{appendix.A}{Transmittances for a range of water vapor mass densities and path lengths.}{}% 53
