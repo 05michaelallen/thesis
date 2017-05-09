@@ -1,0 +1,115 @@
+\begin{thebibliography}{}
+
+\bibitem[Adderley et~al., 2015]{Adderley2015}
+Adderley, C., Christen, A., and Voogt, J.~A. (2015).
+\newblock {The effect of radiometer placement and view on inferred directional
+  and hemispheric radiometric temperatures of an urban canopy}.
+\newblock {\em Atmospheric Measurement Techniques}, 8(2):1891--1933.
+
+\bibitem[Berk et~al., 1987]{Berk1987}
+Berk, A., Bernstein, L.~S., and Robertson, D.~C. (1987).
+\newblock {MODTRAN: A Moderate Resolution Model for LOWTRAN7}.
+\newblock Technical Report GL-TR-89-0122, United States Air Force.
+
+\bibitem[Christen et~al., 2012]{Christen2012}
+Christen, A., Meier, F., and Scherer, D. (2012).
+\newblock {High-frequency fluctuations of surface temperatures in an urban
+  environment}.
+\newblock {\em Theoretical and Applied Climatology}, 108(1-2):301--324.
+
+\bibitem[Grimmond and Oke, 1999]{Grimmond1999}
+Grimmond, S. and Oke, T.~R. (1999).
+\newblock {Aerodynamic Properties of Urban Areas Derived from Analysis of
+  Surface Form}.
+\newblock {\em Journal of Applied Meteorology}, 38:1262--1292.
+
+\bibitem[Hoch, 2005]{Hoch2005}
+Hoch, S. (2005).
+\newblock {\em {Radiative flux divergence in the surface boundary layer from
+  observational and model perspectives}}.
+\newblock PhD thesis, ETH Zurich.
+
+\bibitem[Hoch et~al., 2007]{Hoch2007}
+Hoch, S., Calanca, P., Philipona, R., and Ohmura, A. (2007).
+\newblock {Year-round observation of longwave radiative flux divergence in
+  Greenland}.
+\newblock {\em Journal of Applied Meteorology and Climatology},
+  46(9):1469--1479.
+
+\bibitem[Lagouarde et~al., 2012]{Lagouarde2012}
+Lagouarde, J.~P., H{\'{e}}non, A., Irvine, M., Voogt, J., Pigeon, G., Moreau,
+  P., Masson, V., and Mestayer, P. (2012).
+\newblock {Experimental characterization and modelling of the nighttime
+  directional anisotropy of thermal infrared measurements over an urban area:
+  Case study of Toulouse (France)}.
+\newblock {\em Remote Sensing of Environment}, 117:19--33.
+
+\bibitem[Oke et~al., 2017]{Oke2017}
+Oke, T.~R., Mills, G., Christen, A., and Voogt, J.~A. (2017).
+\newblock {\em {Urban Climates}}.
+\newblock Cambridge University Press.
+
+\bibitem[Peng et~al., 2012]{Peng2012}
+Peng, S., Piao, S., Ciais, P., Friedlingstein, P., Ottle, C., Br{\'{e}}on,
+  F.~M., Nan, H., Zhou, L., and Myneni, R.~B. (2012).
+\newblock {Surface urban heat island across 419 global big cities}.
+\newblock {\em Environmental Science and Technology}, 46(2):696--703.
+
+\bibitem[Rotach et~al., 2005]{Rotach2005}
+Rotach, M.~W., Vogt, R., Bernhofer, C., Batchvarova, E., Christen, A.,
+  Clappier, A., Feddersen, B., Gryning, S.-E., Martucci, G., Mayer, H., Mitev,
+  V., Oke, T.~R., Parlow, E., Richner, H., Roth, M., Roulet, Y.-A., Ruffieux,
+  D., Salmond, J.~A., Schatzmann, M., and Voogt, J.~A. (2005).
+\newblock {BUBBLE – an Urban Boundary Layer Meteorology Project}.
+\newblock {\em Theoretical and Applied Climatology}, 81(3-4):231--261.
+
+\bibitem[Runnalls and Oke, 2000]{Runnalls2000}
+Runnalls, K.~E. and Oke, T.~R. (2000).
+\newblock {Dynamics and controls of the near-surface heat island of Vancouver,
+  British Columbia}.
+\newblock {\em Physical Geography}, 21(4):283--304.
+
+\bibitem[Soux et~al., 2004]{Soux2004}
+Soux, A., Voogt, J.~A., and Oke, T.~R. (2004).
+\newblock {A model to calculate what a remote sensor 'sees' of an urban
+  surface}.
+\newblock {\em Boundary-Layer Meteorology}, 111(1):109--132.
+
+\bibitem[Stewart, 2011]{Stewart2011}
+Stewart, I.~D. (2011).
+\newblock {A systematic review and scientific critique of methodology in modern
+  urban heat island literature}.
+\newblock {\em International Journal of Climatology}, 31(2):200--217.
+
+\bibitem[Voogt, 1995]{Voogt1995}
+Voogt, J.~A. (1995).
+\newblock {\em {Thermal Remote Sensing of Urban Surface Temperatures}}.
+\newblock PhD thesis, University of British Columbia.
+
+\bibitem[Voogt and Oke, 1998]{Voogt1998a}
+Voogt, J.~A. and Oke, T.~R. (1998).
+\newblock {Effects of urban surface geometry on remotely-sensed surface
+  temperature}.
+\newblock {\em International Journal of Remote Sensing}, 19(February
+  2015):895--920.
+
+\bibitem[Voogt and Oke, 2003]{Voogt2003}
+Voogt, J.~A. and Oke, T.~R. (2003).
+\newblock {Thermal remote sensing of urban climates}.
+\newblock {\em Remote Sensing of Environment}, 86(3):370--384.
+
+\bibitem[Voogt et~al., 2007]{Voogt2007}
+Voogt, J.~A., Oke, T.~R., B{\'{e}}lair, S., Benjamin, M., Christen, A., Coops,
+  N.~C., Grimmond, C. S.~B., Lemonsu, A., Mailhot, J., Masson, V., Mckendry,
+  I., Strachan, I., and Wang, J. (2007).
+\newblock {The Environmental Prediction in Canadian Cities ( EPiCC ) Network}.
+\newblock In {\em 8th Symposium of the Urban Environment, American
+  Meteorological Society}, Phoenix, AZ.
+
+\bibitem[Zhao et~al., 2014]{Zhao2014}
+Zhao, L., Lee, X., Smith, R.~B., and Oleson, K. (2014).
+\newblock {Strong contributions of local background climate to urban heat
+  islands}.
+\newblock {\em Nature}, 511(7508):216--219.
+
+\end{thebibliography}

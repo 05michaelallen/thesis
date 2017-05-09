@@ -1,0 +1,20 @@
+\begin{thebibliography}{}
+
+\bibitem[Berk et~al., 1987]{Berk1987}
+Berk, A., Bernstein, L.~S., and Robertson, D.~C. (1987).
+\newblock {MODTRAN: A Moderate Resolution Model for LOWTRAN7}.
+\newblock Technical Report GL-TR-89-0122, United States Air Force.
+
+\bibitem[Soux et~al., 2004]{Soux2004}
+Soux, A., Voogt, J.~A., and Oke, T.~R. (2004).
+\newblock {A model to calculate what a remote sensor 'sees' of an urban
+  surface}.
+\newblock {\em Boundary-Layer Meteorology}, 111(1):109--132.
+
+\bibitem[Stewart, 2011]{Stewart2011}
+Stewart, I.~D. (2011).
+\newblock {A systematic review and scientific critique of methodology in modern
+  urban heat island literature}.
+\newblock {\em International Journal of Climatology}, 31(2):200--217.
+
+\end{thebibliography}
