@@ -1,10 +1,10 @@
 \BOOKMARK [0][-]{section*.2}{List of Tables}{}% 1
 \BOOKMARK [0][-]{section*.4}{List of Figures}{}% 2
-\BOOKMARK [0][-]{section*.7}{List of Symbols}{}% 3
+\BOOKMARK [0][-]{chapter*.7}{List of Symbols}{}% 3
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 4
 \BOOKMARK [1][-]{section.1.1}{Biases and shortcomings in thermal remote sensing of urban Tsurf}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.2}{Research questions and objectives}{chapter.1}% 6
-\BOOKMARK [1][-]{section*.17}{References}{chapter.1}% 7
+\BOOKMARK [1][-]{section*.18}{References}{chapter.1}% 7
 \BOOKMARK [0][-]{chapter.2}{An atmospheric correction method to derive hemispherical time-continuous urban surface temperature}{}% 8
 \BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.2}{Atmospheric effects on TIR}{chapter.2}% 10
@@ -26,7 +26,7 @@
 \BOOKMARK [1][-]{section.2.8}{Sensor placement sensitivity testing}{chapter.2}% 26
 \BOOKMARK [1][-]{section.2.9}{A practical parameterization}{chapter.2}% 27
 \BOOKMARK [1][-]{section.2.10}{Conclusions}{chapter.2}% 28
-\BOOKMARK [1][-]{section*.43}{References}{chapter.2}% 29
+\BOOKMARK [1][-]{section*.46}{References}{chapter.2}% 29
 \BOOKMARK [0][-]{chapter.3}{A climatology of sUHI derived from hemispherical radiometric surface temperatures}{}% 30
 \BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 31
 \BOOKMARK [2][-]{subsection.3.1.1}{Bias in thermal remote sensing}{section.3.1}% 32
@@ -47,10 +47,10 @@
 \BOOKMARK [2][-]{subsection.3.4.3}{Sensor-surface-sun geometries and sUHI}{section.3.4}% 47
 \BOOKMARK [2][-]{subsection.3.4.4}{Meteorological controls on sUHI}{section.3.4}% 48
 \BOOKMARK [1][-]{section.3.5}{Conclusion}{chapter.3}% 49
-\BOOKMARK [1][-]{section*.65}{References}{chapter.3}% 50
+\BOOKMARK [1][-]{section*.68}{References}{chapter.3}% 50
 \BOOKMARK [0][-]{chapter.4}{Conclusion}{}% 51
 \BOOKMARK [1][-]{section.4.1}{Summary of results}{chapter.4}% 52
 \BOOKMARK [1][-]{section.4.2}{Limitations and future work}{chapter.4}% 53
 \BOOKMARK [1][-]{section.4.3}{Final remarks}{chapter.4}% 54
-\BOOKMARK [1][-]{section*.67}{References}{chapter.4}% 55
+\BOOKMARK [1][-]{section*.70}{References}{chapter.4}% 55
 \BOOKMARK [0][-]{appendix.A}{Transmittances for a range of water vapor mass densities and path lengths.}{}% 56
