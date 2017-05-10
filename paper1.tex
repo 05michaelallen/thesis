@@ -23,7 +23,7 @@ Although most thermal remote sensors operate within one of the atmospheric windo
 
 \begin{figure}[H]
 	\includegraphics[width=\textwidth]{spectairtsurf}
-	\caption{At-sensor spectral directional radiances computed in MODTRAN 4.1 \citep{Berk1987} for short (30 \si{m}) and long (3000 \si{m}) path lengths (z) with Planck curves indicating spectral radiances at T\textsubscript{surf} = 300 \si{K} and T\textsubscript{air} = 290 \si{K}.}
+	\caption{At-sensor spectral directional radiances computed in MODTRAN 4.1 (Berk et al., 1987) for short (30 \si{m}) and long (3000 \si{m}) path lengths (z) with Planck curves indicating spectral radiances at T\textsubscript{surf} = 300 \si{K} and T\textsubscript{air} = 290 \si{K}.}
 	\label{spectairtsurf}
 \end{figure}
 
@@ -172,7 +172,7 @@ In this method, a "typical" longwave bandpass, approximately 250 - 2300 \si{\cen
 
 \begin{figure}[H]
 	\includegraphics[width=\textwidth]{dometrans}
-	\caption{A comparison of dome transmittance for a Kipp \& Zonen silicone domed pyrgeometer (data supplied by Kipp \& Zonen \textit{pers. comm.}) and at-sensor radiance (T\textsubscript{surf} = 300 \si{K}, T\textsubscript{air} = 300 \si{K}, $z$ = 30 \si{m})  for "typical" and extended bandpasses.}
+	\caption{A comparison of dome transmittance for a Kipp \& Zonen silicone domed pyrgeometer (data supplied by Kipp \& Zonen, \textit{pers. comm.}) and at-sensor radiance (T\textsubscript{surf} = 300 \si{K}, T\textsubscript{air} = 300 \si{K}, $z$ = 30 \si{m})  for "typical" and extended bandpasses.}
 	\label{dometrans}
 \end{figure}
 
@@ -441,7 +441,7 @@ Both \citet{Roberts2010} and \citet{Adderley2015} did not find a perfectly repre
 
 \section{A practical parameterization}
 
-To save computational time and facilitate broader use of the method, a parameterization scheme was developed to simplify the correction process. In the parameterization, a suite of radiative transfer simulations is run prior to correction (as opposed to at each time step) to retrieve $\tau$ for a range of humidities and path lengths. T\textsubscript{surf} and T\textsubscript{air} are held constant in these simulations as they have a relatively small effect on $\tau$. Simulations for path lengths from 1 to 100 \si{\meter} and water vapor mass densities from 0.1 to 23.5 \si{\gram\per\meter\cubed} are included in Appendix \ref{appendixa}. Sensor-surface geometry is approximated as a single view factor weighted, azimuthally averaged, surface-to-sensor path length calculated using the SUM \citep{Soux2004} and a simplified DBM. This path length represents the average distance from the sensor to the surface as "seen" by the sensor. For each time step, measured humidity is used to infer a hemispherical transmittance ($\overline{\tau_{\Phi}}$) for the approximated surface-sensor geometry. A parameterized T\textsubscript{hem, r} (T\textsubscript{hem, para}) can then be calculated by using measured (in this case, profile averaged) T\textsubscript{air} to decompose measured L\textsubscript{up} into irradiance received by the sensor from the surface $L_{surf}^{at-sensor}$ and from the atmosphere $L_{atm}^{at-sensor}$ via, 
+To save computational time and facilitate broader use of the method, a parameterization scheme was developed to simplify the correction process. In the parameterization, a suite of radiative transfer simulations is run prior to correction (as opposed to at each time step) to retrieve $\tau$ for a range of humidities and path lengths. T\textsubscript{surf} and T\textsubscript{air} are held constant in these simulations as they have a relatively small effect on $\tau$. Simulations for path lengths from 1 to 48 \si{\meter} and water vapor mass densities from 0.1 to 23.5 \si{\gram\per\meter\cubed} are included in Appendix \ref{appendixa}. Sensor-surface geometry is approximated as a single view factor weighted, azimuthally averaged, surface-to-sensor path length calculated using the SUM \citep{Soux2004} and a simplified DBM. This path length represents the average distance from the sensor to the surface as "seen" by the sensor. For each time step, measured humidity is used to infer a hemispherical transmittance ($\overline{\tau_{\Phi}}$) for the approximated surface-sensor geometry. A parameterized T\textsubscript{hem, r} (T\textsubscript{hem, para}) can then be calculated by using measured (in this case, profile averaged) T\textsubscript{air} to decompose measured L\textsubscript{up} into irradiance received by the sensor from the surface $L_{surf}^{at-sensor}$ and from the atmosphere $L_{atm}^{at-sensor}$ via, 
 
 \begin{equation}
 	\label{para}

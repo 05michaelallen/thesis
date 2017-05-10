@@ -32,22 +32,25 @@
 \BOOKMARK [2][-]{subsection.3.1.1}{Bias in thermal remote sensing}{section.3.1}% 32
 \BOOKMARK [1][-]{section.3.2}{Methods}{chapter.3}% 33
 \BOOKMARK [2][-]{subsection.3.2.1}{A method to retrieve hemispherical radiometric urban Tsurf}{section.3.2}% 34
-\BOOKMARK [2][-]{subsection.3.2.2}{Evaluation and parameterization}{section.3.2}% 35
-\BOOKMARK [2][-]{subsection.3.2.3}{Study area}{section.3.2}% 36
-\BOOKMARK [2][-]{subsection.3.2.4}{sUHI analysis}{section.3.2}% 37
-\BOOKMARK [1][-]{section.3.3}{Results}{chapter.3}% 38
-\BOOKMARK [2][-]{subsection.3.3.1}{Diurnal and seasonal variability in sUHI magnitudes}{section.3.3}% 39
-\BOOKMARK [2][-]{subsection.3.3.2}{The effect of sensor-surface geometry on sUHI}{section.3.3}% 40
-\BOOKMARK [2][-]{subsection.3.3.3}{The effect of meteorological conditions on sUHI}{section.3.3}% 41
-\BOOKMARK [2][-]{subsection.3.3.4}{The effect of rural/non-urban characteristics on sUHI}{section.3.3}% 42
-\BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 43
-\BOOKMARK [2][-]{subsection.3.4.1}{Diurnal patterns of sUHI}{section.3.4}% 44
-\BOOKMARK [2][-]{subsection.3.4.2}{Seasonal patterns of sUHI}{section.3.4}% 45
-\BOOKMARK [2][-]{subsection.3.4.3}{Sensor-surface-sun geometries and sUHI}{section.3.4}% 46
-\BOOKMARK [2][-]{subsection.3.4.4}{Meteorological controls on sUHI}{section.3.4}% 47
-\BOOKMARK [1][-]{section.3.5}{Conclusion}{chapter.3}% 48
-\BOOKMARK [1][-]{section*.59}{References}{chapter.3}% 49
-\BOOKMARK [0][-]{chapter.4}{Concluding statements}{}% 50
-\BOOKMARK [1][-]{section.4.1}{Final remarks}{chapter.4}% 51
-\BOOKMARK [1][-]{section*.61}{References}{chapter.4}% 52
-\BOOKMARK [0][-]{appendix.A}{Transmittances for a range of water vapor mass densities and path lengths.}{}% 53
+\BOOKMARK [2][-]{subsection.3.2.2}{Method evaluation and sensitivity testing}{section.3.2}% 35
+\BOOKMARK [2][-]{subsection.3.2.3}{A parameterization scheme}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.4}{Study area}{section.3.2}% 37
+\BOOKMARK [2][-]{subsection.3.2.5}{sUHI analysis}{section.3.2}% 38
+\BOOKMARK [1][-]{section.3.3}{Results}{chapter.3}% 39
+\BOOKMARK [2][-]{subsection.3.3.1}{Diurnal and seasonal variability in sUHI magnitudes}{section.3.3}% 40
+\BOOKMARK [2][-]{subsection.3.3.2}{The effect of sensor-surface geometry on sUHI}{section.3.3}% 41
+\BOOKMARK [2][-]{subsection.3.3.3}{The effect of meteorological conditions on sUHI}{section.3.3}% 42
+\BOOKMARK [2][-]{subsection.3.3.4}{The effect of rural/non-urban characteristics on sUHI and a generalizable case for sUHI}{section.3.3}% 43
+\BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 44
+\BOOKMARK [2][-]{subsection.3.4.1}{Diurnal patterns of sUHI}{section.3.4}% 45
+\BOOKMARK [2][-]{subsection.3.4.2}{Seasonal patterns of sUHI}{section.3.4}% 46
+\BOOKMARK [2][-]{subsection.3.4.3}{Sensor-surface-sun geometries and sUHI}{section.3.4}% 47
+\BOOKMARK [2][-]{subsection.3.4.4}{Meteorological controls on sUHI}{section.3.4}% 48
+\BOOKMARK [1][-]{section.3.5}{Conclusion}{chapter.3}% 49
+\BOOKMARK [1][-]{section*.65}{References}{chapter.3}% 50
+\BOOKMARK [0][-]{chapter.4}{Conclusion}{}% 51
+\BOOKMARK [1][-]{section.4.1}{Summary of results}{chapter.4}% 52
+\BOOKMARK [1][-]{section.4.2}{Limitations and future work}{chapter.4}% 53
+\BOOKMARK [1][-]{section.4.3}{Final remarks}{chapter.4}% 54
+\BOOKMARK [1][-]{section*.67}{References}{chapter.4}% 55
+\BOOKMARK [0][-]{appendix.A}{Transmittances for a range of water vapor mass densities and path lengths.}{}% 56

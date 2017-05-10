@@ -5,6 +5,19 @@ Berk, A., Bernstein, L.~S., and Robertson, D.~C. (1987).
 \newblock {MODTRAN: A Moderate Resolution Model for LOWTRAN7}.
 \newblock Technical Report GL-TR-89-0122, United States Air Force.
 
+\bibitem[Ceamanos et~al., 2016]{Ceamanos2017}
+Ceamanos, X., Briottet, X., Roussel, G., Gilardy, H., and Adeline, K. (2016).
+\newblock {Using 3D information for atmospheric correction of airborne
+  hyperspectral images of urban areas}.
+\newblock In {\em Remote Sensing Technologies and Applications in Urban
+  Environments}, volume 10008, pages 1--4.
+
+\bibitem[Roth et~al., 1989]{Roth1989}
+Roth, M., Oke, T.~R., and Emery, W. (1989).
+\newblock {Satellite-derived urban heat islands from three coastal cities and
+  the utilization of such data in urban climatology.}
+\newblock {\em International Journal of Remote Sensing}, 10(11):1699--1720.
+
 \bibitem[Soux et~al., 2004]{Soux2004}
 Soux, A., Voogt, J.~A., and Oke, T.~R. (2004).
 \newblock {A model to calculate what a remote sensor 'sees' of an urban
@@ -16,5 +29,11 @@ Stewart, I.~D. (2011).
 \newblock {A systematic review and scientific critique of methodology in modern
   urban heat island literature}.
 \newblock {\em International Journal of Climatology}, 31(2):200--217.
+
+\bibitem[Sugawara and Takamura, 2006]{Sugawara2006}
+Sugawara, H. and Takamura, T. (2006).
+\newblock {Longwave radiation flux from an urban canopy: Evaluation via
+  measurements of directional radiometric temperature}.
+\newblock {\em Remote Sensing of Environment}, 104(2):226--237.
 
 \end{thebibliography}

@@ -1,11 +1,5 @@
 \begin{thebibliography}{}
 
-\bibitem[Adderley et~al., 2015]{Adderley2015}
-Adderley, C., Christen, A., and Voogt, J.~A. (2015).
-\newblock {The effect of radiometer placement and view on inferred directional
-  and hemispheric radiometric temperatures of an urban canopy}.
-\newblock {\em Atmospheric Measurement Techniques}, 8(2):1891--1933.
-
 \bibitem[Christen et~al., 2012]{Christen2012}
 Christen, A., Meier, F., and Scherer, D. (2012).
 \newblock {High-frequency fluctuations of surface temperatures in an urban
@@ -68,6 +62,12 @@ Peng, S., Piao, S., Ciais, P., Friedlingstein, P., Ottle, C., Br{\'{e}}on,
 \newblock {Surface urban heat island across 419 global big cities}.
 \newblock {\em Environmental Science and Technology}, 46(2):696--703.
 
+\bibitem[Roth et~al., 1989]{Roth1989}
+Roth, M., Oke, T.~R., and Emery, W. (1989).
+\newblock {Satellite-derived urban heat islands from three coastal cities and
+  the utilization of such data in urban climatology.}
+\newblock {\em International Journal of Remote Sensing}, 10(11):1699--1720.
+
 \bibitem[Stewart, 2011]{Stewart2011}
 Stewart, I.~D. (2011).
 \newblock {A systematic review and scientific critique of methodology in modern
@@ -89,5 +89,10 @@ Streutker, D. (2003).
 Voogt, J.~A. and Oke, T.~R. (1997).
 \newblock {Complete urban surface temperatures}.
 \newblock {\em Journal of Applied Meteorology}, 36(9):1117--1132.
+
+\bibitem[Voogt and Oke, 2003]{Voogt2003}
+Voogt, J.~A. and Oke, T.~R. (2003).
+\newblock {Thermal remote sensing of urban climates}.
+\newblock {\em Remote Sensing of Environment}, 86(3):370--384.
 
 \end{thebibliography}
