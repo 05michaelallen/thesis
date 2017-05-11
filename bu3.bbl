@@ -44,6 +44,12 @@ Lagouarde, J.~P., H{\'{e}}non, A., Irvine, M., Voogt, J., Pigeon, G., Moreau,
   Case study of Toulouse (France)}.
 \newblock {\em Remote Sensing of Environment}, 117:19--33.
 
+\bibitem[Oke, 1982]{Oke1982}
+Oke, T.~R. (1982).
+\newblock {The energetic basis of the urban heat island}.
+\newblock {\em Quarterly Journal of the Royal Meteorological Society},
+  108:1--30.
+
 \bibitem[Oke et~al., 2017]{Oke2017}
 Oke, T.~R., Mills, G., Christen, A., and Voogt, J.~A. (2017).
 \newblock {\em {Urban Climates}}.
@@ -85,6 +91,12 @@ Stewart, I.~D. (2011).
 \newblock {A systematic review and scientific critique of methodology in modern
   urban heat island literature}.
 \newblock {\em International Journal of Climatology}, 31(2):200--217.
+
+\bibitem[Stewart et~al., 2014]{Stewart2014}
+Stewart, I.~D., Oke, T.~R., and Krayenhoff, E.~S. (2014).
+\newblock {Evaluation of the ‘local climate zone' scheme using temperature
+  observations and model simulations}.
+\newblock {\em International Journal of Climatology}, 34(4):1062--1080.
 
 \bibitem[Voogt, 1995]{Voogt1995}
 Voogt, J.~A. (1995).

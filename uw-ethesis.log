@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.10)  10 MAY 2017 20:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.10)  11 MAY 2017 13:56
 entering extended mode
 **./uw-ethesis.tex
 (uw-ethesis.tex
@@ -1053,20 +1053,71 @@ Overfull \hbox (0.91884pt too wide) in paragraph at lines 34--34
 tions of the Sperrstrasse 
  []
 
-[14])
+
+Overfull \hbox (4.01051pt too wide) in paragraph at lines 38--38
+ \OT1/ptm/m/n/12 over the sum-mer months of the BUB-BLE cam-paign cal-cu-lated 
+for the Sperrstrasse 
+ []
+
+[14] [15])
 \tf@lof=\write12
 \openout12 = `uw-ethesis.lof'.
 
- [15] [16] [17
+ [16]
+Overfull \hbox (5.15282pt too wide) in paragraph at lines 121--121
+[]|$\OML/cmm/m/it/12 L[]$| 
+ []
+
+
+Overfull \hbox (5.15282pt too wide) in paragraph at lines 122--122
+[]|$\OML/cmm/m/it/12 L[]$| 
+ []
+
+
+Overfull \hbox (5.15282pt too wide) in paragraph at lines 123--123
+[]|$\OML/cmm/m/it/12 L[]$| 
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 146.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd"
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Overfull \hbox (1.74794pt too wide) in paragraph at lines 146--146
+[]|[]| 
+ []
+
+
+Overfull \hbox (1.74794pt too wide) in paragraph at lines 147--147
+[]|[]| 
+ []
+
+
+Overfull \hbox (1.74794pt too wide) in paragraph at lines 148--148
+[]|[]| 
+ []
+
+
+Overfull \hbox (1.74794pt too wide) in paragraph at lines 149--149
+[]|[]| 
+ []
+
+
+Overfull \hbox (1.74794pt too wide) in paragraph at lines 150--150
+[]|[]| 
+ []
+
+
+Overfull \hbox (1.5885pt too wide) in paragraph at lines 181--181
+[]|\OT1/ptm/m/n/12 sUHI$[]$| 
+ []
+
+[17
 
 
 
 
-]
-Overfull \vbox (126.6165pt too high) has occurred while \output is active []
-
-
-[18] [19]) (introduction.tex
+] [18] [19] [20]) (introduction.tex
 Chapter 1.
 (bu1.aux)
 \openout4 = `bu1.aux'.
@@ -1101,14 +1152,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
-[6] <figures/model.png, id=693, 2472.23625pt x 827.34094pt>
+[6] <figures/model.png, id=701, 2472.23625pt x 827.34094pt>
 File: figures/model.png Graphic file (type png)
 
 <use figures/model.png>
 Package pdftex.def Info: figures/model.png used on input line 76.
 (pdftex.def)             Requested size: 426.763pt x 142.81746pt.
  [7 <./figures/model.png>]
-<figures/anisot.png, id=708, 2194.3581pt x 1063.0917pt>
+<figures/anisot.png, id=716, 2194.3581pt x 1063.0917pt>
 File: figures/anisot.png Graphic file (type png)
 
 <use figures/anisot.png>
@@ -1128,14 +1179,14 @@ Chapter 2.
  [15
 
 
-] [16] <figures/spectairtsurf.png, id=789, 462.528pt x 346.896pt>
+] [16] <figures/spectairtsurf.png, id=798, 462.528pt x 346.896pt>
 File: figures/spectairtsurf.png Graphic file (type png)
 
 <use figures/spectairtsurf.png>
 Package pdftex.def Info: figures/spectairtsurf.png used on input line 25.
 (pdftex.def)             Requested size: 460.72124pt x 345.55595pt.
  [17] [18 <./figures/spectairtsurf.png>]
-<figures/spectransheight.png, id=812, 462.528pt x 346.896pt>
+<figures/spectransheight.png, id=820, 462.528pt x 346.896pt>
 File: figures/spectransheight.png Graphic file (type png)
 
 <use figures/spectransheight.png>
@@ -1149,14 +1200,14 @@ Missing character: There is no ò in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
- [23] <figures/lineofsight.png, id=854, 1881.27844pt x 791.95876pt>
+ [23] <figures/lineofsight.png, id=862, 1881.27844pt x 791.95876pt>
 File: figures/lineofsight.png Graphic file (type png)
 
 <use figures/lineofsight.png>
 Package pdftex.def Info: figures/lineofsight.png used on input line 97.
 (pdftex.def)             Requested size: 460.72124pt x 193.94096pt.
  [24 <./figures/lineofsight.png>] [25]
-<figures/flow.png, id=878, 3088.53876pt x 1241.63875pt>
+<figures/flow.png, id=886, 3088.53876pt x 1241.63875pt>
 File: figures/flow.png Graphic file (type png)
  <use figures/flow.png>
 Package pdftex.def Info: figures/flow.png used on input line 115.
@@ -1182,7 +1233,7 @@ Overfull \hbox (1.14282pt too wide) in paragraph at lines 136--137
 []|\OT1/ptm/m/n/12 Southeast| 
  []
 
-[29] <figures/23radtran.png, id=916, 1954.1808pt x 825.8052pt>
+[29] <figures/23radtran.png, id=924, 1954.1808pt x 825.8052pt>
 File: figures/23radtran.png Graphic file (type png)
 
 <use figures/23radtran.png>
@@ -1197,12 +1248,6 @@ File: omlptm.fd
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 171.
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 173.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd"
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ò in font ptmr7t!
@@ -1216,21 +1261,21 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 
-<figures/dometrans.png, id=933, 462.528pt x 346.896pt>
+<figures/dometrans.png, id=941, 462.528pt x 346.896pt>
 File: figures/dometrans.png Graphic file (type png)
 
 <use figures/dometrans.png>
 Package pdftex.def Info: figures/dometrans.png used on input line 176.
 (pdftex.def)             Requested size: 460.72124pt x 345.55595pt.
  [32] [33 <./figures/dometrans.png>] [34] [35]
-[36] <figures/eval.png, id=977, 1467.98438pt x 1467.98438pt>
+[36] <figures/eval.png, id=985, 1467.98438pt x 1467.98438pt>
 File: figures/eval.png Graphic file (type png)
 
 <use figures/eval.png>
 Package pdftex.def Info: figures/eval.png used on input line 220.
 (pdftex.def)             Requested size: 460.72124pt x 460.71516pt.
  [37] [38 <./figures/eval.png>] [39]
-<figures/bx_ac1.png, id=1011, 433.62pt x 567.3195pt>
+<figures/bx_ac1.png, id=1019, 433.62pt x 567.3195pt>
 File: figures/bx_ac1.png Graphic file (type png)
  <use figures/bx_ac1.png>
 Package pdftex.def Info: figures/bx_ac1.png used on input line 263.
@@ -1241,35 +1286,35 @@ Overfull \vbox (10.89095pt too high) has occurred while \output is active []
 
 
 [41 <./figures/bx_ac1.png>]
-<figures/season_sw.png, id=1022, 455.5419pt x 768.2301pt>
+<figures/season_sw.png, id=1030, 1423.56844pt x 2400.71906pt>
 File: figures/season_sw.png Graphic file (type png)
 
 <use figures/season_sw.png>
 Package pdftex.def Info: figures/season_sw.png used on input line 272.
-(pdftex.def)             Requested size: 299.97739pt x 505.88466pt.
+(pdftex.def)             Requested size: 299.97913pt x 505.88759pt.
 
-<figures/season_sc.png, id=1023, 455.5419pt x 768.2301pt>
+<figures/season_sc.png, id=1031, 1423.56844pt x 2400.71906pt>
 File: figures/season_sc.png Graphic file (type png)
 
 <use figures/season_sc.png>
 Package pdftex.def Info: figures/season_sc.png used on input line 281.
-(pdftex.def)             Requested size: 299.97739pt x 505.88466pt.
+(pdftex.def)             Requested size: 299.97913pt x 505.88759pt.
  [42 <./figures/season_sw.png>]
-<figures/meteo_k_hem.png, id=1029, 455.5419pt x 768.2301pt>
+<figures/meteo_k_hem.png, id=1037, 1423.56844pt x 2400.71906pt>
 File: figures/meteo_k_hem.png Graphic file (type png)
 
 <use figures/meteo_k_hem.png>
 Package pdftex.def Info: figures/meteo_k_hem.png used on input line 290.
-(pdftex.def)             Requested size: 299.97739pt x 505.88466pt.
+(pdftex.def)             Requested size: 299.97913pt x 505.88759pt.
  [43 <./figures/season_sc.png>]
-<figures/meteo_air_hum.png, id=1035, 455.5419pt x 768.2301pt>
+<figures/meteo_air_hum.png, id=1043, 1423.56844pt x 2400.71906pt>
 File: figures/meteo_air_hum.png Graphic file (type png)
 
 <use figures/meteo_air_hum.png>
 Package pdftex.def Info: figures/meteo_air_hum.png used on input line 299.
-(pdftex.def)             Requested size: 299.97739pt x 505.88466pt.
+(pdftex.def)             Requested size: 299.97913pt x 505.88759pt.
  [44 <./figures/meteo_k_hem.png>]
-<figures/hum_test.png, id=1041, 433.62pt x 325.215pt>
+<figures/hum_test.png, id=1049, 433.62pt x 325.215pt>
 File: figures/hum_test.png Graphic file (type png)
 
 <use figures/hum_test.png>
@@ -1289,21 +1334,21 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `subscript' on input line 319.
 
 [46 <./figures/hum_test.png>]
-<figures/nad_hem_314.png, id=1054, 433.62pt x 325.215pt>
+<figures/nad_hem_314.png, id=1063, 433.62pt x 325.215pt>
 File: figures/nad_hem_314.png Graphic file (type png)
 
 <use figures/nad_hem_314.png>
 Package pdftex.def Info: figures/nad_hem_314.png used on input line 329.
 (pdftex.def)             Requested size: 426.81056pt x 320.10791pt.
 
-<figures/tc_mean_314.png, id=1055, 469.755pt x 531.1845pt>
+<figures/tc_mean_314.png, id=1064, 469.755pt x 531.1845pt>
 File: figures/tc_mean_314.png Graphic file (type png)
 
 <use figures/tc_mean_314.png>
 Package pdftex.def Info: figures/tc_mean_314.png used on input line 338.
 (pdftex.def)             Requested size: 426.78961pt x 482.60054pt.
  [47 <./figures/nad_hem_314.png>] [48 <./figures/tc_mean_314.png>] [49] <figure
-s/nonuniform.png, id=1073, 1927.2pt x 1445.4pt>
+s/nonuniform.png, id=1081, 1927.2pt x 1445.4pt>
 File: figures/nonuniform.png Graphic file (type png)
 
 <use figures/nonuniform.png>
@@ -1325,41 +1370,41 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `subscript' on input line 402.
 
-[54] [55] <figures/placement2.png, id=1125, 1520.5608pt x 1371.6846pt>
+[54] [55] <figures/placement2.png, id=1133, 1520.5608pt x 1371.6846pt>
 File: figures/placement2.png Graphic file (type png)
 
 <use figures/placement2.png>
 Package pdftex.def Info: figures/placement2.png used on input line 418.
 (pdftex.def)             Requested size: 426.79822pt x 385.01093pt.
  [56]
-<figures/bars2_ann.png, id=1130, 433.62pt x 325.215pt>
+<figures/bars2_ann.png, id=1138, 433.62pt x 325.215pt>
 File: figures/bars2_ann.png Graphic file (type png)
 
 <use figures/bars2_ann.png>
 Package pdftex.def Info: figures/bars2_ann.png used on input line 427.
 (pdftex.def)             Requested size: 426.81056pt x 320.10791pt.
  [57 <./figures/placement2.png>] [58 <./figures/bars2_ann.png>] <figures/bars45
-_ann.png, id=1149, 433.62pt x 325.215pt>
+_ann.png, id=1158, 433.62pt x 325.215pt>
 File: figures/bars45_ann.png Graphic file (type png)
 
 <use figures/bars45_ann.png>
 Package pdftex.def Info: figures/bars45_ann.png used on input line 438.
 (pdftex.def)             Requested size: 426.81056pt x 320.10791pt.
  [59 <./figures/bars45_ann.png>]
-<figures/vf_all.png, id=1158, 469.755pt x 531.1845pt>
+<figures/vf_all.png, id=1166, 469.755pt x 531.1845pt>
 File: figures/vf_all.png Graphic file (type png)
  <use figures/vf_all.png>
 Package pdftex.def Info: figures/vf_all.png used on input line 451.
 (pdftex.def)             Requested size: 426.78961pt x 482.60054pt.
 
-[60] <figures/vf_all45.png, id=1163, 469.755pt x 531.1845pt>
+[60] <figures/vf_all45.png, id=1171, 469.755pt x 531.1845pt>
 File: figures/vf_all45.png Graphic file (type png)
 
 <use figures/vf_all45.png>
 Package pdftex.def Info: figures/vf_all45.png used on input line 460.
 (pdftex.def)             Requested size: 426.78961pt x 482.60054pt.
  [61 <./figures/vf_all.png>] [62 <./figures/vf_all45.png>] [63] <figures/para_e
-val.png, id=1194, 433.62pt x 220.4235pt>
+val.png, id=1202, 433.62pt x 220.4235pt>
 File: figures/para_eval.png Graphic file (type png)
 
 <use figures/para_eval.png>
@@ -1474,35 +1519,35 @@ Overfull \hbox (26.07007pt too wide) in alignment at lines 96--105
 [][][][][] 
  []
 
-[83] [84] [85] <figures/heatsuhi.png, id=1380, 462.528pt x 346.896pt>
-File: figures/heatsuhi.png Graphic file (type png)
+[83] [84] [85] <figures/heatsuhi5_11.png, id=1388, 462.528pt x 346.896pt>
+File: figures/heatsuhi5_11.png Graphic file (type png)
 
-<use figures/heatsuhi.png>
-Package pdftex.def Info: figures/heatsuhi.png used on input line 140.
+<use figures/heatsuhi5_11.png>
+Package pdftex.def Info: figures/heatsuhi5_11.png used on input line 140.
 (pdftex.def)             Requested size: 426.8154pt x 320.11154pt.
- [86 <./figures/heatsuhi.png>]
-<figures/heatatuhi.png, id=1388, 462.528pt x 346.896pt>
-File: figures/heatatuhi.png Graphic file (type png)
+ [86 <./figures/heatsuhi5_11.png>]
+<figures/heatatuhi5_11.png, id=1396, 462.528pt x 346.896pt>
+File: figures/heatatuhi5_11.png Graphic file (type png)
 
-<use figures/heatatuhi.png>
-Package pdftex.def Info: figures/heatatuhi.png used on input line 149.
+<use figures/heatatuhi5_11.png>
+Package pdftex.def Info: figures/heatatuhi5_11.png used on input line 149.
 (pdftex.def)             Requested size: 426.8154pt x 320.11154pt.
- [87 <./figures/heatatuhi.png>]
-<figures/heat_uhi_diff.png, id=1395, 462.528pt x 346.896pt>
-File: figures/heat_uhi_diff.png Graphic file (type png)
+ [87 <./figures/heatatuhi5_11.png>]
+<figures/heat_uhi_diff5_11.png, id=1403, 462.528pt x 346.896pt>
+File: figures/heat_uhi_diff5_11.png Graphic file (type png)
 
-<use figures/heat_uhi_diff.png>
-Package pdftex.def Info: figures/heat_uhi_diff.png used on input line 158.
+<use figures/heat_uhi_diff5_11.png>
+Package pdftex.def Info: figures/heat_uhi_diff5_11.png used on input line 158.
 (pdftex.def)             Requested size: 426.8154pt x 320.11154pt.
 
-<figures/vanc_suhi.png, id=1397, 462.528pt x 346.896pt>
+<figures/vanc_suhi.png, id=1405, 462.528pt x 346.896pt>
 File: figures/vanc_suhi.png Graphic file (type png)
 
 <use figures/vanc_suhi.png>
 Package pdftex.def Info: figures/vanc_suhi.png used on input line 167.
 (pdftex.def)             Requested size: 426.8154pt x 320.11154pt.
- [88 <./figures/heat_uhi_diff.png>]
-<figures/bxsUHI_season_bubble.png, id=1404, 433.62pt x 567.3195pt>
+ [88 <./figures/heat_uhi_diff5_11.png>]
+<figures/bxsUHI_season_bubble.png, id=1413, 433.62pt x 567.3195pt>
 File: figures/bxsUHI_season_bubble.png Graphic file (type png)
 
 <use figures/bxsUHI_season_bubble.png>
@@ -1514,7 +1559,7 @@ Overfull \vbox (10.89095pt too high) has occurred while \output is active []
 
 
 [90 <./figures/bxsUHI_season_bubble.png>]
-<figures/bxsUHI_season_vanc.png, id=1416, 433.62pt x 567.3195pt>
+<figures/bxsUHI_season_vanc.png, id=1424, 433.62pt x 567.3195pt>
 File: figures/bxsUHI_season_vanc.png Graphic file (type png)
 
 <use figures/bxsUHI_season_vanc.png>
@@ -1526,7 +1571,7 @@ Overfull \vbox (10.89095pt too high) has occurred while \output is active []
 
 
 [91 <./figures/bxsUHI_season_vanc.png>]
-<figures/bxsUHI_iop_bubble.png, id=1423, 433.62pt x 567.3195pt>
+<figures/bxsUHI_iop_bubble.png, id=1431, 433.62pt x 567.3195pt>
 File: figures/bxsUHI_iop_bubble.png Graphic file (type png)
 
 <use figures/bxsUHI_iop_bubble.png>
@@ -1537,28 +1582,28 @@ Overfull \vbox (25.39095pt too high) has occurred while \output is active []
 
 
 [93 <./figures/bxsUHI_iop_bubble.png>] [94]
-<figures/meteo_kdown.png, id=1442, 469.755pt x 234.8775pt>
+<figures/meteo_kdown.png, id=1451, 469.755pt x 234.8775pt>
 File: figures/meteo_kdown.png Graphic file (type png)
 
 <use figures/meteo_kdown.png>
 Package pdftex.def Info: figures/meteo_kdown.png used on input line 213.
 (pdftex.def)             Requested size: 426.78961pt x 213.39479pt.
 
-<figures/meteo_wv.png, id=1443, 469.755pt x 234.8775pt>
+<figures/meteo_wv.png, id=1452, 469.755pt x 234.8775pt>
 File: figures/meteo_wv.png Graphic file (type png)
 
 <use figures/meteo_wv.png>
 Package pdftex.def Info: figures/meteo_wv.png used on input line 220.
 (pdftex.def)             Requested size: 426.78961pt x 213.39479pt.
  [95 <./figures/meteo_kdown.png>]
-<figures/meteo_hum.png, id=1450, 469.755pt x 234.8775pt>
+<figures/meteo_hum.png, id=1458, 469.755pt x 234.8775pt>
 File: figures/meteo_hum.png Graphic file (type png)
 
 <use figures/meteo_hum.png>
 Package pdftex.def Info: figures/meteo_hum.png used on input line 227.
 (pdftex.def)             Requested size: 426.78961pt x 213.39479pt.
  [96 <./figures/meteo_wv.png>]
-<figures/meteo_atuhi.png, id=1456, 469.755pt x 234.8775pt>
+<figures/meteo_atuhi.png, id=1464, 469.755pt x 234.8775pt>
 File: figures/meteo_atuhi.png Graphic file (type png)
 
 <use figures/meteo_atuhi.png>
@@ -1568,7 +1613,7 @@ Package pdftex.def Info: figures/meteo_atuhi.png used on input line 234.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
- [98 <./figures/meteo_atuhi.png>] <figures/vanc_kdown.png, id=1472, 469.755pt x
+ [98 <./figures/meteo_atuhi.png>] <figures/vanc_kdown.png, id=1480, 469.755pt x
  234.8775pt>
 File: figures/vanc_kdown.png Graphic file (type png)
 
@@ -1576,59 +1621,58 @@ File: figures/vanc_kdown.png Graphic file (type png)
 Package pdftex.def Info: figures/vanc_kdown.png used on input line 250.
 (pdftex.def)             Requested size: 426.78961pt x 213.39479pt.
  [99]
-<figures/vanc_wv.png, id=1477, 469.755pt x 234.8775pt>
+<figures/vanc_wv.png, id=1485, 469.755pt x 234.8775pt>
 File: figures/vanc_wv.png Graphic file (type png)
 
 <use figures/vanc_wv.png>
 Package pdftex.def Info: figures/vanc_wv.png used on input line 257.
 (pdftex.def)             Requested size: 426.78961pt x 213.39479pt.
  [100 <./figures/vanc_kdown.png>]
-<figures/vanc_hum.png, id=1483, 469.755pt x 234.8775pt>
+<figures/vanc_hum.png, id=1492, 469.755pt x 234.8775pt>
 File: figures/vanc_hum.png Graphic file (type png)
 
 <use figures/vanc_hum.png>
 Package pdftex.def Info: figures/vanc_hum.png used on input line 264.
 (pdftex.def)             Requested size: 426.78961pt x 213.39479pt.
  [101 <./figures/vanc_wv.png>]
-<figures/vanc_swc_dn.png, id=1490, 469.755pt x 234.8775pt>
+<figures/vanc_swc_dn.png, id=1498, 469.755pt x 234.8775pt>
 File: figures/vanc_swc_dn.png Graphic file (type png)
 
 <use figures/vanc_swc_dn.png>
 Package pdftex.def Info: figures/vanc_swc_dn.png used on input line 271.
 (pdftex.def)             Requested size: 426.78961pt x 213.39479pt.
  [102 <./figures/vanc_hum.png>] [103 <./figures/vanc_swc_dn.png>]
-<figures/rur_uhi_means1.png, id=1503, 1355.0625pt x 1693.82813pt>
+<figures/rur_uhi_means1.png, id=1510, 1355.0625pt x 1693.82813pt>
 File: figures/rur_uhi_means1.png Graphic file (type png)
 
 <use figures/rur_uhi_means1.png>
-Package pdftex.def Info: figures/rur_uhi_means1.png used on input line 286.
+Package pdftex.def Info: figures/rur_uhi_means1.png used on input line 284.
 (pdftex.def)             Requested size: 404.70235pt x 505.87794pt.
  [104]
 Overfull \vbox (54.37793pt too high) has occurred while \output is active []
 
 
-[105 <./figures/rur_uhi_means1.png>]
-<figures/gen_case.png, id=1513, 1355.0625pt x 1693.82813pt>
-File: figures/gen_case.png Graphic file (type png)
+[105 <./figures/rur_uhi_means1.png>] [106] [107] [108]
+<figures/gen_case1.png, id=1553, 1355.0625pt x 1693.82813pt>
+File: figures/gen_case1.png Graphic file (type png)
 
-<use figures/gen_case.png>
-Package pdftex.def Info: figures/gen_case.png used on input line 293.
+<use figures/gen_case1.png>
+Package pdftex.def Info: figures/gen_case1.png used on input line 312.
 (pdftex.def)             Requested size: 404.70235pt x 505.87794pt.
+ [109]
+Overfull \vbox (25.37793pt too high) has occurred while \output is active []
 
-Overfull \vbox (10.87793pt too high) has occurred while \output is active []
 
-
-[106 <./figures/gen_case.png>] [107] [108] [109] [110] [111]
+[110 <./figures/gen_case1.png>] [111] [112]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
- [112] [113]
-[114] [115] [116] [117] [118] (bu3.bblpdfTeX warning (ext4): destination with t
-he same identifier (name{cite.Adderley2015}) has been already used, duplicate i
-gnored
+ [113] [114] [115] [116] [117]
+[118] [119] (bu3.bblpdfTeX warning (ext4): destination with the same identifier
+ (name{cite.Adderley2015}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.3 \bibitem[Adderley et~al., 2015]{Adderley2015}
@@ -1661,7 +1705,7 @@ ate ignored
 <to be read again> 
                    \relax 
 l.39 ...tem[Lagouarde et~al., 2012]{Lagouarde2012}
-                                                   [119
+                                                   [120
 
 
 
@@ -1670,25 +1714,25 @@ l.39 ...tem[Lagouarde et~al., 2012]{Lagouarde2012}
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.47 \bibitem[Oke et~al., 2017]{Oke2017}
+l.53 \bibitem[Oke et~al., 2017]{Oke2017}
                                         pdfTeX warning (ext4): destination with
  the same identifier (name{cite.Peng2012}) has been already used, duplicate ign
 ored
 <to be read again> 
                    \relax 
-l.52 \bibitem[Peng et~al., 2012]{Peng2012}
+l.58 \bibitem[Peng et~al., 2012]{Peng2012}
                                           pdfTeX warning (ext4): destination wi
 th the same identifier (name{cite.Roberts2010}) has been already used, duplicat
 e ignored
 <to be read again> 
                    \relax 
-l.58 \bibitem[Roberts, 2010]{Roberts2010}
+l.64 \bibitem[Roberts, 2010]{Roberts2010}
                                          pdfTeX warning (ext4): destination wit
 h the same identifier (name{cite.Rotach2005}) has been already used, duplicate 
 ignored
 <to be read again> 
                    \relax 
-l.63 \bibitem[Rotach et~al., 2005]{Rotach2005}
+l.69 \bibitem[Rotach et~al., 2005]{Rotach2005}
                                               
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
@@ -1697,35 +1741,38 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.Soux2004
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.77 \bibitem[Soux et~al., 2004]{Soux2004}
+l.83 \bibitem[Soux et~al., 2004]{Soux2004}
                                           pdfTeX warning (ext4): destination wi
 th the same identifier (name{cite.Stewart2011}) has been already used, duplicat
 e ignored
 <to be read again> 
                    \relax 
-l.83 \bibitem[Stewart, 2011]{Stewart2011}
-                                          [120]pdfTeX warning (ext4): destinati
-on with the same identifier (name{cite.Voogt1998a}) has been already used, dupl
-icate ignored
+l.89 \bibitem[Stewart, 2011]{Stewart2011}
+                                          [121]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ò in font ptmr7t!
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Voogt199
+8a}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.94 \bibitem[Voogt and Oke, 1998]{Voogt1998a}
-                                              pdfTeX warning (ext4): destinatio
-n with the same identifier (name{cite.Voogt2003}) has been already used, duplic
-ate ignored
+l.106 \bibitem[Voogt and Oke, 1998]{Voogt1998a}
+                                               pdfTeX warning (ext4): destinati
+on with the same identifier (name{cite.Voogt2003}) has been already used, dupli
+cate ignored
 <to be read again> 
                    \relax 
-l.101 \bibitem[Voogt and Oke, 2003]{Voogt2003}
+l.113 \bibitem[Voogt and Oke, 2003]{Voogt2003}
                                               ) (bu3.aux) (bu.aux))
-(conclusion.tex [121]
+(conclusion.tex [122]
 Chapter 4.
 (bu4.aux)
 \openout4 = `bu4.aux'.
 
- [122
+ [123
 
 
-] [123] [124] [125] [126] [127] (bu4.bblpdfTeX warning (ext4): destination with
+] [124] [125] [126] [127] [128] (bu4.bblpdfTeX warning (ext4): destination with
  the same identifier (name{cite.Adderley2015}) has been already used, duplicate
  ignored
 <to be read again> 
@@ -1761,15 +1808,15 @@ e ignored
 <to be read again> 
                    \relax 
 l.38 \bibitem[Stewart, 2011]{Stewart2011}
-                                          [128
+                                          [129
 
 
 
 
-]) (bu4.aux) (bu.aux)) [129]
+]) (bu4.aux) (bu.aux)) [130]
 (appendix_a.tex
 Appendix A.
-[130
+[131
 
 
 
@@ -1805,19 +1852,19 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 This document will not have a glossary.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 262.
-[131] [132] [133] [134] [135]
+[132] [133] [134] [135] [136]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 262.
  (uw-ethesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 262.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 262.
 Package rerunfilecheck Info: File `uw-ethesis.out' has not changed.
-(rerunfilecheck)             Checksum: D24F4D7CD2203DFA4BD5835FB76F971F;4649.
+(rerunfilecheck)             Checksum: 6E891B3AB762AC78D4FEAB5E6B9F4EDB;4615.
  ) 
 Here is how much of TeX's memory you used:
- 26244 strings out of 493333
- 506031 string characters out of 3139194
- 722059 words of memory out of 3000000
- 28959 multiletter control sequences out of 15000+200000
+ 26258 strings out of 493333
+ 506293 string characters out of 3139194
+ 722515 words of memory out of 3000000
+ 28966 multiletter control sequences out of 15000+200000
  47157 words of font info for 120 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,20n,77p,10383b,1267s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1848,9 +1895,9 @@ ublic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on uw-ethesis.pdf (155 pages, 12953715 bytes).
+Output written on uw-ethesis.pdf (157 pages, 12906781 bytes).
 PDF statistics:
- 1838 PDF objects out of 2073 (max. 8388607)
- 370 named destinations out of 1000 (max. 500000)
+ 1866 PDF objects out of 2073 (max. 8388607)
+ 377 named destinations out of 1000 (max. 500000)
  654 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -103,80 +103,127 @@ To be filled in at a later date.
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{p{1.5cm}p{2cm}p{10cm}}
+	\begin{tabular}{p{1.5cm}p{3cm}p{10cm}}
 		Roman &&\\
 		\toprule
-		
 		Symbol & Unit & Property \\
 		\midrule
 		$C$ & \si{\joule} & heat capacity \\
 		FOV & \si{\deg} & sensor field of view \\
-		\textit{H} & \si{\meter} & building width \\
-		$Q*$ & \si{\watt\per\square\meter} & net radiation flux density \\
-		$\Delta Q_A$ & \si{\watt\per\square\meter} & net advective heat flux density \\
-		$\Delta Q_G$ & \si{\watt\per\square\meter} & net heat storage flux density \\
-		$Q_E$ & \si{\watt\per\square\meter} & latent heat flux density \\
-		$Q_F$ & \si{\watt\per\square\meter} & anthropogenic heat flux density \\
-		$Q_H$ & \si{\watt\per\square\meter} & sensible heat flux density \\
-		$t$ & \si{\minute} & time \\
-		T\textsubscript{air} & \si{\kelvin} & air temperature \\
-		T\textsubscript{comp} & \si{\kelvin} & complete urban surface temperature\\
-		T\textsubscript{hem} & \si{\kelvin} & urban surface temperature viewed from a hemispherical remote sensor\\
-		T\textsubscript{plan} & \si{\kelvin} & urban surface temperature viewed from a sensor in the nadir\\
-		T\textsubscript{road} & \si{\kelvin} &road surface temperature\\
-		T\textsubscript{roof} & \si{\kelvin} & roof surface temperature \\
-		T\textsubscript{surf} & \si{\kelvin} & surface temperature \\
-		T\textsubscript{wall} & \si{\kelvin} & wall surface temperature\\
-		
-		
-		
-		aUHI & \si{\kelvin} & air temperature urban heat island effect \\
-		clUHI & \si{\kelvin} & canopy layer air temperature urban heat island effect \\
-		sUHI & \si{\kelvin} & surface temperature urban heat island effect \\
-		$V_B$ & - & effects from background climate on observation of a given meteorological variable \\
-		$V_H$ & - & effects from the urban environment on observation of a given meteorological variable \\
-		$V_L$ & - & effects from local topography on observation of a given meteorological variable \\
-		$V_M$ & - & observed meteorological variable \\
-		$V_{M, U} $ & - & observed meteorological variable (urban) \\
-		$V_{M  R}$ & - & observed meteorological variable (rural) \\
-		$z$ & \si{\meter} & layer thickness (air, surface, or subsurface)\\
+		\textit{H} & \si{\meter} & building height \\
+		H & \si{\gram\per\meter\cubed} & water vapor mass density \\
+		K\textsubscript{up} & \si{\watt\per\square\meter} & upwelling shortwave radiation \\
+		K\textsubscript{down} & \si{\watt\per\square\meter} & downwelling shortwave radiation \\
+		$L_0$ & \si{\watt\per\square\meter} & irradiance at the surface\\
+		$L_z$ & \si{\watt\per\square\meter} & irradiance at height $z$\\
+		$L^{\downarrow}_{sky}$ & \si{\watt\per\square\meter} & upwelling longwave flux density emitted from the atmosphere\\
+		$L^{\uparrow}_z$ & \si{\watt\per\square\meter} & upwelling longwave flux density at height $z$\\
+		$L_{atm}^{at-sensor}$ & \si{\watt\per\square\meter} & the component of at-sensor irradiance from the atmosphere\\
+		$L_{surf}^{at-sensor}$ & \si{\watt\per\square\meter} & the component of at-sensor irradiance from the surface\\
+		$L_{total}^{at-sensor}$ & \si{\watt\per\square\meter} & total at-sensor irradiance\\
+		L\textsubscript{down} & \si{\watt\per\square\meter} & downwelling longwave flux density \\
+		L\textsubscript{up} & \si{\watt\per\square\meter} & upwelling longwave flux density \\
+		$L'_z$ & \si{\watt\per\square\meter\per\steradian} & directional radiance through path length $z$\\
+		P & \si{\hecto\pascal} & atmospheric pressure \\
 		\bottomrule
 	\end{tabular} 
 \end{table}
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{p{1.5cm}p{2cm}p{10cm}}
-		Roman &&\\
+	\begin{tabular}{p{1.5cm}p{3cm}p{10cm}}
 		\toprule
-		
 		Symbol & Unit & Property \\
 		\midrule
-		$C$ & \si{\joule} & heat capacity \\
-		FOV & \si{\deg} & sensor field of view \\
-		\textit{H} & \si{\meter} & building width \\
 		$Q*$ & \si{\watt\per\square\meter} & net radiation flux density \\
 		$\Delta Q_A$ & \si{\watt\per\square\meter} & net advective heat flux density \\
 		$\Delta Q_G$ & \si{\watt\per\square\meter} & net heat storage flux density \\
 		$Q_E$ & \si{\watt\per\square\meter} & latent heat flux density \\
 		$Q_F$ & \si{\watt\per\square\meter} & anthropogenic heat flux density \\
 		$Q_H$ & \si{\watt\per\square\meter} & sensible heat flux density \\
+		$ r $ & - & spectral sensor response \\
+		$\overline{r}$ & - & Planck weighted mean broadband sensor response \\
+		$R$ & \si{\watt\per\square\meter\per\steradian\per\micro\meter} & spectral directional radiance \\
+		$R^{\uparrow}_0$ & \si{\watt\per\square\meter\per\steradian\per\micro\meter} & upwelling spectral directional radiance at height zero\\
+		$R^{\uparrow}_{atm}$ & \si{\watt\per\square\meter\per\steradian\per\micro\meter} & upwelling spectral directional radiance emitted from the atmosphere\\
+		$R^{\downarrow}_{sky}$ & \si{\watt\per\square\meter\per\steradian\per\micro\meter} & downwelling spectral directional radiance emitted from the sky/atmosphere\\
+		$R^{\uparrow}_z$ & \si{\watt\per\square\meter\per\steradian\per\micro\meter} & upwelling spectral directional radiance at height $z$\\
 		$t$ & \si{\minute} & time \\
+		T & \si{\kelvin} & temperature \\
+		T\textsubscript{adj} & \si{\kelvin} & dome adjusted T\textsubscript{hem, r} \\
 		T\textsubscript{air} & \si{\kelvin} & air temperature \\
-		T\textsubscript{surf} & \si{\kelvin} & surface temperature \\
+		T\textsubscript{bias} & \si{\kelvin} & bias in T\textsubscript{hem, r} in terms of temperature \\
+		T\textsubscript{bright} & \si{\kelvin} & surface brightness temperature\\
+		T\textsubscript{calib} & \si{\kelvin} & instrument calibration temperature\\
 		T\textsubscript{comp} & \si{\kelvin} & complete urban surface temperature\\
-		T\textsubscript{plan} & \si{\kelvin} & urban surface temperature viewed from a sensor in the nadir\\
+		T\textsubscript{emiss} & \si{\kelvin} & emission temperature\\
 		T\textsubscript{hem} & \si{\kelvin} & urban surface temperature viewed from a hemispherical remote sensor\\
-		aUHI & \si{\kelvin} & air temperature urban heat island effect \\
-		clUHI & \si{\kelvin} & canopy layer air temperature urban heat island effect \\
-		sUHI & \si{\kelvin} & surface temperature urban heat island effect \\
+		T\textsubscript{hem, b} & \si{\kelvin} & urban surface brightness temperature viewed from a hemispherical remote sensor\\
+		T\textsubscript{hem, r} & \si{\kelvin} & urban surface radiometric  temperature viewed from a hemispherical remote sensor\\
+		\bottomrule
+	\end{tabular} 
+\end{table}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{1.5cm}p{3cm}p{10cm}}
+		\toprule
+		Symbol & Unit & Property \\
+		\midrule
+		T\textsubscript{plan} & \si{\kelvin} & urban surface temperature viewed from a sensor in the nadir\\
+		T\textsubscript{rad} & \si{\kelvin} & radiometric surface temperature\\
+		T\textsubscript{road} & \si{\kelvin} & road surface temperature\\
+		T\textsubscript{roof} & \si{\kelvin} & roof surface temperature \\
+		T\textsubscript{surf} & \si{\kelvin} & surface temperature \\
+		T\textsubscript{wall} & \si{\kelvin} & wall surface temperature\\
+		aUHI & \si{\kelvin} & air temperature urban heat island magnitude \\
+		clUHI & \si{\kelvin} & canopy layer air temperature urban heat island magnitude \\
+		sUHI & \si{\kelvin} & surface temperature urban heat island magnitude \\
+		sUHI\textsubscript{comp}  & \si{\kelvin} & surface urban heat island magnitude calculated from T\textsubscript{comp} \\
+		sUHI\textsubscript{hem}  & \si{\kelvin} & surface urban heat island magnitude calculated from T\textsubscript{hem, r} \\
+		sUHI\textsubscript{plan}  & \si{\kelvin} & surface urban heat island magnitude calculated from T\textsubscript{plan} \\
 		$V_B$ & - & effects from background climate on observation of a given meteorological variable \\
 		$V_H$ & - & effects from the urban environment on observation of a given meteorological variable \\
 		$V_L$ & - & effects from local topography on observation of a given meteorological variable \\
 		$V_M$ & - & observed meteorological variable \\
 		$V_{M, U} $ & - & observed meteorological variable (urban) \\
 		$V_{M  R}$ & - & observed meteorological variable (rural) \\
-		$z$ & \si{\meter} & layer thickness (air, surface, or subsurface)\\
+		\textit{W} & \si{\meter} & building width \\
+		WD & \si{\deg} & wind direction \\
+		WV & \si{\meter\per\second} & wind velocity \\
+		$z$ & \si{\meter} & height/path length \\
+		$z_H$ & \si{\meter} & mean building height \\
+		$z_t$ & \si{\meter} & layer thickness\\
+		\bottomrule
+	\end{tabular} 
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{1.5cm}p{3cm}p{10cm}}
+		Greek &&\\
+		\toprule
+		Symbol & Unit & Property \\
+		\midrule
+		$\alpha $ & - & albedo \\
+		$\epsilon$ & - & emissivity \\
+		$\epsilon_\lambda$ & - & spectral emissivity \\
+		$\theta$ & \si{\deg} & zenith angle \\
+		$\lambda$ & \si{\micro\meter} & wavelength \\
+		$\lambda_B $ & - & plan area of buildings \\
+		$\lambda_C $ &- & complete aspect ratio \\
+		$\lambda_I $ & -& plan area of impervious ground \\
+		$ \lambda_P$ & -& plan aspect ratio\\
+		$ \lambda_T $ & -& plan area of trees \\
+		$ \lambda_V$ & -& plan area of ground vegetation \\
+		$\nu$ & \si{\per\centi\meter} & wavenumber \\
+		$\sigma$ & \si{\watt\meter^{-2}\kelvin^{-4}} & Stefan Boltzmann constant \\
+		$\sigma_H $ & \si{\meter} & standard deviation of building height \\
+		$\tau $ & - & atmospheric transmittance \\ 
+		$\tau_d $ & - & atmospheric transmittance \\ 
+		$\tau_\lambda $ & - & spectral atmospheric transmittance \\ 
+		$\tau_{\Phi} $ & - & hemispherical  atmospheric transmittance \\ 
+		$\phi$ & \si{\deg} & azimuth angle \\
+		$\Phi $ & - & view factor \\
 		\bottomrule
 	\end{tabular} 
 \end{table}
