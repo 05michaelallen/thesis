@@ -13,7 +13,7 @@
 \contentsline {subsection}{\numberline {2.2.3}Atmospheric correction of near-ground TIR}{23}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}A "rolling lookup table" method for hemispherical atmospheric correction}{26}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Study area}{27}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Modeling path lengths of 3-dimensional terrain}{29}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}Modeling path lengths of 3-dimensional terrain}{30}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Modeling hemispherical irradiances}{31}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}Evaluation of the method using profiles of upwelling longwave radiation over a homogeneous flat surface}{35}{section.2.4}
 \contentsline {section}{\numberline {2.5}Results}{39}{section.2.5}
@@ -31,26 +31,28 @@
 \contentsline {section}{\numberline {3.1}Introduction}{73}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Bias in thermal remote sensing}{75}{subsection.3.1.1}
 \contentsline {section}{\numberline {3.2}Methods}{77}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}A method to retrieve hemispherical radiometric urban T\textsubscript {surf}}{78}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Method evaluation and sensitivity testing}{80}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}A parameterization scheme}{81}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Study area}{82}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}sUHI analysis}{85}{subsection.3.2.5}
-\contentsline {section}{\numberline {3.3}Results}{87}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Diurnal and seasonal variability in sUHI magnitudes}{87}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}The effect of sensor-surface geometry on sUHI}{93}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}The effect of meteorological conditions on sUHI}{95}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}The effect of rural/non-urban characteristics on sUHI and a generalizable case for sUHI}{105}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}Discussion}{108}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Diurnal patterns of sUHI}{108}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Seasonal patterns of sUHI}{111}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Sensor-surface-sun geometries and sUHI}{112}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.2.1}A method to retrieve hemispherical radiometric urban T\textsubscript {surf}}{77}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Method evaluation and sensitivity testing}{79}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}A parameterization scheme}{80}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Study area}{81}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}sUHI analysis}{84}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Results}{86}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Diurnal and seasonal variability in sUHI magnitudes}{86}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}The effect of sensor-surface geometry on sUHI}{92}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}The effect of meteorological conditions on sUHI}{94}{subsection.3.3.3}
+\contentsline {subsubsection}{BUBBLE}{94}{section*.57}
+\contentsline {subsubsection}{EPiCC}{98}{section*.62}
+\contentsline {subsection}{\numberline {3.3.4}The effect of rural/non-urban characteristics on sUHI and a generalizable case for sUHI}{104}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}Discussion}{107}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Diurnal patterns of sUHI}{107}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Seasonal patterns of sUHI}{110}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Sensor-surface-sun geometries and sUHI}{111}{subsection.3.4.3}
 \contentsline {subsection}{\numberline {3.4.4}Meteorological controls on sUHI}{113}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Conclusion}{117}{section.3.5}
-\contentsline {section}{\textbf {References}}{119}{section*.68}
+\contentsline {section}{\numberline {3.5}Conclusions}{117}{section.3.5}
+\contentsline {section}{\textbf {References}}{119}{section*.70}
 \contentsline {chapter}{\numberline {4}Conclusion}{122}{chapter.4}
 \contentsline {section}{\numberline {4.1}Summary of results}{122}{section.4.1}
 \contentsline {section}{\numberline {4.2}Limitations and future work}{125}{section.4.2}
 \contentsline {section}{\numberline {4.3}Final remarks}{127}{section.4.3}
-\contentsline {section}{\textbf {References}}{128}{section*.70}
+\contentsline {section}{\textbf {References}}{128}{section*.72}
 \contentsline {chapter}{\numberline {A}Transmittances for a range of water vapor mass densities and path lengths.}{130}{appendix.A}

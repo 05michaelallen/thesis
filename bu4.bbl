@@ -1,5 +1,11 @@
 \begin{thebibliography}{}
 
+\bibitem[Adderley et~al., 2015]{Adderley2015}
+Adderley, C., Christen, A., and Voogt, J.~A. (2015).
+\newblock {The effect of radiometer placement and view on inferred directional
+  and hemispheric radiometric temperatures of an urban canopy}.
+\newblock {\em Atmospheric Measurement Techniques}, 8(2):1891--1933.
+
 \bibitem[Berk et~al., 1987]{Berk1987}
 Berk, A., Bernstein, L.~S., and Robertson, D.~C. (1987).
 \newblock {MODTRAN: A Moderate Resolution Model for LOWTRAN7}.
@@ -11,6 +17,11 @@ Ceamanos, X., Briottet, X., Roussel, G., Gilardy, H., and Adeline, K. (2016).
   hyperspectral images of urban areas}.
 \newblock In {\em Remote Sensing Technologies and Applications in Urban
   Environments}, volume 10008, pages 1--4.
+
+\bibitem[Roberts, 2010]{Roberts2010}
+Roberts, S. (2010).
+\newblock {\em {Three-dimensional radiation flux source areas in urban areas}}.
+\newblock PhD thesis, University of British Columbia.
 
 \bibitem[Roth et~al., 1989]{Roth1989}
 Roth, M., Oke, T.~R., and Emery, W. (1989).

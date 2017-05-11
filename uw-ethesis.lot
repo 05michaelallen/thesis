@@ -5,13 +5,13 @@
 \contentsline {table}{\numberline {2.3}{\ignorespaces Planck weighted mean sensor response and T\textsubscript {bias} for a suite of common urban emission temperatures.\relax }}{52}{table.caption.38}
 \contentsline {table}{\numberline {2.4}{\ignorespaces Statistical performance of T\textsubscript {hem} derived using the parameterization scheme relative to modeled T\textsubscript {hem,r}. RMSE\textit {\textsubscript {s}} and RMSE\textit {\textsubscript {u}} represent the systemic and unsystematic RMSE respectively. n = 853\relax }}{65}{table.caption.45}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces A description of morphological parameters and measured variables for BUBBLE urban and rural sites. Modified from Rotach et al. (2005) to include only relevant parameters.\relax }}{84}{table.caption.48}
-\contentsline {table}{\numberline {3.2}{\ignorespaces A description of morphological parameters and measured variables for EPiCC urban and rural sites.\relax }}{85}{table.caption.49}
-\contentsline {table}{\numberline {3.3}{\ignorespaces A summary of the relationship between sUHI, meteorological variables, and clUHI.\relax }}{116}{table.caption.67}
+\contentsline {table}{\numberline {3.1}{\ignorespaces A description of morphological parameters and measured variables for BUBBLE urban and rural sites. Modified from Rotach et al. (2005) to include only relevant parameters.\relax }}{83}{table.caption.48}
+\contentsline {table}{\numberline {3.2}{\ignorespaces A description of morphological parameters and measured variables for EPiCC urban and rural sites.\relax }}{84}{table.caption.49}
+\contentsline {table}{\numberline {3.3}{\ignorespaces A summary of the relationship between sUHI, meteorological variables, and clUHI. These relationships are generalizable and represent the character of mean diurnal sUHI in response to changing conditions.\relax }}{116}{table.caption.69}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces A look-up table of bulk, point to point atmospheric transmittances as a function of path length (\si {\meter }) and water vapor mass density (\si {\gram \per \meter \cubed }). Assembled from simulations in MODTRAN 4.1 with T\textsubscript {air} = T\textsubscript {surf} = $300$ \si {\kelvin }, CO$_2$ = 400 \si {ppm}, and trace absorber and O$_3$ concentrations supplied by the mid-latitude summer standard atmospheric profile (Kantor and Cole, 1962)\relax }}{131}{table.caption.73}
-\contentsline {table}{\numberline {A.2}{\ignorespaces Continued from Table \ref {a1}\relax }}{132}{table.caption.74}
-\contentsline {table}{\numberline {A.3}{\ignorespaces Continued from Table \ref {a2}\relax }}{133}{table.caption.75}
-\contentsline {table}{\numberline {A.4}{\ignorespaces Continued from Table \ref {a3}\relax }}{134}{table.caption.76}
-\contentsline {table}{\numberline {A.5}{\ignorespaces Continued from Table \ref {a4}\relax }}{135}{table.caption.77}
+\contentsline {table}{\numberline {A.1}{\ignorespaces A look-up table of bulk, point to point atmospheric transmittances as a function of path length (\si {\meter }) and water vapor mass density (\si {\gram \per \meter \cubed }). Assembled from simulations in MODTRAN 4.1 with T\textsubscript {air} = T\textsubscript {surf} = $300$ \si {\kelvin }, CO$_2$ = 400 \si {ppm}, and trace absorber and O$_3$ concentrations supplied by the mid-latitude summer standard atmospheric profile (Kantor and Cole, 1962)\relax }}{131}{table.caption.75}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Continued from Table \ref {a1}\relax }}{132}{table.caption.76}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Continued from Table \ref {a2}\relax }}{133}{table.caption.77}
+\contentsline {table}{\numberline {A.4}{\ignorespaces Continued from Table \ref {a3}\relax }}{134}{table.caption.78}
+\contentsline {table}{\numberline {A.5}{\ignorespaces Continued from Table \ref {a4}\relax }}{135}{table.caption.79}
